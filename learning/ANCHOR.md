@@ -62,23 +62,23 @@ Use this table when translating textbook formulas into the project. It fixes the
 
 | Object | Convention in this repository | What must be kept explicit |
 |---|---|---|
-| State and channel | $`\rho\ge0`$, $`\operatorname{Tr}\rho=1`$; $`\Phi`$ is completely positive and trace preserving. | $`\Phi`$ acts on states. Its Heisenberg dual satisfies $`\operatorname{Tr}[\Phi(\rho)X]=\operatorname{Tr}[\rho\Phi^*(X)]`$. |
+| State and channel | $`\rho\ge0`$, $`\mathrm{Tr}\rho=1`$; $`\Phi`$ is completely positive and trace preserving. | $`\Phi`$ acts on states. Its Heisenberg dual satisfies $`\mathrm{Tr}[\Phi(\rho)X]=\mathrm{Tr}[\rho\Phi^*(X)]`$. |
 | Size variables | $`n=2j`$, $`d=n+1`$; use $`m`$ for the number of independent channel uses. | The spin-size limit $`n\to\infty`$ is different from coding over $`m\to\infty`$ uses at each fixed $`n`$. |
 | Time | $`\nu=nt`$. For $`d\rho/ds=\gamma\sum_a\mathcal D[J_a](\rho)`$, $`t=\gamma s/2`$. | A factor of two in the Lindblad generator changes the physical-time conversion. |
 | Distances | Trace distance is $`\frac12\Vert \rho-\sigma\Vert _1`$; channel distance is one half of the diamond norm. | A bound for the full diamond norm has twice the numerical error parameter. |
 | Logarithms | Entropies and classical rates use $`\log_2`$; $`Q`$ is in qubits per use. | If a source uses natural logarithms, divide entropy expressions by $`\ln2`$ to obtain bits. The book's logarithm convention was not verified from full text here. |
 | Coherent-state measure | $`d\Omega`$ has total mass one; $`d\int_{S^2}\lvert\Omega\rangle\langle\Omega\rvert\,d\Omega=I`$. | The POVM density includes the factor $`d=n+1`$. Haar measure on the rotation group is also normalized. |
 | Excitation | $`N=j-J_z`$ has eigenvalues $`0,\ldots,n`$. | $`N`$ is an observable, not the spin size or the number of channel uses. |
-| Reference | $`\operatorname{id}_R\otimes\Phi`$ acts on a joint state $`\rho_{RS}`$. | The untouched reference tests preservation of entanglement; it is not a noiseless channel carrying the message to the receiver. |
+| Reference | $`\mathrm{id}_R\otimes\Phi`$ acts on a joint state $`\rho_{RS}`$. | The untouched reference tests preservation of entanglement; it is not a noiseless channel carrying the message to the receiver. |
 
 For the [residual-entanglement calculation](../science/residual_entanglement.md), the Choi object is a **normalized state**:
 
 ```math
 |\Omega_d\rangle=d^{-1/2}\sum_{r=1}^{d}|r,r\rangle,
 \qquad
-\rho_\Phi=(\Phi\otimes\operatorname{id})
+\rho_\Phi=(\Phi\otimes\mathrm{id})
 (|\Omega_d\rangle\langle\Omega_d|),
-\qquad \operatorname{Tr}\rho_\Phi=1.
+\qquad \mathrm{Tr}\rho_\Phi=1.
 ```
 
 The transpose is on the second factor in the displayed $`J_z`$ basis. A convention using an unnormalized maximally entangled vector instead gives the Choi matrix $`d\rho_\Phi`$ and multiplies every eigenvalue by $`d`$. The coherent spin state $`|\Omega\rangle`$ and the maximally entangled state $`|\Omega_d\rangle`$ are different objects despite the shared letter.
@@ -120,7 +120,7 @@ The global upper bound has a different source: it compares probability densities
 For a coherent input at the north pole, the [communication proof, Section 2](../science/communication.md#2-almost-all-classical-bits-survive) gives
 
 ```math
-\mu_j(t)=\operatorname{Tr}[N\Phi_t^{(j)}
+\mu_j(t)=\mathrm{Tr}[N\Phi_t^{(j)}
 (|j,j\rangle\langle j,j|)]
 =j(1-e^{-2t})
 \le nt.

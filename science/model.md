@@ -57,7 +57,7 @@ For a difference of channels, the diamond norm is
 ```math
 \|\mathcal N-\mathcal M\|_\diamond
 =\sup_{\rho_{RA}}
-\|(\operatorname{id}_R\otimes(\mathcal N-\mathcal M))(\rho_{RA})\|_1.
+\|(\mathrm{id}_R\otimes(\mathcal N-\mathcal M))(\rho_{RA})\|_1.
 ```
 
 A reference of dimension equal to the input dimension suffices. Our distance uses one half of this norm:

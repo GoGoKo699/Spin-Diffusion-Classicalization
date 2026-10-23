@@ -14,7 +14,7 @@ $`\mathcal R:\mathcal B(\mathcal H_j)\to\mathcal B(\mathbb C^k)`$ be arbitrary C
 ```math
 F_e=
 \langle\Omega_k|
-(\operatorname{id}\otimes\mathcal R\circ\Phi_t^{(j)}\circ\mathcal V)
+(\mathrm{id}\otimes\mathcal R\circ\Phi_t^{(j)}\circ\mathcal V)
 (|\Omega_k\rangle\langle\Omega_k|)
 |\Omega_k\rangle,
 \qquad
@@ -50,7 +50,7 @@ For north-pole input, use the nonnegative excitation observable
 $`N=j-J_z`$, with eigenvalues $`0,\ldots,n`$. The rank-one decay law gives the exact mean
 
 ```math
-\mu_j(t)=\operatorname{Tr}[N\Phi_t^{(j)}(|j,j\rangle\langle j,j|)]
+\mu_j(t)=\mathrm{Tr}[N\Phi_t^{(j)}(|j,j\rangle\langle j,j|)]
 =j(1-e^{-2t}).
 ```
 
@@ -63,7 +63,7 @@ g(\mu)=(\mu+1)\log_2(\mu+1)-\mu\log_2\mu,
 
 To see this without a Gaussian-state assumption, embed the finite ladder in the infinite nonnegative ladder and compare with the geometric Gibbs distribution
 $`q_r=(1+\mu)^{-1}(\mu/(1+\mu))^r`$.
-Nonnegativity of quantum relative entropy gives $`S(\rho)\le-\operatorname{Tr}\rho\log_2 q=g(\mu)`$ when the mean is $`\mu`$; monotonicity of $`g`$ handles an upper bound on the mean. Off-diagonal matrix elements do not invalidate this argument.
+Nonnegativity of quantum relative entropy gives $`S(\rho)\le-\mathrm{Tr}\rho\log_2 q=g(\mu)`$ when the mean is $`\mu`$; monotonicity of $`g`$ handles an upper bound on the mean. Off-diagonal matrix elements do not invalidate this argument.
 
 Thus the following bound is exact at finite $`j`$:
 

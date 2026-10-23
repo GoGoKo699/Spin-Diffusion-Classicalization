@@ -14,7 +14,7 @@ Let $`n=2j\in\mathbb N`$, $`d=n+1`$, and let $`J_x,J_y,J_z`$ act in one irreduci
 Rank-$`\ell`$ tensor operators have channel eigenvalue $`e^{-t\ell(\ell+1)}`$. Define the **normalized** Choi state and its partial transpose by
 
 ```math
-\rho_{n,t}=(\Phi_t\otimes\operatorname{id})(|\Omega_d\rangle\langle\Omega_d|),
+\rho_{n,t}=(\Phi_t\otimes\mathrm{id})(|\Omega_d\rangle\langle\Omega_d|),
 \quad |\Omega_d\rangle=d^{-1/2}\sum_{m=-j}^{j}|m,m\rangle,
 \quad \rho_{n,t}^{\Gamma}=({\rm id}\otimes T)(\rho_{n,t}).
 ```
@@ -87,7 +87,7 @@ Because each singlet marginal is $`I/d`$,
 
 ```math
 \lambda_{0,n}(t)
-=\frac{(-1)^n}{d^2}\int p_t(g)\operatorname{tr}[U_j(g)^2]\,dg.
+=\frac{(-1)^n}{d^2}\int p_t(g)\mathrm{tr}[U_j(g)^2]\,dg.
 \tag{4}
 ```
 
@@ -330,7 +330,7 @@ Let $`W=(|s_j\rangle\langle s_j|)^\Gamma`$. Since the singlet is maximally entan
 \|W\|_\infty=1/d.
 ```
 
-For every separable state $`\sigma`$, $`\operatorname{tr}(W\sigma)\ge0`$. When $`\lambda_{0,n}<0`$, Hölder's inequality gives
+For every separable state $`\sigma`$, $`\mathrm{tr}(W\sigma)\ge0`$. When $`\lambda_{0,n}<0`$, Hölder's inequality gives
 
 ```math
 \frac12\|\rho_{n,t}-\sigma\|_1\ge-\frac d2\lambda_{0,n}(t).

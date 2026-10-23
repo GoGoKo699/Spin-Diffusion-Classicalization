@@ -69,7 +69,7 @@ This remains true for an arbitrarily stronger fixed third-axis rate $`c`$. The l
 
 ```math
 C(\Phi_{D,\tau/n})\ge
-\log_2(n+1)-g\!\left(\frac{\tau\operatorname{Tr}D}{3}\right).
+\log_2(n+1)-g\!\left(\frac{\tau\mathrm{Tr}D}{3}\right).
 \tag{4}
 ```
 
@@ -233,7 +233,7 @@ When $`\tau\sqrt{\mu_1\mu_2}<1`$, $`B>A\ge0`$ and the block has limiting negativ
 For positive definite $`D`$,
 
 ```math
-\det D_v=v^T\operatorname{adj}(D)v
+\det D_v=v^T\mathrm{adj}(D)v
 =(\det D)v^TD^{-1}v.
 ```
 
@@ -267,7 +267,7 @@ The Heisenberg generator on the spin vector is
 
 ```math
 \mathcal L_D^\dagger(\boldsymbol J)=-A\boldsymbol J,
-\qquad A=(\operatorname{Tr}D)I_3-D.
+\qquad A=(\mathrm{Tr}D)I_3-D.
 ```
 
 For the coherent state at $`v`$, the nonnegative integer-valued excitation operator $`N_v=j-v\cdot\boldsymbol J`$ has output mean
@@ -275,7 +275,7 @@ For the coherent state at $`v`$, the nonnegative integer-valued excitation opera
 ```math
 m_v=j[1-v^Te^{-tA}v]
 \le jt\,v^TAv
-=\frac{\tau}{2}[\operatorname{Tr}D-v^TDv].
+=\frac{\tau}{2}[\mathrm{Tr}D-v^TDv].
 \tag{16}
 ```
 
@@ -285,12 +285,12 @@ Since $`g`$ is increasing and concave,
 
 ```math
 \int S(\Phi_{D,t}(|v\rangle\langle v|))\,d\Omega
-\le g\!\left(j\left[1-\tfrac13\operatorname{Tr}(e^{-tA})\right]\right)
-\le g\!\left(\frac{nt\operatorname{Tr}D}{3}\right).
+\le g\!\left(j\left[1-\tfrac13\mathrm{Tr}(e^{-tA})\right]\right)
+\le g\!\left(\frac{nt\mathrm{Tr}D}{3}\right).
 \tag{17}
 ```
 
-Here the average of $`v^TDv`$ is $`\operatorname{Tr}D/3`$. Combining (17) with $`\chi`$ proves (4), because the Holevo information of any fixed ensemble is achievable in independent-use classical communication. The sharper first expression in (17) is also an exact finite-$`n`$ bound.
+Here the average of $`v^TDv`$ is $`\mathrm{Tr}D/3`$. Combining (17) with $`\chi`$ proves (4), because the Holevo information of any fixed ensemble is achievable in independent-use classical communication. The sharper first expression in (17) is also an exact finite-$`n`$ bound.
 
 A simpler uniform bound,
 
@@ -298,7 +298,7 @@ A simpler uniform bound,
 C\ge\log_2d-g[\tau(b+c)/2],
 ```
 
-is valid as well. Averaging before applying $`g`$ yields (4), which is at least as strong because $`\operatorname{Tr}D/3\le(b+c)/2`$.
+is valid as well. Averaging before applying $`g`$ yields (4), which is at least as strong because $`\mathrm{Tr}D/3\le(b+c)/2`$.
 
 The smallest eigenvalue of $`e^{-tA}`$ is $`e^{-(b+c)t}`$, so (16) also gives the stated polarization retention. At fixed $`\tau`$ and fixed $`D`$, nearly maximal classical communication and nearly unchanged mean polarization coexist with the channel's $`O(1/n)`$ proximity to EB.
 
@@ -362,31 +362,31 @@ The classical lower bound also survives time-dependent deterministic rotations. 
 
 ```math
 \dot M=-A(t)M,\qquad M(0)=I,
-\qquad A(t)=(\operatorname{Tr}D(t))I-\widetilde D(t)\ge0.
+\qquad A(t)=(\mathrm{Tr}D(t))I-\widetilde D(t)\ge0.
 ```
 
-Euclidean contraction gives $`\|M(t)\|_{\mathrm{op}}\le1`$. The average coherent-state excitation relative to its initial pole is $`j[1-\operatorname{Tr}M(T)/3]`$. Since
+Euclidean contraction gives $`\|M(t)\|_{\mathrm{op}}\le1`$. The average coherent-state excitation relative to its initial pole is $`j[1-\mathrm{Tr}M(T)/3]`$. Since
 
 ```math
-3-\operatorname{Tr}M(T)
-=\int_0^T\operatorname{Tr}[A(s)M(s)]\,ds
-\le\int_0^T\operatorname{Tr}A(s)\,ds
-=2\int_0^T\operatorname{Tr}D(s)\,ds,
+3-\mathrm{Tr}M(T)
+=\int_0^T\mathrm{Tr}[A(s)M(s)]\,ds
+\le\int_0^T\mathrm{Tr}A(s)\,ds
+=2\int_0^T\mathrm{Tr}D(s)\,ds,
 ```
 
 the same uniform ensemble and Jensen argument prove
 
 ```math
 C(\Phi_{[0,T]})\ge\log_2(n+1)
--g\!\left(\frac n3\int_0^T\operatorname{Tr}D(s)\,ds\right).
+-g\!\left(\frac n3\int_0^T\mathrm{Tr}D(s)\,ds\right).
 \tag{21}
 ```
 
-The trace inequality uses $`|\operatorname{Tr}(AM)|\le\operatorname{Tr}(A)\|M\|_{\mathrm{op}}`$ for $`A\ge0`$; $`M`$ need not be symmetric. Therefore the capacity proof does not assume commuting instantaneous anisotropies.
+The trace inequality uses $`|\mathrm{Tr}(AM)|\le\mathrm{Tr}(A)\|M\|_{\mathrm{op}}`$ for $`A\ge0`$; $`M`$ need not be symmetric. Therefore the capacity proof does not assume commuting instantaneous anisotropies.
 
 ## 6. Limits of the robustness claim
 
-1. **Fixed positive anisotropy matters.** For a fixed $`D>0`$, the EB upper bound has no condition-number prefactor, and the classical deficit at $`\tau=1/a`$ remains the finite constant $`g(\operatorname{Tr}D/(3a))`$. If $`a`$ depends on $`n`$ and tends to zero, that deficit can grow, and the advertised fixed-anisotropy separation must be reassessed.
+1. **Fixed positive anisotropy matters.** For a fixed $`D>0`$, the EB upper bound has no condition-number prefactor, and the classical deficit at $`\tau=1/a`$ remains the finite constant $`g(\mathrm{Tr}D/(3a))`$. If $`a`$ depends on $`n`$ and tends to zero, that deficit can grow, and the advertised fixed-anisotropy separation must be reassessed.
 2. **Rank-deficient noise has a different limit.** The lower-bound proof remains valid for $`D\ge0`$. If $`a=0`$, the pole along the largest-eigenvalue axis has tangent rates $`0,b`$ and gives the strictly positive lower bound $`1/[2(1+\tau b)^{3/2}]`$ for every finite $`\tau`$. Thus bounded-rate rotations do not produce asymptotic EB proximity at any fixed inverse-spin time under rank-deficient $`D`$. No claim about its longer timescale is made here.
 3. **Irreducibility is essential.** Collective noise on the full tensor product of distinguishable spins has noiseless multiplicity spaces. They are absent from $`\mathcal H_j`$ and are outside this theorem.
 4. **Uses must be independent for capacities.** A common rotation applied jointly to many carriers is a different communication channel. Equations (5) and (18) do not rule out relational or multiplicity encodings in that model.
@@ -401,9 +401,9 @@ The completed run gives the following smallest eigenvalues of that $`2\times2`$ 
 
 | Diffusion and $`\tau`$ | $`n=16`$ | $`n=32`$ | $`n=64`$ | Proved limit |
 |---|---:|---:|---:|---:|
-| $`\operatorname{diag}(1,2,5)`$, $`\tau=0.5`$ | $`-0.0248990`$ | $`-0.0361314`$ | $`-0.0420206`$ | $`-0.0481125`$ |
-| $`\operatorname{diag}(1,1,5)`$, $`\tau=0.8`$ | $`0.0015970`$ | $`-0.0138792`$ | $`-0.0221729`$ | $`-0.0308642`$ |
+| $`\mathrm{diag}(1,2,5)`$, $`\tau=0.5`$ | $`-0.0248990`$ | $`-0.0361314`$ | $`-0.0420206`$ | $`-0.0481125`$ |
+| $`\mathrm{diag}(1,1,5)`$, $`\tau=0.8`$ | $`0.0015970`$ | $`-0.0138792`$ | $`-0.0221729`$ | $`-0.0308642`$ |
 | $`D`$ with cross terms, $`\tau=0.5`$ | $`-0.0275724`$ | $`-0.0388456`$ | $`-0.0447486`$ | $`-0.0508486`$ |
-| $`\operatorname{diag}(0,1,3)`$, $`\tau=2`$ | $`-0.0079839`$ | $`-0.0426074`$ | $`-0.0657619`$ | $`-0.0962250`$ |
+| $`\mathrm{diag}(0,1,3)`$, $`\tau=2`$ | $`-0.0079839`$ | $`-0.0426074`$ | $`-0.0657619`$ | $`-0.0962250`$ |
 
 The cross-term matrix has rows $`(1,0.3,0.4)`$, $`(0.3,2,0.2)`$, $`(0.4,0.2,5)`$, with pole along the third coordinate. All four sequences approach the predicted constants. The positive $`n=16`$ value in the axial example is an expected finite-size limitation of this witness; the theorem is a lower bound at fixed rates as $`n\to\infty`$ and does not claim that the witness detects entanglement for every finite $`n`$. Full values, commands and numerical residuals are available in the [verification record](../verification/README.md).

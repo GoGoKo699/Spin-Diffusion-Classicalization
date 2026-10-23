@@ -72,7 +72,7 @@ Conjugation by a unitary has diamond norm one, independently of the representati
 ```math
 \frac12\|\Phi_t^{(j)}-\mathcal B_j\|_\diamond
 \le\frac12\int|p_t(g)-k_n(g)|\,dg
-=\operatorname{TV}(p_t,k_n).
+=\mathrm{TV}(p_t,k_n).
 ```
 
 This elementary transfer is part of the broader method developed by [Bardet and collaborators](../references/RELATED_WORK.md#group-transference-collective-decoherence-and-capacities-bardet-et-al). The required estimate here compares two sharply localized kernels at time $`1/n`$, rather than comparing the heat kernel with its uniform stationary law.
@@ -99,24 +99,24 @@ Let $`r_n(\theta)=w(\theta)k_n(\theta)`$. At $`t=1/n`$,
 
 ```math
 \frac{r_n(\theta)}{m_{1/n}(\theta)}
-=A_n\operatorname{sinc}^2(\theta/2)
+=A_n\mathrm{sinc}^2(\theta/2)
 e^{n\theta^2/4}\cos^{2n}(\theta/2)
 \le A_n,
 \qquad
 A_n=\frac{C_n}{\sqrt{\pi}n^{3/2}}.
 ```
 
-Here $`\operatorname{sinc}x=\sin x/x`$. The inequality follows from
+Here $`\mathrm{sinc}x=\sin x/x`$. The inequality follows from
 $`\log\cos x\le-x^2/2`$ for $`0\le x<\pi/2`$.
 
 Both densities integrate to one. If $`r\le A m`$ for normalized densities, then
-$`\operatorname{TV}(r,m)=\int(r-m)_+\le A-1`$.
+$`\mathrm{TV}(r,m)=\int(r-m)_+\le A-1`$.
 Stirling's bounds give
 
 ```math
 A_n\le(1+1/n)e^{1/(6n)},
 \qquad
-\operatorname{TV}(r_n,m_{1/n})
+\mathrm{TV}(r_n,m_{1/n})
 \le\frac{(7/6)e^{1/6}}n.
 ```
 
@@ -148,7 +148,7 @@ by taking minus its $`\theta`$ derivative and multiplying by
 $`2e^{t/4}\sin(\theta/2)/\pi`$.
 
 The zero-image term is
-$`h_t^0=m_t e^{t/4}\operatorname{sinc}(\theta/2)`$.
+$`h_t^0=m_t e^{t/4}\mathrm{sinc}(\theta/2)`$.
 For nonzero images, put $`x=\theta-2\pi q`$.
 The absolute-radius intervals from $`q\ge1`$ are
 $`[(2q-1)\pi,2q\pi]`$; those from $`q=-p\le-1`$ are
@@ -158,19 +158,19 @@ Because $`\sin(\theta/2)=(-1)^q\sin(x/2)`$,
 ```math
 \int_0^\pi|h_t-h_t^0|\,d\theta
 \le e^{t/4}\int_\pi^\infty
-m_t(x)|\operatorname{sinc}(x/2)|\,dx
+m_t(x)|\mathrm{sinc}(x/2)|\,dx
 \le e^{t/4}\Pr_{m_t}\{\theta\ge\pi\}.
 ```
 
 On $`[0,\pi]`$,
-$`0\le1-\operatorname{sinc}(\theta/2)\le\theta^2/24`$.
+$`0\le1-\mathrm{sinc}(\theta/2)\le\theta^2/24`$.
 For $`t\le1`$, the zero-image discrepancy has integral at most
 $`(e^{t/4}-1)+e^{t/4}t/4\le e^{1/4}t/2`$.
 Adding the image error and the missing Maxwell tail, dividing by two, and using
 $`\Pr\{\theta\ge\pi\}\le6t/\pi^2`$ gives
 
 ```math
-\operatorname{TV}(h_t,m_t)
+\mathrm{TV}(h_t,m_t)
 \le
 \left[\frac{e^{1/4}}4+
 \frac{3(1+e^{1/4})}{\pi^2}\right]t.
@@ -179,7 +179,7 @@ $`\Pr\{\theta\ge\pi\}\le6t/\pi^2`$ gives
 Combining the two comparisons at $`t=1/n`$ establishes
 
 ```math
-\operatorname{TV}(p_{1/n},k_n)
+\mathrm{TV}(p_{1/n},k_n)
 \le \frac{K_0}{n},
 \qquad
 K_0=
@@ -238,7 +238,7 @@ U_{11}=a^{n-2}(1-n|b|^2).
 
 The last expression is used for $`n\ge2`$; its apparent singularity at $`n=1`$ is removable.
 
-Let $`\rho_{RS}=(\operatorname{id}\otimes\Phi_{\nu/n}^{(j)})(|\beta_j\rangle\langle\beta_j|)`$.
+Let $`\rho_{RS}=(\mathrm{id}\otimes\Phi_{\nu/n}^{(j)})(|\beta_j\rangle\langle\beta_j|)`$.
 The principal block of $`\rho_{RS}^{\Gamma_R}`$ on
 $`|0\rangle_R|1\rangle_S,|1\rangle_R|0\rangle_S`$ is
 
@@ -261,7 +261,7 @@ $`N(0,2\nu I_3)`$. This follows from the radial Maxwell comparison above and the
 n|b|^2\longrightarrow
 Z=\tfrac14(X_x^2+X_y^2),
 \qquad
-Z\sim\operatorname{Exp}(\text{mean }\nu).
+Z\sim\mathrm{Exp}(\text{mean }\nu).
 ```
 
 The longitudinal phase that could oscillate in $`a^n`$ cancels in the relevant product:
@@ -293,8 +293,8 @@ Set $`W=(|v\rangle\langle v|)^{\Gamma_R}`$. This witness has
 $`\|W\|_\infty=1/2`$ and nonnegative expectation on every separable state $`\sigma`$. Hence
 
 ```math
--\operatorname{Tr}(W\rho_{RS})
-\le|\operatorname{Tr}[W(\rho_{RS}-\sigma)]|
+-\mathrm{Tr}(W\rho_{RS})
+\le|\mathrm{Tr}[W(\rho_{RS}-\sigma)]|
 \le\tfrac12\|\rho_{RS}-\sigma\|_1.
 ```
 

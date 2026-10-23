@@ -24,7 +24,7 @@ An external reference makes this distinction operational. A joint state $`\rho_{
 
 A Bell pair illustrates why reduced states are insufficient. Each half is maximally mixed, just as for an equal classical mixture of $`|00\rangle`$ and $`|11\rangle`$. The Bell pair also has coherence between those alternatives. Testing a channel on one half asks whether it preserves the joint quantum correlations, beyond reproducing the local input state.
 
-A quantum channel is completely positive and trace preserving, or CPTP. Complete positivity requires the extended operation $`\operatorname{id}_R\otimes\Phi`$ to preserve positivity for every reference. It ensures that the channel remains physically meaningful when its input belongs to an entangled system.
+A quantum channel is completely positive and trace preserving, or CPTP. Complete positivity requires the extended operation $`\mathrm{id}_R\otimes\Phi`$ to preserve positivity for every reference. It ensures that the channel remains physically meaningful when its input belongs to an entangled system.
 
 The channel studied here averages rotations:
 
@@ -81,7 +81,7 @@ Bounded excitation makes this approach the oscillator commutator. The local nois
 A channel is entanglement breaking, abbreviated EB, if every joint input becomes separable across output/reference. Equivalently, it has a measurement-and-preparation implementation:
 
 ```math
-\mathcal E(\rho)=\sum_x\operatorname{Tr}(M_x\rho)\,\sigma_x,
+\mathcal E(\rho)=\sum_x\mathrm{Tr}(M_x\rho)\,\sigma_x,
 \qquad M_x\ge0,\qquad \sum_xM_x=I.
 ```
 
@@ -90,7 +90,7 @@ The measurement outcome may carry useful classical information. EB therefore per
 Another equivalent characterization uses the normalized Choi state
 
 ```math
-\rho_\Phi=(\Phi\otimes\operatorname{id})
+\rho_\Phi=(\Phi\otimes\mathrm{id})
 (|\Omega_d\rangle\langle\Omega_d|),
 \qquad
 |\Omega_d\rangle=d^{-1/2}\sum_{r=1}^d|r,r\rangle.
@@ -103,7 +103,7 @@ Trace distance is $`\frac12\|\rho-\sigma\|_1`$. It bounds the difference in prob
 ```math
 \frac12\|\Phi-\Psi\|_\diamond
 =\sup_{\rho_{RS}}\frac12
-\|(\operatorname{id}_R\otimes(\Phi-\Psi))(\rho_{RS})\|_1.
+\|(\mathrm{id}_R\otimes(\Phi-\Psi))(\rho_{RS})\|_1.
 ```
 
 A reference of input dimension suffices. Preprocessing and postprocessing by channels contract this distance. Thus one estimate controls all encoders and final decoders, including entangled tests.
@@ -121,15 +121,15 @@ The infimum includes every EB comparator on these spaces. Exact EB means $`e_j(t
 
 ## 4. Entropy, coding, and the research question — M09–M12
 
-All entropies use base-two logarithms. The von Neumann entropy is $`S(\rho)=-\operatorname{Tr}\rho\log_2\rho`$. A useful bound controls it using the mean of the nonnegative excitation observable $`N`$:
+All entropies use base-two logarithms. The von Neumann entropy is $`S(\rho)=-\mathrm{Tr}\rho\log_2\rho`$. A useful bound controls it using the mean of the nonnegative excitation observable $`N`$:
 
 ```math
 S(\rho)\le g(\mu),\qquad
 g(\mu)=(\mu+1)\log_2(\mu+1)-\mu\log_2\mu,
-\quad g(0)=0,\quad \operatorname{Tr}(N\rho)\le\mu.
+\quad g(0)=0,\quad \mathrm{Tr}(N\rho)\le\mu.
 ```
 
-To justify this for the finite spin ladder when $`\mu>0`$, embed it in the nonnegative integer ladder and compare with the geometric distribution $`q_r=(1+\mu)^{-1}[\mu/(1+\mu)]^r`$. Nonnegative quantum relative entropy gives $`S(\rho)\le-\operatorname{Tr}\rho\log_2q`$. The logarithm is affine in excitation, producing $`g(\mu)`$. At $`\mu=0`$, only the ground level can be occupied and the entropy is zero. Coherences cause no difficulty; the actual state need not be thermal or Gaussian.
+To justify this for the finite spin ladder when $`\mu>0`$, embed it in the nonnegative integer ladder and compare with the geometric distribution $`q_r=(1+\mu)^{-1}[\mu/(1+\mu)]^r`$. Nonnegative quantum relative entropy gives $`S(\rho)\le-\mathrm{Tr}\rho\log_2q`$. The logarithm is affine in excitation, producing $`g(\mu)`$. At $`\mu=0`$, only the ground level can be occupied and the entropy is zero. Coherences cause no difficulty; the actual state need not be thermal or Gaussian.
 
 The function is increasing and concave: for positive $`\mu`$, its first derivative is $`\log_2(1+1/\mu)`$ and its second is $`-1/[\ln2\,\mu(1+\mu)]`$. Increasingness permits an upper estimate on mean excitation. Concavity later permits averaging over coherent directions when the output entropy depends on orientation. The bound controls uncertainty through excitation, independently of how many high levels exist.
 
@@ -256,7 +256,7 @@ The decisive step controls classical probability distributions before choosing t
 ```math
 \frac12\|\Phi_t-\mathcal B_j\|_\diamond
 \le\frac12\int|p_t(g)-k_n(g)|\,dg
-=\operatorname{TV}(p_t,k_n).
+=\mathrm{TV}(p_t,k_n).
 ```
 
 Every unitary conjugation has diamond norm one, whatever the spin dimension. This is why the bound survives a growing carrier and an arbitrary reference.
@@ -277,7 +277,7 @@ r_n(\theta)\le A_nm_{1/n}(\theta),
 \le(1+1/n)e^{1/(6n)}.
 ```
 
-Normalization turns pointwise domination into $`\operatorname{TV}(r_n,m_{1/n})\le A_n-1=O(1/n)`$. Stirling bounds control the normalization uniformly, rather than merely identifying its limiting value.
+Normalization turns pointwise domination into $`\mathrm{TV}(r_n,m_{1/n})\le A_n-1=O(1/n)`$. Stirling bounds control the normalization uniformly, rather than merely identifying its limiting value.
 
 The Maxwell density is normalized on the whole positive half-line. Its second moment is $`6t`$ because it is the radius of three independent Gaussian coordinates, each of variance $`2t`$. Keeping the radial measure explicit is essential: comparing the central densities while forgetting the Haar volume factor would give the wrong probability law and normalization.
 
@@ -290,12 +290,12 @@ h_t(\theta)=
 e^{-(\theta-2\pi q)^2/(4t)}.
 ```
 
-The zero image is $`m_t(\theta)e^{t/4}\operatorname{sinc}(\theta/2)`$. Its curvature correction has integrated size $`O(t)`$, since $`1-\operatorname{sinc}(\theta/2)\le\theta^2/24`$. The absolute-radius intervals of the remaining images partition $`[\pi,\infty)`$ once. Their total contribution is bounded by a Maxwell tail, as is the missing mass beyond the group interval. Thus the estimate includes curvature, wrapping images, and tails.
+The zero image is $`m_t(\theta)e^{t/4}\mathrm{sinc}(\theta/2)`$. Its curvature correction has integrated size $`O(t)`$, since $`1-\mathrm{sinc}(\theta/2)\le\theta^2/24`$. The absolute-radius intervals of the remaining images partition $`[\pi,\infty)`$ once. Their total contribution is bounded by a Maxwell tail, as is the missing mass beyond the group interval. Thus the estimate includes curvature, wrapping images, and tails.
 
 Combining the two explicit bounds gives
 
 ```math
-\operatorname{TV}(p_{1/n},k_n)\le\frac{K_0}{n},
+\mathrm{TV}(p_{1/n},k_n)\le\frac{K_0}{n},
 \qquad K_0=2.393520645\ldots<2.4.
 ```
 
@@ -442,9 +442,9 @@ Choosing the pole along the strongest axis gives transverse strengths $`a,b`$. T
 \frac1{\sqrt{ab}}\le\tau_{\mathrm{op}}(D)\le\frac1a.
 ```
 
-The bounds coincide when $`a=b\le c`$. For $`a<b`$, the exact coefficient remains unresolved. Unitality still preserves the ensemble average; averaging the output entropy bounds and using concavity of $`g`$ yields $`C\ge\log_2d-g(\tau\operatorname{Tr}D/3)`$ without assuming covariance.
+The bounds coincide when $`a=b\le c`$. For $`a<b`$, the exact coefficient remains unresolved. Unitality still preserves the ensemble average; averaging the output entropy bounds and using concavity of $`g`$ yields $`C\ge\log_2d-g(\tau\mathrm{Tr}D/3)`$ without assuming covariance.
 
-The two rates enter through a Gaussian determinant. The isotropic Laplace transform becomes $`\mathbb E e^{-sZ}=\det(I+s\tau D_v)^{-1/2}`$; the same population/coherence combination produces the displayed numerator. By contrast, the global upper bound can extract only the guaranteed isotropic strength $`a`$. For classical entropy, averaging directions uses $`\int v^TDv\,d\Omega=\operatorname{Tr}D/3`$. These are three different uses of the noise matrix, explaining the bracket and the averaged rate.
+The two rates enter through a Gaussian determinant. The isotropic Laplace transform becomes $`\mathbb E e^{-sZ}=\det(I+s\tau D_v)^{-1/2}`$; the same population/coherence combination produces the displayed numerator. By contrast, the global upper bound can extract only the guaranteed isotropic strength $`a`$. For classical entropy, averaging directions uses $`\int v^TDv\,d\Omega=\mathrm{Tr}D/3`$. These are three different uses of the noise matrix, explaining the bracket and the averaged rate.
 
 Deterministic linear spin Hamiltonians $`H(s)=h(s)\cdot J`$ permit a stronger upper statement. With time-dependent positive-semidefinite diffusion matrices,
 
@@ -455,7 +455,7 @@ Deterministic linear spin Hamiltonians $`H(s)=h(s)\cdot J`$ permit a stronger up
 
 is sufficient for the same $`2.4/n`$ EB approximation. Casimir centrality makes the factorization survive strong prescribed rotations. The unchanged local lower limit has a narrower assumption: rotation rates bounded independently of $`n`$. Fast spin-dependent rotations may change the transverse noise seen by the witness.
 
-The corresponding classical entropy bound uses $`(n/3)\int_0^T\operatorname{Tr}D(s)\,ds`$ as its argument of $`g`$. For fixed rank-deficient diffusion and bounded rotation rates, a transverse determinant vanishes and the lower witness remains positive at every fixed inverse-spin time. Nonlinear Hamiltonians and spin-dependent degenerating diffusion rates require separate analysis. The [anisotropic proof](../science/anisotropic_diffusion.md) gives the factorization, Gaussian integral, entropy averaging, and precise control scope.
+The corresponding classical entropy bound uses $`(n/3)\int_0^T\mathrm{Tr}D(s)\,ds`$ as its argument of $`g`$. For fixed rank-deficient diffusion and bounded rotation rates, a transverse determinant vanishes and the lower witness remains positive at every fixed inverse-spin time. Nonlinear Hamiltonians and spin-dependent degenerating diffusion rates require separate analysis. The [anisotropic proof](../science/anisotropic_diffusion.md) gives the factorization, Gaussian integral, entropy averaging, and precise control scope.
 
 ## 10. Exact residual entanglement — M28–M29
 
