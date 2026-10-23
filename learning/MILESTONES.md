@@ -248,7 +248,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Conceptual connection:** The rotation distributions are compared before choosing a spin representation. That order of argument is what protects the bound against hidden encodings in the growing Hilbert space.
 
-**Sources and anchor:** [Finite-size bound and exact definition of $`K_0`$](../science/classicalization.md#3-a-uniform-finite-size-bound), [uniformity of the argument](../science/classicalization.md#5-what-makes-the-result-uniform), and [related norm comparisons](../references/RELATED_WORK.md#uniform-berezinheat-comparison-ioos-kaminker-polterovich-and-shmoish). Holevo, Chapters 3 and 6, supply the operational channel setting; the uniform estimate is established locally.
+**Sources and anchor:** [Finite-size bound and its explicit constant](../science/classicalization.md#3-a-uniform-finite-size-bound), [uniformity of the argument](../science/classicalization.md#5-what-makes-the-result-uniform), and [related norm comparisons](../references/RELATED_WORK.md#uniform-berezinheat-comparison-ioos-kaminker-polterovich-and-shmoish). Holevo, Chapters 3 and 6, supply the operational channel setting; the uniform estimate is established locally.
 
 ### M18 — Extend the comparator to every later time
 
