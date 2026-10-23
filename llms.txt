@@ -1,0 +1,27 @@
+# Spin-Diffusion-Classicalization
+
+This repository studies isotropic and anisotropic rotational diffusion on one irreducible spin. Its central result is a sharp scaled-time boundary for vanishing diamond distance to entanglement-breaking channels, with nearly maximal classical capacity and vanishing unassisted quantum capacity at and above that boundary.
+
+## Authoritative routes
+
+- Overview and reproduction entrypoint: README.md
+- Connected scientific route: science/README.md
+- Carrier, generator, time normalization, half-diamond convention, exact claims and resource accounting: science/model.md
+- Explicit coherent-measurement comparator, uniform heat-kernel estimate and matching two-level converse: science/classicalization.md
+- Arbitrary encoding/recovery, finite classical bound, finite quantum-capacity converse and intermediate timescales: science/communication.md
+- Unequal diffusion strengths, sharp two-equal-smallest-rate family, rank-deficient cases and deterministic rotations: science/anisotropic_diffusion.md
+- Exact normalized-Choi singlet eigenvalue, odd-spin asymptotic and finite NPT certificates: science/residual_entanglement.md
+- Physical story, interpretation and boundaries: science/interpretation.md
+- Imported results, precise predecessor comparison and source versions: references/RELATED_WORK.md
+- Structured bibliography: references/references.bib
+- Numerical checks, recorded outputs and figure generation: verification/README.md
+
+## Essential distinctions
+
+The channel is Phi_t = exp[-t sum_a [J_a,[J_a,.]]], n=2j, nu=nt. Distances use one half of the diamond norm. The threshold is nu=1 for asymptotic proximity to EB, not a proved sharp positive-to-zero quantum-capacity boundary. The upper bound is a finite-n O(1/n) approximation and does not assert exact EB at finite n.
+
+The residual Choi theorem identifies one negative partial-transpose eigenvalue for fixed 0<nu<pi/2 and sufficiently large odd n. It determines neither all-sector PPT/EB time nor the size of every entanglement measure. General fixed positive anisotropy has a bracket; exact equality is proved when its two smallest eigenvalues agree.
+
+The carrier is irreducible. An arbitrary initial encoding and final recovery are permitted, but intermediate active correction and a quantum bypass are additional resources. Capacities use independent channel copies, not a common rotation shared across all carriers.
+
+Follow the source map for attribution: coherent-channel rotation identities, Berezin/heat comparisons, transference methods, rotational partial-transpose structure and capacity continuity have established predecessors. Numerical checks verify conventions and sampled finite behavior; the proofs carry the general statements.

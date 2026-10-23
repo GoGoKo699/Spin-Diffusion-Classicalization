@@ -1,0 +1,201 @@
+{
+  "passed": true,
+  "model": "L_D=-sum_ab D_ab [J_a,[J_b,.]], n=2j, t=tau/n",
+  "scope": "Sampled finite-spin consistency checks, not a proof of an asymptotic rate or threshold",
+  "proof": "science/anisotropic_diffusion.md",
+  "sampled_spin_sizes": [
+    16,
+    32,
+    64
+  ],
+  "sampled_convergence_criterion": "Absolute errors decrease at each listed size; final error is below half the first; final witness is negative",
+  "symmetry_tolerance": 1e-10,
+  "max_diagonal_symmetry_error": 5.273559366969494e-16,
+  "max_hermiticity_error": 1.1777369018733902e-16,
+  "cases": [
+    {
+      "case": "generic_diagonal",
+      "D": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0
+        ]
+      ],
+      "tau": 0.5,
+      "predicted_limit": -0.04811252243246882,
+      "sampled_convergence_passed": true,
+      "rows": [
+        {
+          "n": 16,
+          "lambda_minus": -0.02489899050783686,
+          "difference_from_limit": 0.023213531924631964,
+          "diagonal_symmetry_error": 1.1102230246251565e-16,
+          "hermiticity_error": 0.0
+        },
+        {
+          "n": 32,
+          "lambda_minus": -0.03613137940679882,
+          "difference_from_limit": 0.01198114302567,
+          "diagonal_symmetry_error": 3.608224830031759e-16,
+          "hermiticity_error": 7.850462293418876e-17
+        },
+        {
+          "n": 64,
+          "lambda_minus": -0.04202059814004158,
+          "difference_from_limit": 0.006091924292427241,
+          "diagonal_symmetry_error": 5.551115123125783e-17,
+          "hermiticity_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "sharp_axial_family",
+      "D": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0
+        ]
+      ],
+      "tau": 0.8,
+      "predicted_limit": -0.030864197530864182,
+      "sampled_convergence_passed": true,
+      "rows": [
+        {
+          "n": 16,
+          "lambda_minus": 0.0015969799222949194,
+          "difference_from_limit": 0.0324611774531591,
+          "diagonal_symmetry_error": 5.551115123125783e-17,
+          "hermiticity_error": 0.0
+        },
+        {
+          "n": 32,
+          "lambda_minus": -0.013879162355317248,
+          "difference_from_limit": 0.016985035175546934,
+          "diagonal_symmetry_error": 2.7755575615628914e-16,
+          "hermiticity_error": 0.0
+        },
+        {
+          "n": 64,
+          "lambda_minus": -0.02217287554107826,
+          "difference_from_limit": 0.008691321989785922,
+          "diagonal_symmetry_error": 1.6653345369377348e-16,
+          "hermiticity_error": 0.0
+        }
+      ]
+    },
+    {
+      "case": "longitudinal_cross_terms",
+      "D": [
+        [
+          1.0,
+          0.3,
+          0.4
+        ],
+        [
+          0.3,
+          2.0,
+          0.2
+        ],
+        [
+          0.4,
+          0.2,
+          5.0
+        ]
+      ],
+      "tau": 0.5,
+      "predicted_limit": -0.05084855829141336,
+      "sampled_convergence_passed": true,
+      "rows": [
+        {
+          "n": 16,
+          "lambda_minus": -0.027572390270610612,
+          "difference_from_limit": 0.02327616802080275,
+          "diagonal_symmetry_error": 5.551117195763058e-17,
+          "hermiticity_error": 3.9258735057775355e-17
+        },
+        {
+          "n": 32,
+          "lambda_minus": -0.038845640629023244,
+          "difference_from_limit": 0.012002917662390117,
+          "diagonal_symmetry_error": 2.7769191693388347e-17,
+          "hermiticity_error": 1.1776405090269183e-16
+        },
+        {
+          "n": 64,
+          "lambda_minus": -0.04474856884722643,
+          "difference_from_limit": 0.00609998944418693,
+          "diagonal_symmetry_error": 3.330669671407052e-16,
+          "hermiticity_error": 1.1777369018733902e-16
+        }
+      ]
+    },
+    {
+      "case": "rank_two_at_late_scaled_time",
+      "D": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.0
+        ]
+      ],
+      "tau": 2.0,
+      "predicted_limit": -0.0962250448649376,
+      "sampled_convergence_passed": true,
+      "rows": [
+        {
+          "n": 16,
+          "lambda_minus": -0.007983937497521333,
+          "difference_from_limit": 0.08824110736741628,
+          "diagonal_symmetry_error": 8.326672684688674e-17,
+          "hermiticity_error": 0.0
+        },
+        {
+          "n": 32,
+          "lambda_minus": -0.042607378063998315,
+          "difference_from_limit": 0.05361766680093929,
+          "diagonal_symmetry_error": 1.3877787807814457e-16,
+          "hermiticity_error": 0.0
+        },
+        {
+          "n": 64,
+          "lambda_minus": -0.0657618725888963,
+          "difference_from_limit": 0.030463172276041298,
+          "diagonal_symmetry_error": 5.273559366969494e-16,
+          "hermiticity_error": 0.0
+        }
+      ]
+    }
+  ]
+}
