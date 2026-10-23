@@ -29,18 +29,20 @@ be the total-spin-zero vector.
 
 **Theorem.** The singlet is an eigenvector of $`\rho_{n,t}^{\Gamma}`$, with exact eigenvalue
 
+**Equation (1).**
+
 ```math
 \boxed{\lambda_{0,n}(t)=\frac1{(n+1)^2}
 \sum_{\ell=0}^{n}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.}
-\tag{1}
 ```
 
 For every fixed $`0<\nu<\pi/2`$, along odd $`n\to\infty`$,
 
+**Equation (2).**
+
 ```math
 \boxed{\lambda_{0,n}(\nu/n)
 \sim-\frac{e^{-2\nu}}{\cosh\nu}\frac{e^{-\nu n}}n<0.}
-\tag{2}
 ```
 
 Consequently the channel has an NPT Choi state, and is not entanglement breaking, for all sufficiently large half-integer spins at each such fixed $`\nu`$. At $`\nu=1`$, the stronger finite statement holds: **every odd $`n\ge5`$** has a negative singlet eigenvalue.
@@ -64,11 +66,12 @@ The diffusion channel is a random rotation with the normalized SO(3) heat distri
 
 where $`F`$ swaps the two spin factors,
 
+**Equation (3).**
+
 ```math
 \rho_{n,t}^{\Gamma}
 =\frac1d\int p_t(g)(U_j(g)\otimes I)F(U_j(g)^\dagger\otimes I)\,dg
 =\frac1d\int p_t(g)(U_j(g)\otimes U_j(g)^\dagger)F\,dg.
-\tag{3}
 ```
 
 Covariance implies that $`\rho_{n,t}^{\Gamma}`$ commutes with every $`U_j(h)\otimes U_j(h)`$. The decomposition into total spins $`0,1,\ldots,n`$ is multiplicity free, so the singlet is an eigenvector. Its swap parity is
@@ -85,17 +88,19 @@ Singlet invariance also gives
 
 Because each singlet marginal is $`I/d`$,
 
+**Equation (4).**
+
 ```math
 \lambda_{0,n}(t)
 =\frac{(-1)^n}{d^2}\int p_t(g)\mathrm{tr}[U_j(g)^2]\,dg.
-\tag{4}
 ```
 
 The SU(2) character identity
 
+**Equation (5).**
+
 ```math
 (-1)^n\chi_j(g^2)=\sum_{\ell=0}^{n}(-1)^\ell\chi_\ell(g)
-\tag{5}
 ```
 
 follows directly by summing weights: in the alternating sum on the right, the surviving weights are $`-n,-n+2,\ldots,n`$, each with coefficient $`(-1)^n`$. Finally,
@@ -123,9 +128,10 @@ R_n(t)=\sum_{\ell=n+1}^{\infty}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.
 
 Then
 
+**Equation (6).**
+
 ```math
 S_n(t)=H(t)-R_n(t).
-\tag{6}
 ```
 
 The parity assumption is essential: when $`n`$ is odd, the first omitted term is positive. The argument below therefore produces a negative singlet eigenvalue for odd $`n`$. It makes no corresponding all-sector assertion for even $`n`$.
@@ -134,11 +140,12 @@ The parity assumption is essential: when $`n`$ is odd, the first omitted term is
 
 Poisson summation of the half-integer character series, evaluated at $`\theta=\pi`$, gives
 
+**Equation (7).**
+
 ```math
 H(t)=\pi^{3/2}t^{-3/2}e^{t/4}
 \sum_{k=0}^{\infty}(-1)^k(2k+1)
 e^{-\pi^2(2k+1)^2/(4t)}.
-\tag{7}
 ```
 
 The coefficient contains both equally short images at angular displacements $`+\pi`$ and $`-\pi`$. Equivalently, start from the exact radial heat density
@@ -152,31 +159,34 @@ and use $`p_t(\pi)=\pi h_t(\pi)/2`$. Pairing $`q=0,1`$, then $`q=-1,2`$, and so 
 
 For $`0<t\le\pi^2/2`$, the positive magnitudes in (7) decrease, so alternating-series bounds yield
 
+**Equation (8).**
+
 ```math
 K(t)\bigl(1-3e^{-2\pi^2/t}\bigr)\le H(t)\le K(t),
 \quad K(t)=\pi^{3/2}t^{-3/2}e^{t/4-\pi^2/(4t)}.
-\tag{8}
 ```
 
 In particular, for fixed $`\nu>0`$,
+
+**Equation (9).**
 
 ```math
 H(\nu/n)
 \sim \pi^{3/2}\nu^{-3/2}n^{3/2}
 e^{-\pi^2 n/(4\nu)}.
-\tag{9}
 ```
 
 ### 2.2 Dominated convergence for the omitted tail
 
 Set $`\ell=n+1+k`$. For odd $`n`$,
 
+**Equation (10).**
+
 ```math
 \frac{R_n(\nu/n)}{n e^{-\nu n}}
 =\sum_{k=0}^{\infty}(-1)^k
 \left(2+\frac{3+2k}{n}\right)
 e^{-\nu(3+2k)}e^{-\nu(k+1)(k+2)/n}.
-\tag{10}
 ```
 
 For every fixed $`\nu>0`$ and every $`n\ge1`$, the absolute value of the summand is at most
@@ -187,23 +197,25 @@ For every fixed $`\nu>0`$ and every $`n\ge1`$, the absolute value of the summand
 
 This is an absolutely summable, $`n`$-independent majorant. Dominated convergence applies to the series despite its alternating signs, giving
 
+**Equation (11).**
+
 ```math
 \lim_{n\to\infty,\ n\ {\mathrm{odd}}}
 \frac{R_n(\nu/n)}{n e^{-\nu n}}
 =2e^{-3\nu}\sum_{k=0}^{\infty}(-e^{-2\nu})^k
 =\frac{2e^{-3\nu}}{1+e^{-2\nu}}
 =:\beta(\nu)=\frac{e^{-2\nu}}{\cosh\nu}>0.
-\tag{11}
 ```
 
 For a quantitative bound, put $`q=e^{-2\nu}`$ and define
+
+**Equation (12).**
 
 ```math
 D(\nu)=e^{-3\nu}\left[
 \frac{3+4\nu}{1-q}
 +\frac{(2+6\nu)q}{(1-q)^2}
 +\frac{2\nu q(1+q)}{(1-q)^3}\right].
-\tag{12}
 ```
 
 The elementary inequality $`1-e^{-x}\le x`$ gives, term by term,
@@ -215,10 +227,11 @@ The elementary inequality $`1-e^{-x}\le x`$ gives, term by term,
 
 Summing the resulting geometric moments proves the explicit estimate
 
+**Equation (13).**
+
 ```math
 \boxed{\left|\frac{R_n(\nu/n)}{n e^{-\nu n}}-\beta(\nu)\right|
 \le\frac{D(\nu)}n.}
-\tag{13}
 ```
 
 ### 2.3 Exponential comparison
@@ -231,21 +244,23 @@ For fixed $`0<\nu<\pi/2`$,
 
 Equations (8) and (13) yield the finite bound
 
+**Equation (14).**
+
 ```math
 \left|\frac{S_n(\nu/n)}{n e^{-\nu n}}+\beta(\nu)\right|
 \le\frac{D(\nu)}n
 +\pi^{3/2}\nu^{-3/2}\sqrt n\,
 e^{\nu/(4n)}e^{-n\Delta(\nu)}.
-\tag{14}
 ```
 
 Both terms on the right vanish. Since $`\beta(\nu)>0`$, $`S_n(\nu/n)<0`$ for all sufficiently large odd $`n`$, and
+
+**Equation (15).**
 
 ```math
 \lambda_{0,n}(\nu/n)
 =-\beta(\nu)\frac{e^{-\nu n}}n
 \left[1+O_\nu\!\left(n^{-1}+\sqrt n\,e^{-n\Delta(\nu)}\right)\right].
-\tag{15}
 ```
 
 This proves (2). The estimate is for fixed $`\nu`$; it is not uniform as $`\nu\uparrow\pi/2`$.
@@ -254,9 +269,10 @@ This proves (2). The estimate is for fixed $`\nu`$; it is not uniform as $`\nu\u
 
 Let $`a_\ell(t)=(2\ell+1)e^{-t\ell(\ell+1)}`$. If
 
+**Equation (16).**
+
 ```math
 t(2n+3)^2\ge2,
-\tag{16}
 ```
 
 then $`a_\ell(t)`$ decreases for all real $`\ell\ge n+1`$, since the derivative of its logarithm is $`2/(2\ell+1)-t(2\ell+1)`$. For odd $`n`$, alternating-series bounds imply
@@ -267,6 +283,8 @@ R_n(t)\ge a_{n+1}(t)-a_{n+2}(t).
 
 Consequently the following fully explicit conditions certify a negative singlet eigenvalue:
 
+**Equation (17).**
+
 ```math
 \begin{gathered}
 0<t\le\pi^2/2,\qquad t(2n+3)^2\ge2,\qquad n\ {\mathrm{odd}},\\
@@ -274,7 +292,6 @@ Consequently the following fully explicit conditions certify a negative singlet 
 \left[1-\frac{2n+5}{2n+3}e^{-2t(n+2)}\right]
 >\pi^{3/2}t^{-3/2}e^{t/4-\pi^2/(4t)}.
 \end{gathered}
-\tag{17}
 ```
 
 The certificate uses an upper bound on the full heat contribution and a lower bound on the omitted tail. It therefore does not depend on resolving a small difference between large floating-point terms.
@@ -296,12 +313,13 @@ H(1/n)\le\pi^{3/2}n^{3/2}e^{1/20-\pi^2 n/4}.
 
 Their lower ratio bound is
 
+**Equation (18).**
+
 ```math
 \frac{R_n(1/n)}{H(1/n)}
 \ge
 \frac{2e^{-69/20}(1-15e^{-2}/13)}{\pi^{3/2}}
 \frac{e^{(\pi^2/4-1)n}}{\sqrt n}.
-\tag{18}
 ```
 
 The right-hand side is increasing for $`n\ge5`$. At $`n=5`$, the elementary inequalities $`\pi>3`$, $`\pi^{3/2}<6`$, $`\sqrt5<9/4`$, $`e^2>7`$, and $`\sqrt e>3/2`$ already lower-bound it by $`1064/819>1`$. Thus $`R_n>H`$ for every odd $`n\ge5`$, proving the stated finite-spin result. For example,
@@ -314,10 +332,11 @@ The right-hand side is increasing for $`n\ge5`$. At $`n=5`$, the elementary ineq
 
 At $`\nu=\pi/2`$, the two exponential rates agree. Their polynomial prefactors do not: the heat term scales as $`n^{3/2}`$, and the omitted tail as $`n`$. Therefore
 
+**Equation (19).**
+
 ```math
 \lambda_{0,n}\!\left(\frac\pi{2n}\right)
 \sim 2\sqrt2\,n^{-1/2}e^{-\pi n/2}>0.
-\tag{19}
 ```
 
 For fixed $`\nu>\pi/2`$, the heat contribution also wins exponentially, and the singlet eigenvalue is eventually positive. Thus $`\pi/2`$ is the boundary for the fixed-$`\nu`$ sign behavior of **this singlet eigenvalue**. Positivity of one sector says nothing sufficient about the other partial-transpose sectors. Even positivity of all sectors would only establish PPT, not automatically separability or the entanglement-breaking property in these dimensions.
@@ -338,19 +357,21 @@ For every separable state $`\sigma`$, $`\mathrm{tr}(W\sigma)\ge0`$. When $`\lamb
 
 Applying this to normalized Choi states of EB channels yields
 
+**Equation (20).**
+
 ```math
 \inf_{\Psi\in\mathrm{EB}}\frac12\|\Phi_t-\Psi\|_\diamond
 \ge-\frac{n+1}{2}\lambda_{0,n}(t).
-\tag{20}
 ```
 
 In particular, for fixed $`1\le\nu<\pi/2`$, along odd $`n`$,
+
+**Equation (21).**
 
 ```math
 \liminf e^{\nu n}
 \inf_{\Psi\in\mathrm{EB}}\frac12\|\Phi_{\nu/n}-\Psi\|_\diamond
 \ge\frac{e^{-2\nu}}{2\cosh\nu}>0.
-\tag{21}
 ```
 
 This is an exponentially small **lower** bound, alongside the independent $`O(1/n)`$ upper bound. It does not establish the decay rate of the optimized channel distance, total negativity, distillable entanglement, or quantum capacity.
