@@ -4,14 +4,14 @@
 
 ## Result and conventions
 
-Let $n=2j\in\mathbb N$, $d=n+1$, and let $J_x,J_y,J_z$ act in one irreducible spin-$j$ representation. Consider
+Let $`n=2j\in\mathbb N`$, $`d=n+1`$, and let $`J_x,J_y,J_z`$ act in one irreducible spin-$`j`$ representation. Consider
 
 ```math
 \Phi_t=\exp\!\left[-t\sum_{a=x,y,z}[J_a,[J_a,\cdot]]\right],
 \qquad \nu=nt.
 ```
 
-Rank-$\ell$ tensor operators have channel eigenvalue $e^{-t\ell(\ell+1)}$. Define the **normalized** Choi state and its partial transpose by
+Rank-$`\ell`$ tensor operators have channel eigenvalue $`e^{-t\ell(\ell+1)}`$. Define the **normalized** Choi state and its partial transpose by
 
 ```math
 \rho_{n,t}=(\Phi_t\otimes\operatorname{id})(|\Omega_d\rangle\langle\Omega_d|),
@@ -19,7 +19,7 @@ Rank-$\ell$ tensor operators have channel eigenvalue $e^{-t\ell(\ell+1)}$. Defin
 \quad \rho_{n,t}^{\Gamma}=({\rm id}\otimes T)(\rho_{n,t}).
 ```
 
-The basis for the transpose is the displayed $J_z$ basis. Let
+The basis for the transpose is the displayed $`J_z`$ basis. Let
 
 ```math
 |s_j\rangle=d^{-1/2}\sum_{m=-j}^{j}(-1)^{j-m}|m,-m\rangle
@@ -27,7 +27,7 @@ The basis for the transpose is the displayed $J_z$ basis. Let
 
 be the total-spin-zero vector.
 
-**Theorem.** The singlet is an eigenvector of $\rho_{n,t}^{\Gamma}$, with exact eigenvalue
+**Theorem.** The singlet is an eigenvector of $`\rho_{n,t}^{\Gamma}`$, with exact eigenvalue
 
 ```math
 \boxed{\lambda_{0,n}(t)=\frac1{(n+1)^2}
@@ -35,7 +35,7 @@ be the total-spin-zero vector.
 \tag{1}
 ```
 
-For every fixed $0<\nu<\pi/2$, along odd $n\to\infty$,
+For every fixed $`0<\nu<\pi/2`$, along odd $`n\to\infty`$,
 
 ```math
 \boxed{\lambda_{0,n}(\nu/n)
@@ -43,7 +43,7 @@ For every fixed $0<\nu<\pi/2$, along odd $n\to\infty$,
 \tag{2}
 ```
 
-Consequently the channel has an NPT Choi state, and is not entanglement breaking, for all sufficiently large half-integer spins at each such fixed $\nu$. At $\nu=1$, the stronger finite statement holds: **every odd $n\ge5$** has a negative singlet eigenvalue.
+Consequently the channel has an NPT Choi state, and is not entanglement breaking, for all sufficiently large half-integer spins at each such fixed $`\nu`$. At $`\nu=1`$, the stronger finite statement holds: **every odd $`n\ge5`$** has a negative singlet eigenvalue.
 
 This is compatible with the independent channel-level bound
 
@@ -52,17 +52,17 @@ This is compatible with the independent channel-level bound
 \le\frac{2.4}{n},\qquad \nu\ge1.
 ```
 
-Thus, for $1\le\nu<\pi/2$, arbitrarily good approximation by entanglement-breaking channels coexists with exact Choi NPT along half-integer spins. Equation (2) describes **one identified partial-transpose eigenvalue**. It is not an upper bound on all residual entanglement, nor a determination of the exact PPT or EB time.
+Thus, for $`1\le\nu<\pi/2`$, arbitrarily good approximation by entanglement-breaking channels coexists with exact Choi NPT along half-integer spins. Equation (2) describes **one identified partial-transpose eigenvalue**. It is not an upper bound on all residual entanglement, nor a determination of the exact PPT or EB time.
 
 ## 1. Exact singlet eigenvalue
 
-The diffusion channel is a random rotation with the normalized SO(3) heat distribution $p_t(g)$. For half-integer spin, conjugation by $U_j(g)$ is independent of the choice of SU(2) lift. Since
+The diffusion channel is a random rotation with the normalized SO(3) heat distribution $`p_t(g)`$. For half-integer spin, conjugation by $`U_j(g)`$ is independent of the choice of SU(2) lift. Since
 
 ```math
 (|\Omega_d\rangle\langle\Omega_d|)^\Gamma=F/d,
 ```
 
-where $F$ swaps the two spin factors,
+where $`F`$ swaps the two spin factors,
 
 ```math
 \rho_{n,t}^{\Gamma}
@@ -71,7 +71,7 @@ where $F$ swaps the two spin factors,
 \tag{3}
 ```
 
-Covariance implies that $\rho_{n,t}^{\Gamma}$ commutes with every $U_j(h)\otimes U_j(h)$. The decomposition into total spins $0,1,\ldots,n$ is multiplicity free, so the singlet is an eigenvector. Its swap parity is
+Covariance implies that $`\rho_{n,t}^{\Gamma}`$ commutes with every $`U_j(h)\otimes U_j(h)`$. The decomposition into total spins $`0,1,\ldots,n`$ is multiplicity free, so the singlet is an eigenvector. Its swap parity is
 
 ```math
 F|s_j\rangle=(-1)^n|s_j\rangle.
@@ -83,7 +83,7 @@ Singlet invariance also gives
 (I\otimes U_j(g)^\dagger)|s_j\rangle=(U_j(g)\otimes I)|s_j\rangle.
 ```
 
-Because each singlet marginal is $I/d$,
+Because each singlet marginal is $`I/d`$,
 
 ```math
 \lambda_{0,n}(t)
@@ -98,13 +98,13 @@ The SU(2) character identity
 \tag{5}
 ```
 
-follows directly by summing weights: in the alternating sum on the right, the surviving weights are $-n,-n+2,\ldots,n$, each with coefficient $(-1)^n$. Finally,
+follows directly by summing weights: in the alternating sum on the right, the surviving weights are $`-n,-n+2,\ldots,n`$, each with coefficient $`(-1)^n`$. Finally,
 
 ```math
 \int p_t(g)\chi_\ell(g)\,dg=(2\ell+1)e^{-t\ell(\ell+1)}.
 ```
 
-Substitution proves (1). As a normalization check, at $t=0$ it gives $\lambda_{0,n}(0)=(-1)^n/d$, exactly the singlet eigenvalue of $F/d$. For $n=1$, it gives the familiar qubit expression $(1-3e^{-2t})/4$.
+Substitution proves (1). As a normalization check, at $`t=0`$ it gives $`\lambda_{0,n}(0)=(-1)^n/d`$, exactly the singlet eigenvalue of $`F/d`$. For $`n=1`$, it gives the familiar qubit expression $`(1-3e^{-2t})/4`$.
 
 ## 2. Separate the antipodal heat kernel from a representation tail
 
@@ -115,7 +115,7 @@ S_n(t)=\sum_{\ell=0}^{n}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)},
 \quad H(t)=\sum_{\ell=0}^{\infty}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.
 ```
 
-Since $\chi_\ell(\pi)=(-1)^\ell$, $H(t)=p_t(\pi)>0$ is the SO(3) heat kernel at rotation angle $\pi$, relative to normalized Haar measure. For odd $n$, define the omitted tail
+Since $`\chi_\ell(\pi)=(-1)^\ell`$, $`H(t)=p_t(\pi)>0`$ is the SO(3) heat kernel at rotation angle $`\pi`$, relative to normalized Haar measure. For odd $`n`$, define the omitted tail
 
 ```math
 R_n(t)=\sum_{\ell=n+1}^{\infty}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.
@@ -128,11 +128,11 @@ S_n(t)=H(t)-R_n(t).
 \tag{6}
 ```
 
-The parity assumption is essential: when $n$ is odd, the first omitted term is positive. The argument below therefore produces a negative singlet eigenvalue for odd $n$. It makes no corresponding all-sector assertion for even $n$.
+The parity assumption is essential: when $`n`$ is odd, the first omitted term is positive. The argument below therefore produces a negative singlet eigenvalue for odd $`n`$. It makes no corresponding all-sector assertion for even $`n`$.
 
 ### 2.1 Exact heat-kernel image formula and its asymptotics
 
-Poisson summation of the half-integer character series, evaluated at $\theta=\pi$, gives
+Poisson summation of the half-integer character series, evaluated at $`\theta=\pi`$, gives
 
 ```math
 H(t)=\pi^{3/2}t^{-3/2}e^{t/4}
@@ -141,16 +141,16 @@ e^{-\pi^2(2k+1)^2/(4t)}.
 \tag{7}
 ```
 
-The coefficient contains both equally short images at angular displacements $+\pi$ and $-\pi$. Equivalently, start from the exact radial heat density
+The coefficient contains both equally short images at angular displacements $`+\pi`$ and $`-\pi`$. Equivalently, start from the exact radial heat density
 
 ```math
 h_t(\theta)=\frac{e^{t/4}}{\sqrt\pi t^{3/2}}\sin(\theta/2)
 \sum_{q\in\mathbb Z}(-1)^q(\theta-2\pi q)e^{-(\theta-2\pi q)^2/(4t)}
 ```
 
-and use $p_t(\pi)=\pi h_t(\pi)/2$. Pairing $q=0,1$, then $q=-1,2$, and so on gives (7).
+and use $`p_t(\pi)=\pi h_t(\pi)/2`$. Pairing $`q=0,1`$, then $`q=-1,2`$, and so on gives (7).
 
-For $0<t\le\pi^2/2$, the positive magnitudes in (7) decrease, so alternating-series bounds yield
+For $`0<t\le\pi^2/2`$, the positive magnitudes in (7) decrease, so alternating-series bounds yield
 
 ```math
 K(t)\bigl(1-3e^{-2\pi^2/t}\bigr)\le H(t)\le K(t),
@@ -158,7 +158,7 @@ K(t)\bigl(1-3e^{-2\pi^2/t}\bigr)\le H(t)\le K(t),
 \tag{8}
 ```
 
-In particular, for fixed $\nu>0$,
+In particular, for fixed $`\nu>0`$,
 
 ```math
 H(\nu/n)
@@ -169,7 +169,7 @@ e^{-\pi^2 n/(4\nu)}.
 
 ### 2.2 Dominated convergence for the omitted tail
 
-Set $\ell=n+1+k$. For odd $n$,
+Set $`\ell=n+1+k`$. For odd $`n`$,
 
 ```math
 \frac{R_n(\nu/n)}{n e^{-\nu n}}
@@ -179,13 +179,13 @@ e^{-\nu(3+2k)}e^{-\nu(k+1)(k+2)/n}.
 \tag{10}
 ```
 
-For every fixed $\nu>0$ and every $n\ge1$, the absolute value of the summand is at most
+For every fixed $`\nu>0`$ and every $`n\ge1`$, the absolute value of the summand is at most
 
 ```math
 (5+2k)e^{-\nu(3+2k)}.
 ```
 
-This is an absolutely summable, $n$-independent majorant. Dominated convergence applies to the series despite its alternating signs, giving
+This is an absolutely summable, $`n`$-independent majorant. Dominated convergence applies to the series despite its alternating signs, giving
 
 ```math
 \lim_{n\to\infty,\ n\ {\mathrm{odd}}}
@@ -196,7 +196,7 @@ This is an absolutely summable, $n$-independent majorant. Dominated convergence 
 \tag{11}
 ```
 
-For a quantitative bound, put $q=e^{-2\nu}$ and define
+For a quantitative bound, put $`q=e^{-2\nu}`$ and define
 
 ```math
 D(\nu)=e^{-3\nu}\left[
@@ -206,7 +206,7 @@ D(\nu)=e^{-3\nu}\left[
 \tag{12}
 ```
 
-The elementary inequality $1-e^{-x}\le x$ gives, term by term,
+The elementary inequality $`1-e^{-x}\le x`$ gives, term by term,
 
 ```math
 \left|\left(2+\frac{3+2k}{n}\right)e^{-\nu(k+1)(k+2)/n}-2\right|
@@ -223,7 +223,7 @@ Summing the resulting geometric moments proves the explicit estimate
 
 ### 2.3 Exponential comparison
 
-For fixed $0<\nu<\pi/2$,
+For fixed $`0<\nu<\pi/2`$,
 
 ```math
 \Delta(\nu)=\frac{\pi^2}{4\nu}-\nu>0.
@@ -239,7 +239,7 @@ e^{\nu/(4n)}e^{-n\Delta(\nu)}.
 \tag{14}
 ```
 
-Both terms on the right vanish. Since $\beta(\nu)>0$, $S_n(\nu/n)<0$ for all sufficiently large odd $n$, and
+Both terms on the right vanish. Since $`\beta(\nu)>0`$, $`S_n(\nu/n)<0`$ for all sufficiently large odd $`n`$, and
 
 ```math
 \lambda_{0,n}(\nu/n)
@@ -248,18 +248,18 @@ Both terms on the right vanish. Since $\beta(\nu)>0$, $S_n(\nu/n)<0$ for all suf
 \tag{15}
 ```
 
-This proves (2). The estimate is for fixed $\nu$; it is not uniform as $\nu\uparrow\pi/2$.
+This proves (2). The estimate is for fixed $`\nu`$; it is not uniform as $`\nu\uparrow\pi/2`$.
 
 ## 3. Explicit finite-spin NPT certificates
 
-Let $a_\ell(t)=(2\ell+1)e^{-t\ell(\ell+1)}$. If
+Let $`a_\ell(t)=(2\ell+1)e^{-t\ell(\ell+1)}`$. If
 
 ```math
 t(2n+3)^2\ge2,
 \tag{16}
 ```
 
-then $a_\ell(t)$ decreases for all real $\ell\ge n+1$, since the derivative of its logarithm is $2/(2\ell+1)-t(2\ell+1)$. For odd $n$, alternating-series bounds imply
+then $`a_\ell(t)`$ decreases for all real $`\ell\ge n+1`$, since the derivative of its logarithm is $`2/(2\ell+1)-t(2\ell+1)`$. For odd $`n`$, alternating-series bounds imply
 
 ```math
 R_n(t)\ge a_{n+1}(t)-a_{n+2}(t).
@@ -279,9 +279,9 @@ Consequently the following fully explicit conditions certify a negative singlet 
 
 The certificate uses an upper bound on the full heat contribution and a lower bound on the omitted tail. It therefore does not depend on resolving a small difference between large floating-point terms.
 
-### At the operational threshold: all odd $n\ge5$
+### At the operational threshold: all odd $`n\ge5`$
 
-Set $t=1/n$. For $n\ge5$, (16) holds and
+Set $`t=1/n`$. For $`n\ge5`$, (16) holds and
 
 ```math
 R_n(1/n)\ge
@@ -304,15 +304,15 @@ Their lower ratio bound is
 \tag{18}
 ```
 
-The right-hand side is increasing for $n\ge5$. At $n=5$, the elementary inequalities $\pi>3$, $\pi^{3/2}<6$, $\sqrt5<9/4$, $e^2>7$, and $\sqrt e>3/2$ already lower-bound it by $1064/819>1$. Thus $R_n>H$ for every odd $n\ge5$, proving the stated finite-spin result. For example,
+The right-hand side is increasing for $`n\ge5`$. At $`n=5`$, the elementary inequalities $`\pi>3`$, $`\pi^{3/2}<6`$, $`\sqrt5<9/4`$, $`e^2>7`$, and $`\sqrt e>3/2`$ already lower-bound it by $`1064/819>1`$. Thus $`R_n>H`$ for every odd $`n\ge5`$, proving the stated finite-spin result. For example,
 
 ```math
 \lambda_{0,5}(1/5)=-6.77854310143684068\times10^{-5}.
 ```
 
-## 4. The endpoint and the interpretation of the scale $\pi/2$
+## 4. The endpoint and the interpretation of the scale $`\pi/2`$
 
-At $\nu=\pi/2$, the two exponential rates agree. Their polynomial prefactors do not: the heat term scales as $n^{3/2}$, and the omitted tail as $n$. Therefore
+At $`\nu=\pi/2`$, the two exponential rates agree. Their polynomial prefactors do not: the heat term scales as $`n^{3/2}`$, and the omitted tail as $`n`$. Therefore
 
 ```math
 \lambda_{0,n}\!\left(\frac\pi{2n}\right)
@@ -320,17 +320,17 @@ At $\nu=\pi/2$, the two exponential rates agree. Their polynomial prefactors do 
 \tag{19}
 ```
 
-For fixed $\nu>\pi/2$, the heat contribution also wins exponentially, and the singlet eigenvalue is eventually positive. Thus $\pi/2$ is the boundary for the fixed-$\nu$ sign behavior of **this singlet eigenvalue**. Positivity of one sector says nothing sufficient about the other partial-transpose sectors. Even positivity of all sectors would only establish PPT, not automatically separability or the entanglement-breaking property in these dimensions.
+For fixed $`\nu>\pi/2`$, the heat contribution also wins exponentially, and the singlet eigenvalue is eventually positive. Thus $`\pi/2`$ is the boundary for the fixed-$`\nu`$ sign behavior of **this singlet eigenvalue**. Positivity of one sector says nothing sufficient about the other partial-transpose sectors. Even positivity of all sectors would only establish PPT, not automatically separability or the entanglement-breaking property in these dimensions.
 
 ## 5. A channel-distance consequence
 
-Let $W=(|s_j\rangle\langle s_j|)^\Gamma$. Since the singlet is maximally entangled,
+Let $`W=(|s_j\rangle\langle s_j|)^\Gamma`$. Since the singlet is maximally entangled,
 
 ```math
 \|W\|_\infty=1/d.
 ```
 
-For every separable state $\sigma$, $\operatorname{tr}(W\sigma)\ge0$. When $\lambda_{0,n}<0$, Hölder's inequality gives
+For every separable state $`\sigma`$, $`\operatorname{tr}(W\sigma)\ge0`$. When $`\lambda_{0,n}<0`$, Hölder's inequality gives
 
 ```math
 \frac12\|\rho_{n,t}-\sigma\|_1\ge-\frac d2\lambda_{0,n}(t).
@@ -344,7 +344,7 @@ Applying this to normalized Choi states of EB channels yields
 \tag{20}
 ```
 
-In particular, for fixed $1\le\nu<\pi/2$, along odd $n$,
+In particular, for fixed $`1\le\nu<\pi/2`$, along odd $`n`$,
 
 ```math
 \liminf e^{\nu n}
@@ -353,16 +353,16 @@ In particular, for fixed $1\le\nu<\pi/2$, along odd $n$,
 \tag{21}
 ```
 
-This is an exponentially small **lower** bound, alongside the independent $O(1/n)$ upper bound. It does not establish the decay rate of the optimized channel distance, total negativity, distillable entanglement, or quantum capacity.
+This is an exponentially small **lower** bound, alongside the independent $`O(1/n)`$ upper bound. It does not establish the decay rate of the optimized channel distance, total negativity, distillable entanglement, or quantum capacity.
 
 ## 6. Reproducible validation
 
 [The residual-entanglement verification](../verification/README.md) compares two independently constructed representations and includes the finite-spin checks below.
 
-1. It constructs spin matrices, forms the full double-commutator generator, exponentiates it, builds the normalized Choi matrix, and partially transposes it. Across 35 cases with $n=1,2,3,4,5,7,9$ and $\nu=0,0.5,1,1.4,1.7$, the singlet formula agrees to at most $3.68\times10^{-16}$; the largest singlet eigenvector residual is $1.22\times10^{-15}$. Choi normalization and positivity are also checked.
-2. Seventeen scalar cases use Python `Decimal.exp`, with precision chosen to resolve the exponentially small sum. Values through $n=401$ agree with the Poisson heat term minus the independently summed tail to less than $10^{-55}$ after dividing by $n e^{-\nu n}$. The explicit tail bound (13) passes in every case. The tests include $\nu=1,1.5,1.55,\pi/2$, so they check both negative residual NPT and the positive endpoint prefactor.
+1. It constructs spin matrices, forms the full double-commutator generator, exponentiates it, builds the normalized Choi matrix, and partially transposes it. Across 35 cases with $`n=1,2,3,4,5,7,9`$ and $`\nu=0,0.5,1,1.4,1.7`$, the singlet formula agrees to at most $`3.68\times10^{-16}`$; the largest singlet eigenvector residual is $`1.22\times10^{-15}`$. Choi normalization and positivity are also checked.
+2. Seventeen scalar cases use Python `Decimal.exp`, with precision chosen to resolve the exponentially small sum. Values through $`n=401`$ agree with the Poisson heat term minus the independently summed tail to less than $`10^{-55}`$ after dividing by $`n e^{-\nu n}`$. The explicit tail bound (13) passes in every case. The tests include $`\nu=1,1.5,1.55,\pi/2`$, so they check both negative residual NPT and the positive endpoint prefactor.
 
-For $n=401$, the ratio $-S_n(\nu/n)/[\beta(\nu)n e^{-\nu n}]$ is approximately $0.999567$ at $\nu=1$, $0.996829$ at $\nu=1.5$, and $0.996390$ at $\nu=1.55$. The corresponding eigenvalue at $\nu=\pi/2$ is positive. These checks test conventions and finite-size behavior; the asymptotic statement follows from the analytic bounds above.
+For $`n=401`$, the ratio $`-S_n(\nu/n)/[\beta(\nu)n e^{-\nu n}]`$ is approximately $`0.999567`$ at $`\nu=1`$, $`0.996829`$ at $`\nu=1.5`$, and $`0.996390`$ at $`\nu=1.55`$. The corresponding eigenvalue at $`\nu=\pi/2`$ is positive. These checks test conventions and finite-size behavior; the asymptotic statement follows from the analytic bounds above.
 
 ## Related primary literature and scope
 

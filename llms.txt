@@ -5,6 +5,10 @@ This repository studies isotropic and anisotropic rotational diffusion on one ir
 ## Authoritative routes
 
 - Overview and reproduction entrypoint: README.md
+- Common learning entrypoint: learning/README.md
+- Explanatory tutorial with an exactly solved qubit example and the full project mechanism: learning/TUTORIAL.md
+- Settled understanding map, exactly M01–M30 with 12 background and 18 narrative milestones: learning/MILESTONES.md
+- Single educational anchor, Holevo's second revised and expanded 2019 edition, with verified chapter locations and a source-to-project bridge: learning/ANCHOR.md
 - Connected scientific route: science/README.md
 - Carrier, generator, time normalization, half-diamond convention, exact claims and resource accounting: science/model.md
 - Explicit coherent-measurement comparator, uniform heat-kernel estimate and matching two-level converse: science/classicalization.md
@@ -15,6 +19,16 @@ This repository studies isotropic and anisotropic rotational diffusion on one ir
 - Imported results, precise predecessor comparison and source versions: references/RELATED_WORK.md
 - Structured bibliography: references/references.bib
 - Numerical checks, recorded outputs and figure generation: verification/README.md
+
+## Routes by reader intention
+
+- Physical story: science/interpretation.md, then learning/TUTORIAL.md for definitions and the worked example.
+- Study: learning/README.md, learning/MILESTONES.md, learning/ANCHOR.md, and learning/TUTORIAL.md. The map's dependencies and targets follow the project itself; the two phase syntheses are M12 and M30.
+- Theorem or proof: science/model.md fixes the conventions, then science/classicalization.md supplies the two-sided channel argument. The remaining science pages give the consequences and extensions.
+- Reproduction: verification/README.md documents commands, expected outputs, numerical domains, and the distinction between sampled checks and proof.
+- Attribution: references/RELATED_WORK.md separates imported identities and quantitative theorems from the spin-specific estimates developed here.
+
+Holevo (2019) is the sole educational anchor. The bridge's textbook pointers are verified at chapter level; full chapter text was not inspected, so they do not assert book equation or theorem numbers. The spin-specific claims use the canonical project proofs and the primary research sources in the source map. The local Gaussian limit, exact ladder entropy bound, and global diamond estimate are distinct steps.
 
 ## Essential distinctions
 
