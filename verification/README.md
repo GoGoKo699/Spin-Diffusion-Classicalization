@@ -18,6 +18,8 @@ python verification/make_figures.py
 
 The runner prints one completion line for each check and ends with `"all_assertions_passed": true` if every assertion succeeds. Fresh reports go to `verification/local_results/`, which is ignored by Git. The figure generator uses the committed reference reports by default and writes two SVG figures under `figures/`.
 
+Each run atomically replaces its manifest before starting the checks, with `"status": "running"` and `"all_assertions_passed": false`, then updates it after each completed check. A failed check records `"status": "failed"`, its name and the error, and exits unsuccessfully. Reports from an earlier run may remain in the output directory; only a manifest with `"status": "passed"` and `"all_assertions_passed": true` identifies a complete fresh run. An interrupted run keeps a non-passing manifest instead of retaining an earlier success.
+
 To choose destinations or draw from a fresh run:
 
 ```bash

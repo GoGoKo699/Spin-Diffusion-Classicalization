@@ -345,7 +345,7 @@ H(t)=\boldsymbol h(t)\cdot\boldsymbol J,
 \mathcal G_t=-i[H(t),\cdot]+\mathcal L_{D(t)},
 ```
 
-with deterministic, locally integrable coefficients. The adjoint Casimir commutes with every linear Hamiltonian rotation as well as every quadratic diffusion generator. Write $`\alpha(t)=\lambda_{\min}(D(t))`$ and
+with deterministic, locally integrable coefficients and a real symmetric diffusion matrix $`D(t)\ge0`$ almost everywhere. The adjoint Casimir commutes with every linear Hamiltonian rotation as well as every quadratic diffusion generator. Write $`\alpha(t)=\lambda_{\min}(D(t))`$ and
 
 ```math
 \kappa(T)=\int_0^T\alpha(s)\,ds.
