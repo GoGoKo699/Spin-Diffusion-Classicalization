@@ -24,7 +24,7 @@ Let $`e_j(t)`$ be the infimum of the half-diamond distance from $`\Phi_t`$ to al
 ```math
 \begin{aligned}
 \nu\ge1:&\qquad e_{n/2}(\nu/n)\le\min\{1,2.4/n\},\\
-0\le\nu<1:&\qquad
+0\le\nu\lt 1:&\qquad
 \liminf_{n\to\infty}e_{n/2}(\nu/n)
 \ge\frac{1-\nu}{2(1+\nu)^2}>0.
 \end{aligned}
@@ -39,7 +39,7 @@ The second line holds at every fixed subthreshold $`\nu`$. Thus **$`\nu=1`$ is t
 | Classical capacity at fixed scaled time | $`C\ge\log_2(n+1)-g(\nu)`$, where $`g(x)=(x+1)\log_2(x+1)-x\log_2x`$. |
 | At the boundary $`\nu=1`$ | The classical deficit is at most two bits; mean polarization is retained by the factor $`e^{-2/n}`$. |
 
-These capacity statements allow arbitrary block codes over independent uses. The sharp boundary above is a channel-distance result; positive quantum capacity throughout $`\nu<1`$ is not established. [Communication bounds and proofs](science/communication.md).
+These capacity statements allow arbitrary block codes over independent uses. The sharp boundary above is a channel-distance result; positive quantum capacity throughout $`\nu\lt 1`$ is not established. [Communication bounds and proofs](science/communication.md).
 
 ![Kernel comparison and encoded witness for spin diffusion](figures/operational_threshold.svg)
 
@@ -47,7 +47,7 @@ These capacity statements allow arbitrary block codes over independent uses. The
 
 ## Robustness and residual entanglement
 
-For a fixed positive diffusion matrix with eigenvalues $`0<a\le b\le c`$, the onset of vanishing distance to EB obeys
+For a fixed positive diffusion matrix with eigenvalues $`0\lt a\le b\le c`$, the onset of vanishing distance to EB obeys
 
 ```math
 \frac1{\sqrt{ab}}\le\tau_{\mathrm{op}}\le\frac1a,
@@ -56,7 +56,7 @@ For a fixed positive diffusion matrix with eigenvalues $`0<a\le b\le c`$, the on
 
 When **the two smallest rates agree**, $`a=b\le c`$, both bounds meet at $`\tau_{\mathrm{op}}=1/a`$. The third-axis rate may be arbitrarily stronger and fixed. Classical capacity still grows as $`\log_2(n+1)`$ with a bounded deficit. Deterministic linear spin rotations preserve the upper bound through an exact Casimir factorization. [Anisotropic theorem](science/anisotropic_diffusion.md).
 
-Operational classicality also differs from exact entanglement death. For every fixed $`1\le\nu<\pi/2`$ and sufficiently large odd $`n`$, the normalized Choi state still has a negative partial-transpose eigenvalue:
+Operational classicality also differs from exact entanglement death. For every fixed $`1\le\nu\lt \pi/2`$ and sufficiently large odd $`n`$, the normalized Choi state still has a negative partial-transpose eigenvalue:
 
 ```math
 \lambda_{0,n}(\nu/n)

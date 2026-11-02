@@ -6,7 +6,7 @@ Rank-two angular noise generates the missing rotation direction through commutat
 
 ## 1. Model and established conclusions
 
-Fix $`0<b\le c<\infty`$, independently of $`n=2j`$, on one irreducible spin carrier. Set
+Fix $`0\lt b\le c\lt \infty`$, independently of $`n=2j`$, on one irreducible spin carrier. Set
 
 ```math
 \mathcal L_{b,c}=-b\,\mathrm{ad}_{J_y}^2-c\,\mathrm{ad}_{J_z}^2,
@@ -322,7 +322,7 @@ This is uniform over input energy, encodings and reference dimension.
 \int\Gamma(\log p_u^{\mathrm{BB}})p_u^{\mathrm{BB}}
 +\frac u3\int(Z\log p_u^{\mathrm{BB}})^2p_u^{\mathrm{BB}}
 \le\frac u3-4+\frac{64}u\le\frac{64}u,
-\qquad 0<u\le1.
+\qquad 0\lt u\le1.
 ```
 
 Cauchy–Schwarz therefore bounds the joint horizontal $`L^1`$ gradient by $`8/\sqrt u`$ and $`\|Zp_u^{\mathrm{BB}}\|_1`$ by $`8\sqrt3/u`$. For $`V=aX+dY+fZ`$, integrating along $`h\exp(-vV)`$, $`0\le v\le1`$, yields

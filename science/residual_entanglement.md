@@ -36,13 +36,13 @@ be the total-spin-zero vector.
 \sum_{\ell=0}^{n}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.}
 ```
 
-For every fixed $`0<\nu<\pi/2`$, along odd $`n\to\infty`$,
+For every fixed $`0\lt \nu\lt \pi/2`$, along odd $`n\to\infty`$,
 
 **Equation (2).**
 
 ```math
 \boxed{\lambda_{0,n}(\nu/n)
-\sim-\frac{e^{-2\nu}}{\cosh\nu}\frac{e^{-\nu n}}n<0.}
+\sim-\frac{e^{-2\nu}}{\cosh\nu}\frac{e^{-\nu n}}n\lt 0.}
 ```
 
 Consequently the channel has an NPT Choi state, and is not entanglement breaking, for all sufficiently large half-integer spins at each such fixed $`\nu`$. At $`\nu=1`$, the stronger finite statement holds: **every odd $`n\ge5`$** has a negative singlet eigenvalue.
@@ -54,7 +54,7 @@ This is compatible with the independent channel-level bound
 \le\frac{2.4}{n},\qquad \nu\ge1.
 ```
 
-Thus, for $`1\le\nu<\pi/2`$, arbitrarily good approximation by entanglement-breaking channels coexists with exact Choi NPT along half-integer spins. Equation (2) describes **one identified partial-transpose eigenvalue**. It is not an upper bound on all residual entanglement, nor a determination of the exact PPT or EB time.
+Thus, for $`1\le\nu\lt \pi/2`$, arbitrarily good approximation by entanglement-breaking channels coexists with exact Choi NPT along half-integer spins. Equation (2) describes **one identified partial-transpose eigenvalue**. It is not an upper bound on all residual entanglement, nor a determination of the exact PPT or EB time.
 
 ## 1. Exact singlet eigenvalue
 
@@ -157,7 +157,7 @@ h_t(\theta)=\frac{e^{t/4}}{\sqrt\pi t^{3/2}}\sin(\theta/2)
 
 and use $`p_t(\pi)=\pi h_t(\pi)/2`$. Pairing $`q=0,1`$, then $`q=-1,2`$, and so on gives (7).
 
-For $`0<t\le\pi^2/2`$, the positive magnitudes in (7) decrease, so alternating-series bounds yield
+For $`0\lt t\le\pi^2/2`$, the positive magnitudes in (7) decrease, so alternating-series bounds yield
 
 **Equation (8).**
 
@@ -236,7 +236,7 @@ Summing the resulting geometric moments proves the explicit estimate
 
 ### 2.3 Exponential comparison
 
-For fixed $`0<\nu<\pi/2`$,
+For fixed $`0\lt \nu\lt \pi/2`$,
 
 ```math
 \Delta(\nu)=\frac{\pi^2}{4\nu}-\nu>0.
@@ -253,7 +253,7 @@ Equations (8) and (13) yield the finite bound
 e^{\nu/(4n)}e^{-n\Delta(\nu)}.
 ```
 
-Both terms on the right vanish. Since $`\beta(\nu)>0`$, $`S_n(\nu/n)<0`$ for all sufficiently large odd $`n`$, and
+Both terms on the right vanish. Since $`\beta(\nu)>0`$, $`S_n(\nu/n)\lt 0`$ for all sufficiently large odd $`n`$, and
 
 **Equation (15).**
 
@@ -287,7 +287,7 @@ Consequently the following fully explicit conditions certify a negative singlet 
 
 ```math
 \begin{gathered}
-0<t\le\pi^2/2,\qquad t(2n+3)^2\ge2,\qquad n\ {\mathrm{odd}},\\
+0\lt t\le\pi^2/2,\qquad t(2n+3)^2\ge2,\qquad n\ {\mathrm{odd}},\\
 (2n+3)e^{-t(n+1)(n+2)}
 \left[1-\frac{2n+5}{2n+3}e^{-2t(n+2)}\right]
 >\pi^{3/2}t^{-3/2}e^{t/4-\pi^2/(4t)}.
@@ -322,7 +322,7 @@ Their lower ratio bound is
 \frac{e^{(\pi^2/4-1)n}}{\sqrt n}.
 ```
 
-The right-hand side is increasing for $`n\ge5`$. At $`n=5`$, the elementary inequalities $`\pi>3`$, $`\pi^{3/2}<6`$, $`\sqrt5<9/4`$, $`e^2>7`$, and $`\sqrt e>3/2`$ already lower-bound it by $`1064/819>1`$. Thus $`R_n>H`$ for every odd $`n\ge5`$, proving the stated finite-spin result. For example,
+The right-hand side is increasing for $`n\ge5`$. At $`n=5`$, the elementary inequalities $`\pi>3`$, $`\pi^{3/2}\lt 6`$, $`\sqrt5\lt 9/4`$, $`e^2>7`$, and $`\sqrt e>3/2`$ already lower-bound it by $`1064/819>1`$. Thus $`R_n>H`$ for every odd $`n\ge5`$, proving the stated finite-spin result. For example,
 
 ```math
 \lambda_{0,5}(1/5)=-6.77854310143684068\times10^{-5}.
@@ -349,7 +349,7 @@ Let $`W=(|s_j\rangle\langle s_j|)^\Gamma`$. Since the singlet is maximally entan
 \|W\|_\infty=1/d.
 ```
 
-For every separable state $`\sigma`$, $`\mathrm{tr}(W\sigma)\ge0`$. When $`\lambda_{0,n}<0`$, Hölder's inequality gives
+For every separable state $`\sigma`$, $`\mathrm{tr}(W\sigma)\ge0`$. When $`\lambda_{0,n}\lt 0`$, Hölder's inequality gives
 
 ```math
 \frac12\|\rho_{n,t}-\sigma\|_1\ge-\frac d2\lambda_{0,n}(t).
@@ -364,7 +364,7 @@ Applying this to normalized Choi states of EB channels yields
 \ge-\frac{n+1}{2}\lambda_{0,n}(t).
 ```
 
-In particular, for fixed $`1\le\nu<\pi/2`$, along odd $`n`$,
+In particular, for fixed $`1\le\nu\lt \pi/2`$, along odd $`n`$,
 
 **Equation (21).**
 

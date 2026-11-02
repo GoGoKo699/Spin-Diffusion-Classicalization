@@ -54,7 +54,7 @@ e_j(t)=\inf_{\mathcal E\in\mathrm{EB}}
 
 Here EB means entanglement breaking: the output is separable from every external reference, for every joint input. The comparator may still transmit classical information. Consequently, proximity to EB does not mean proximity to a channel with a constant output.
 
-The [threshold proof](../science/classicalization.md) establishes that $`e_{n/2}(\nu/n)`$ tends to zero for fixed $`\nu\ge1`$ and remains bounded away from zero for fixed $`\nu<1`$. The [communication proof](../science/communication.md) then shows how an almost maximal classical rate can coexist with a vanishing quantum-capacity upper bound. This is the central connection between the chapter topics.
+The [threshold proof](../science/classicalization.md) establishes that $`e_{n/2}(\nu/n)`$ tends to zero for fixed $`\nu\ge1`$ and remains bounded away from zero for fixed $`\nu\lt 1`$. The [communication proof](../science/communication.md) then shows how an almost maximal classical rate can coexist with a vanishing quantum-capacity upper bound. This is the central connection between the chapter topics.
 
 ## Notation and normalization bridge
 
@@ -117,7 +117,7 @@ The global upper bound has a different source: it compares probability densities
 
 ### Rank-two diffusion requires growing excitation
 
-For fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0<b\le c`$, the inverse-spin witness remains positive at every fixed $`nt`$. A longer scale therefore needs a different test. Near the $`c`$ axis, squeeze the oscillator coordinates by
+For fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0\lt b\le c`$, the inverse-spin witness remains positive at every fixed $`nt`$. A longer scale therefore needs a different test. Near the $`c`$ axis, squeeze the oscillator coordinates by
 
 ```math
 q=n^{1/6}Q,\qquad p=n^{-1/6}P,
@@ -127,8 +127,8 @@ q=n^{1/6}Q,\qquad p=n^{-1/6}P,
 These inputs have mean excitation $`O(n^{1/3})`$. The controlled local contraction has generator
 
 ```math
-\mathcal G=-\frac b2\operatorname{ad}_P^2
--c\operatorname{ad}_{Q^2/2}^2.
+\mathcal G=-\frac b2\mathrm{ad}_P^2
+-c\mathrm{ad}_{Q^2/2}^2.
 ```
 
 Exchanging quadratures identifies the sister model's parameters $`D_{\mathrm{osc}}=b/2`$, $`\kappa=c`$, $`\eta=\omega=0`$. The [rank-two account](../science/rank_two_diffusion.md) supplies the exact spin embedding, projection normalization, generator estimates and trace-norm convergence on fixed finite Schwartz input spans and fixed finite scaled-time intervals. The error constants depend on that span and interval; this is not convergence in the unrestricted diamond norm.
@@ -179,7 +179,7 @@ The book's chapter map organizes the prerequisites. The following calculations a
 | Specify the finite carrier and the operational criterion | [Model](../science/model.md) | Irreducibility, time normalization, reference systems, half-diamond convention, and exact resource scope. |
 | Identify the coherent measurement channel | [Classicalization, Section 1](../science/classicalization.md#1-an-established-measurement-channel) | The normalized POVM/preparation formula and the exact imported spin kernel, with research attribution. |
 | Make the upper bound uniform over all encodings | [Classicalization, Sections 2–3](../science/classicalization.md#2-classical-probability-controls-the-complete-channel-norm) | Rotation-kernel total variation controls diamond distance; the explicit finite-size error is below $`2.4/n`$. |
-| Prove the matching lower side | [Classicalization, Section 4](../science/classicalization.md#4-a-two-level-converse-below-the-boundary) | Exact two-level matrix elements, a controlled Gaussian coordinate limit, and a separability witness for every fixed $`\nu<1`$. |
+| Prove the matching lower side | [Classicalization, Section 4](../science/classicalization.md#4-a-two-level-converse-below-the-boundary) | Exact two-level matrix elements, a controlled Gaussian coordinate limit, and a separability witness for every fixed $`\nu\lt 1`$. |
 | Convert channel proximity into communication statements | [Communication](../science/communication.md) | Arbitrary encoder/decoder fidelity bound, exact coherent-ensemble entropy estimate, and an explicit regularized quantum-capacity bound. |
 | Control departures from isotropy | [Anisotropic diffusion](../science/anisotropic_diffusion.md) | Casimir factorization, tangent-plane Gaussian witness, capacity bounds, and the precise gap left for unequal smallest diffusion rates. |
 | Control the singular rank-two limit | [Rank-two diffusion](../science/rank_two_diffusion.md) | Growing-excitation contraction, finite-reference lower witnesses, a weaker equal-rate global EB bound and the unresolved global sufficiency question. |

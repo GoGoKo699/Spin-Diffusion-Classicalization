@@ -242,7 +242,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** Why does the kernel estimate control the full spin channel as its dimension grows?
 
-**Understanding target:** Combine the two Maxwell comparisons with the probability-to-channel inequality to obtain $`\frac12\|\Phi_{1/n}^{(j)}-\mathcal B_j\|_\diamond\le K_0/n`$, with $`K_0<2.4`$. Explain the absence of a dimension-dependent norm-conversion factor and the resulting uniformity over arbitrary input states and references. Distinguish this upper bound from either equality with total variation or an optimized exact distance to the EB set.
+**Understanding target:** Combine the two Maxwell comparisons with the probability-to-channel inequality to obtain $`\frac12\|\Phi_{1/n}^{(j)}-\mathcal B_j\|_\diamond\le K_0/n`$, with $`K_0\lt 2.4`$. Explain the absence of a dimension-dependent norm-conversion factor and the resulting uniformity over arbitrary input states and references. Distinguish this upper bound from either equality with total variation or an optimized exact distance to the EB set.
 
 **Dependencies and story role:** Uses M08 and M14–M16. This turns the component estimates into the first channel-level conclusion of the narrative.
 
@@ -284,7 +284,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** Which short-time fluctuations determine the asymptotic sign of the two-level witness?
 
-**Understanding target:** Explain the scaled Gaussian rotation coordinates at fixed $`\nu>0`$ and the exponential variable $`Z`$ with mean $`\nu`$ obtained from the two transverse coordinates. Identify the exact cancellation of the longitudinal phase in the relevant coherence product. Connect bounded matrix elements and tail truncation to convergence of expectations, leading to the negative expectation $`-(1-\nu)/[2(1+\nu)^2]`$ when $`0<\nu<1`$, with $`\nu=0`$ treated directly.
+**Understanding target:** Explain the scaled Gaussian rotation coordinates at fixed $`\nu>0`$ and the exponential variable $`Z`$ with mean $`\nu`$ obtained from the two transverse coordinates. Identify the exact cancellation of the longitudinal phase in the relevant coherence product. Connect bounded matrix elements and tail truncation to convergence of expectations, leading to the negative expectation $`-(1-\nu)/[2(1+\nu)^2]`$ when $`0\lt \nu\lt 1`$, with $`\nu=0`$ treated directly.
 
 **Dependencies and story role:** Uses M06, M16, and M19. It supplies the nonzero limiting obstruction needed to match the upper bound's time scale.
 
@@ -298,7 +298,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** In exactly what sense do the upper comparator and lower witness locate a sharp boundary?
 
-**Understanding target:** Combine $`e_{n/2}(\nu/n)=O(1/n)`$ for $`\nu\ge1`$ with a strictly positive limiting lower bound at each fixed $`0\le\nu<1`$. Explain why their meeting point is $`\nu=1`$, even though their numerical bounds need not agree away from it. State the order of limits and distinguish this distance-to-EB boundary from finite-$`n`$ exact EB and from a proven boundary for positive quantum capacity.
+**Understanding target:** Combine $`e_{n/2}(\nu/n)=O(1/n)`$ for $`\nu\ge1`$ with a strictly positive limiting lower bound at each fixed $`0\le\nu\lt 1`$. Explain why their meeting point is $`\nu=1`$, even though their numerical bounds need not agree away from it. State the order of limits and distinguish this distance-to-EB boundary from finite-$`n`$ exact EB and from a proven boundary for positive quantum capacity.
 
 **Dependencies and story role:** Integrates M17–M20 with the definitions in M12. It completes the central channel theorem before turning to its consequences and extensions.
 
@@ -354,7 +354,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** Is the communication separation confined to one finely chosen time?
 
-**Understanding target:** Use the exact finite bounds at $`t_n=n^{-\alpha}`$, with fixed $`0<\alpha<1`$, to obtain $`C\ge\alpha\log_2n-\log_2e+o(1)`$ while $`Q=O(\log n/n)`$ and polarization tends to one. Explain why $`nt_n`$ now grows rather than remaining fixed, and why the later-time upper bound and entropy estimate still apply without another channel approximation.
+**Understanding target:** Use the exact finite bounds at $`t_n=n^{-\alpha}`$, with fixed $`0\lt \alpha\lt 1`$, to obtain $`C\ge\alpha\log_2n-\log_2e+o(1)`$ while $`Q=O(\log n/n)`$ and polarization tends to one. Explain why $`nt_n`$ now grows rather than remaining fixed, and why the later-time upper bound and entropy estimate still apply without another channel approximation.
 
 **Dependencies and story role:** Uses M18, M23, and M24. It broadens the fixed-$`\nu`$ conclusion into a range of experimentally interpretable shrinking diffusion times.
 
@@ -368,7 +368,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** Which parts of classicalization require isotropy, and when can the anisotropic boundary still be located exactly?
 
-**Understanding target:** For fixed $`D>0`$ with eigenvalues $`a\le b\le c`$, explain extraction of the isotropic component $`aI`$ through the central adjoint Casimir. Connect the tangent-plane witness to $`ab`$ at the pole along the strongest axis, giving $`1/\sqrt{ab}\le\tau_{\mathrm{op}}(D)\le1/a`$ for $`\tau=nt`$. Identify the exact case $`a=b\le c`$ and the unresolved gap when $`a<b`$. Explain why unitality and entropy averaging retain the classical bound without full rotation covariance.
+**Understanding target:** For fixed $`D>0`$ with eigenvalues $`a\le b\le c`$, explain extraction of the isotropic component $`aI`$ through the central adjoint Casimir. Connect the tangent-plane witness to $`ab`$ at the pole along the strongest axis, giving $`1/\sqrt{ab}\le\tau_{\mathrm{op}}(D)\le1/a`$ for $`\tau=nt`$. Identify the exact case $`a=b\le c`$ and the unresolved gap when $`a\lt b`$. Explain why unitality and entropy averaging retain the classical bound without full rotation covariance.
 
 **Dependencies and story role:** Uses M05, M18, M20, M23, and M24. It tests the structural robustness of the completed isotropic argument.
 
@@ -382,7 +382,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** When one noise direction is absent, what does the nonlinear local limit establish and what remains a global channel problem?
 
-**Understanding target:** Retain the deterministic-rotation condition $`n\int_0^T\lambda_{\min}(D(u))du\ge1`$ and distinguish its upper scope from bounded-rate local converses. For fixed $`D=\mathrm{diag}(0,b,c)`$, explain why bounded-excitation inverse-spin tests do not locate the longer scale. Follow the squeeze $`q=n^{1/6}Q`$, $`p=n^{-1/6}P`$ and $`t=s n^{-2/3}`$ to the generator $`-(b/2)\operatorname{ad}_P^2-c\operatorname{ad}_{Q^2/2}^2`$, with physical excitation $`O(n^{1/3})`$. State the fixed finite Schwartz-span/reference/time quantifiers of the controlled trace-norm approximation. Transfer a finite-energy NPT witness at every finite $`s`$, making $`n^2t^3\to\infty`$ necessary for vanishing distance. Distinguish this lower conclusion from the weaker proved equal-rate global upper regime $`t\sqrt n\to\infty`$ and the unresolved sufficiency of the candidate crossover variable.
+**Understanding target:** Retain the deterministic-rotation condition $`n\int_0^T\lambda_{\min}(D(u))du\ge1`$ and distinguish its upper scope from bounded-rate local converses. For fixed $`D=\mathrm{diag}(0,b,c)`$, explain why bounded-excitation inverse-spin tests do not locate the longer scale. Follow the squeeze $`q=n^{1/6}Q`$, $`p=n^{-1/6}P`$ and $`t=s n^{-2/3}`$ to the generator $`-(b/2)\mathrm{ad}_P^2-c\mathrm{ad}_{Q^2/2}^2`$, with physical excitation $`O(n^{1/3})`$. State the fixed finite Schwartz-span/reference/time quantifiers of the controlled trace-norm approximation. Transfer a finite-energy NPT witness at every finite $`s`$, making $`n^2t^3\to\infty`$ necessary for vanishing distance. Distinguish this lower conclusion from the weaker proved equal-rate global upper regime $`t\sqrt n\to\infty`$ and the unresolved sufficiency of the candidate crossover variable.
 
 **Dependencies and story role:** Uses M03, M06–M08, M20 and M26. It follows the failure of isotropic extraction into a different excitation regime, then returns to the original all-reference channel question.
 
@@ -410,7 +410,7 @@ The [scientific account](../science/README.md) supplies the spin-specific defini
 
 **Central question:** How can a channel approach the EB set while an exact entanglement witness remains negative?
 
-**Understanding target:** Separate the finite character sum into the positive antipodal heat term and the omitted representation tail. Compare their exponential rates to obtain $`\lambda_{0,n}(\nu/n)\sim-[e^{-2\nu}/\cosh\nu]e^{-\nu n}/n`$ for fixed $`0<\nu<\pi/2`$ along odd $`n`$. Explain the stronger certificate at $`\nu=1`$ for every odd $`n\ge5`$, the change in this sector's sign at the fixed-$`\nu`$ endpoint, and the coexistence of an exponentially small distance lower bound with the independent $`O(1/n)`$ upper bound. Do not identify this single eigenvalue with total residual entanglement or the exact PPT/EB time.
+**Understanding target:** Separate the finite character sum into the positive antipodal heat term and the omitted representation tail. Compare their exponential rates to obtain $`\lambda_{0,n}(\nu/n)\sim-[e^{-2\nu}/\cosh\nu]e^{-\nu n}/n`$ for fixed $`0\lt \nu\lt \pi/2`$ along odd $`n`$. Explain the stronger certificate at $`\nu=1`$ for every odd $`n\ge5`$, the change in this sector's sign at the fixed-$`\nu`$ endpoint, and the coexistence of an exponentially small distance lower bound with the independent $`O(1/n)`$ upper bound. Do not identify this single eigenvalue with total residual entanglement or the exact PPT/EB time.
 
 **Dependencies and story role:** Uses M07, M16, M21, M24, and M28. It reconciles the project's operational conclusion with exact surviving entanglement.
 

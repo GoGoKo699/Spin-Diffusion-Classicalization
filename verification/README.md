@@ -80,7 +80,7 @@ with the coherent pole along the third coordinate. Thus the check exercises the 
 [The rank-two scientific account](../science/rank_two_diffusion.md) separates a squeezed local contraction from the missing global entanglement-breaking approximation. The new check uses the original finite-spin generator
 
 ```math
-\mathcal L=-\operatorname{ad}_{J_y}^{2}-\operatorname{ad}_{J_z}^{2},
+\mathcal L=-\mathrm{ad}_{J_y}^{2}-\mathrm{ad}_{J_z}^{2},
 \qquad t=s n^{-2/3}.
 ```
 
@@ -91,7 +91,7 @@ For $`s=1`$, the partial-transpose block minima are approximately $`-0.0444294`$
 A separate analytic consistency check uses the exact finite-dimensional inequality
 
 ```math
-F_e(t)\ge1-2t\bigl[\operatorname{Var}(J_y)+\operatorname{Var}(J_z)\bigr].
+F_e(t)\ge1-2t\bigl[\mathrm{Var}(J_y)+\mathrm{Var}(J_z)\bigr].
 ```
 
 The program verifies it against the independently evolved output and records the scaled variance approaching $`13/16`$. The proof and its scope are in the scientific account. This check supplies a conservative direct finite-spin lower bound, independently of the local output-convergence theorem.
@@ -111,7 +111,7 @@ The optional run adds witness sizes $`n=256,512`$. Its $`s=1`$ block minimum at 
 
 The dense construction exponentiates the Lindblad superoperator, reshapes it into a **normalized** Choi matrix, and then takes its partial transpose. It checks positivity and unit trace before comparing the singlet eigenpair with the scalar formula. This independently tests the factor $`(n+1)^{-2}`$ and the parity convention.
 
-At larger $`n`$, ordinary floating-point subtraction can give a meaningless sign. The scalar checks use decimal precision $`90+\lceil2n/\ln10\rceil`$ for the registered $`\nu<2`$ cases. They compare the finite alternating sum with the separately evaluated Poisson heat term minus the omitted tail. After scaling by $`n e^{-\nu n}`$, the reconstruction errors are below $`10^{-55}`$, and the explicit tail-error bound passes in every registered case. The samples include $`\nu=1,1.5,1.55,\pi/2`$; the endpoint tests the positive asymptotic rather than assuming the negative sign persists there. [Analytical proof](../science/residual_entanglement.md).
+At larger $`n`$, ordinary floating-point subtraction can give a meaningless sign. The scalar checks use decimal precision $`90+\lceil2n/\ln10\rceil`$ for the registered $`\nu\lt 2`$ cases. They compare the finite alternating sum with the separately evaluated Poisson heat term minus the omitted tail. After scaling by $`n e^{-\nu n}`$, the reconstruction errors are below $`10^{-55}`$, and the explicit tail-error bound passes in every registered case. The samples include $`\nu=1,1.5,1.55,\pi/2`$; the endpoint tests the positive asymptotic rather than assuming the negative sign persists there. [Analytical proof](../science/residual_entanglement.md).
 
 ## Recorded outputs
 
@@ -127,7 +127,7 @@ The figures are generated from those reports by [make_figures.py](make_figures.p
 
 ![Operational threshold checks](../figures/operational_threshold.svg)
 
-The lower witness tends to a positive distance bound at every fixed $`\nu<1`$. Above the boundary, the finite witness may become zero before other entanglement witnesses do; the theorem concerns its limiting bound.
+The lower witness tends to a positive distance bound at every fixed $`\nu\lt 1`$. Above the boundary, the finite witness may become zero before other entanglement witnesses do; the theorem concerns its limiting bound.
 
 ![Residual Choi entanglement after the operational threshold](../figures/residual_entanglement.svg)
 

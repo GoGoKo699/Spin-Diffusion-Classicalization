@@ -2,7 +2,7 @@
 
 [Model and claims](model.md) · [Communication](communication.md) · [Anisotropic diffusion](anisotropic_diffusion.md)
 
-The proof has two parts. A coherent-state measurement supplies an explicit entanglement-breaking comparator at $`\nu=1`$. A two-level encoded Bell state supplies the converse at every fixed $`\nu<1`$.
+The proof has two parts. A coherent-state measurement supplies an explicit entanglement-breaking comparator at $`\nu=1`$. A two-level encoded Bell state supplies the converse at every fixed $`\nu\lt 1`$.
 
 ## 1. An established measurement channel
 
@@ -107,7 +107,7 @@ A_n=\frac{C_n}{\sqrt{\pi}n^{3/2}}.
 ```
 
 Here $`\mathrm{sinc}x=\sin x/x`$. The inequality follows from
-$`\log\cos x\le-x^2/2`$ for $`0\le x<\pi/2`$.
+$`\log\cos x\le-x^2/2`$ for $`0\le x\lt \pi/2`$.
 
 Both densities integrate to one. If $`r\le A m`$ for normalized densities, then
 $`\mathrm{TV}(r,m)=\int(r-m)_+\le A-1`$.
@@ -121,7 +121,7 @@ A_n\le(1+1/n)e^{1/(6n)},
 ```
 
 For completeness, write
-$`n!=\sqrt{2\pi n}(n/e)^n e^{s_n}`$ with $`0<s_n<1/(12n)`$.
+$`n!=\sqrt{2\pi n}(n/e)^n e^{s_n}`$ with $`0\lt s_n\lt 1/(12n)`$.
 Then $`A_n=(1+1/n)e^{2s_n-s_{2n}}`$.
 Finally $`(1+x)e^{x/6}-1\le(7/6)e^{1/6}x`$ for $`0\le x\le1`$.
 
@@ -185,7 +185,7 @@ Combining the two comparisons at $`t=1/n`$ establishes
 K_0=
 \frac76e^{1/6}+\frac14e^{1/4}
 +\frac{3(1+e^{1/4})}{\pi^2}
-=2.393520645\ldots<2.4.
+=2.393520645\ldots\lt 2.4.
 ```
 
 This is a conservative bound, valid for every positive integer $`n`$.
@@ -282,7 +282,7 @@ B_n\longrightarrow\mathbb E[(1-Z)e^{-Z}]
 =\frac1{(1+\nu)^2}.
 ```
 
-For $`\nu<1`$, the antisymmetric unit vector $`|v\rangle`$ in this block has limiting negative expectation
+For $`\nu\lt 1`$, the antisymmetric unit vector $`|v\rangle`$ in this block has limiting negative expectation
 
 ```math
 \langle v|\rho_{RS}^{\Gamma_R}|v\rangle

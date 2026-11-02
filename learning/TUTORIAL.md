@@ -296,7 +296,7 @@ Combining the two explicit bounds gives
 
 ```math
 \mathrm{TV}(p_{1/n},k_n)\le\frac{K_0}{n},
-\qquad K_0=2.393520645\ldots<2.4.
+\qquad K_0=2.393520645\ldots\lt 2.4.
 ```
 
 This is a conservative uniform estimate, not the optimized diamond distance. For later times, the comparator $`\Phi_{t-1/n}\circ\mathcal B_j`$ remains EB. Semigroup composition and contraction therefore yield
@@ -352,14 +352,14 @@ The antisymmetric vector in this block has limiting partial-transpose expectatio
 ```math
 \liminf_{n\to\infty}e_{n/2}(\nu/n)
 \ge\frac{1-\nu}{2(1+\nu)^2},
-\qquad 0\le\nu<1.
+\qquad 0\le\nu\lt 1.
 ```
 
 For example, $`\nu=1/2`$ gives the nonzero lower bound $`1/9`$. At $`\nu=0`$, the Bell state is unchanged.
 
 Together with the upper bound, this places the sharp boundary for vanishing distance to EB at $`\nu=1`$. The [converse proof](../science/classicalization.md#4-a-two-level-converse-below-the-boundary) establishes that operational statement; it does not locate a positive-quantum-capacity boundary.
 
-The lower formula is a bound obtained from one chosen input and measurement. It need not equal the limiting channel distance. Sharpness here refers to its strictly positive sign at every fixed $`\nu<1`$, together with a uniform upper bound that vanishes at and above one.
+The lower formula is a bound obtained from one chosen input and measurement. It need not equal the limiting channel distance. Sharpness here refers to its strictly positive sign at every fixed $`\nu\lt 1`$, together with a uniform upper bound that vanishes at and above one.
 
 ## 8. Fidelity and the communication separation — M22–M25
 
@@ -406,7 +406,7 @@ Q(\Phi_t)\le
 
 The dimension factor is essential, and the theorem already accounts for arbitrary block lengths at each fixed spin. Its conservative constants need not give a useful finite-size improvement at moderate $`n`$.
 
-The separation also holds for $`t_n=n^{-\alpha}`$, with fixed $`0<\alpha<1`$. Now $`nt_n`$ grows, but the later-time comparison still applies. Using $`g(x)=\log_2x+\log_2e+o(1)`$,
+The separation also holds for $`t_n=n^{-\alpha}`$, with fixed $`0\lt \alpha\lt 1`$. Now $`nt_n`$ grows, but the later-time comparison still applies. Using $`g(x)=\log_2x+\log_2e+o(1)`$,
 
 ```math
 C(\Phi_{t_n})\ge\alpha\log_2n-\log_2e+o(1),
@@ -418,7 +418,7 @@ Thus the classical rate diverges across a range of shrinking times. The [communi
 
 ## 9. Unequal strengths, rotations and rank-two diffusion — M26–M27
 
-Replace isotropy by a fixed real symmetric positive-definite matrix $`D`$, with eigenvalues $`0<a\le b\le c`$:
+Replace isotropy by a fixed real symmetric positive-definite matrix $`D`$, with eigenvalues $`0\lt a\le b\le c`$:
 
 ```math
 \mathcal L_D=-\sum_{r,s}D_{rs}[J_r,[J_s,\cdot]],
@@ -442,7 +442,7 @@ Choosing the pole along the strongest axis gives transverse strengths $`a,b`$. T
 \frac1{\sqrt{ab}}\le\tau_{\mathrm{op}}(D)\le\frac1a.
 ```
 
-The bounds coincide when $`a=b\le c`$. For $`a<b`$, the exact coefficient remains unresolved. Unitality still preserves the ensemble average; averaging the output entropy bounds and using concavity of $`g`$ yields $`C\ge\log_2d-g(\tau\mathrm{Tr}D/3)`$ without assuming covariance.
+The bounds coincide when $`a=b\le c`$. For $`a\lt b`$, the exact coefficient remains unresolved. Unitality still preserves the ensemble average; averaging the output entropy bounds and using concavity of $`g`$ yields $`C\ge\log_2d-g(\tau\mathrm{Tr}D/3)`$ without assuming covariance.
 
 The two rates enter through a Gaussian determinant. The isotropic Laplace transform becomes $`\mathbb E e^{-sZ}=\det(I+s\tau D_v)^{-1/2}`$; the same population/coherence combination produces the displayed numerator. By contrast, the global upper bound can extract only the guaranteed isotropic strength $`a`$. For classical entropy, averaging directions uses $`\int v^TDv\,d\Omega=\mathrm{Tr}D/3`$. These are three different uses of the noise matrix, explaining the bracket and the averaged rate.
 
@@ -459,7 +459,7 @@ The corresponding classical entropy bound uses $`(n/3)\int_0^T\mathrm{Tr}D(s)\,d
 
 ### A missing axis changes the question
 
-Take fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0<b\le c`$, and choose the pole along the $`c`$ axis. At every fixed inverse-spin time $`t=\tau/n`$, the tangent rates are $`0,b`$, so the earlier two-level witness remains positive:
+Take fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0\lt b\le c`$, and choose the pole along the $`c`$ axis. At every fixed inverse-spin time $`t=\tau/n`$, the tangent rates are $`0,b`$, so the earlier two-level witness remains positive:
 
 ```math
 \liminf_{n\to\infty}e_{n/2,D}(\tau/n)
@@ -509,7 +509,7 @@ The positive constant depends on $`s,b,c`$ and the input/test packets, and can b
 An independent finite-spin bound makes the test concrete. Prepare a Bell state from the normalized finite-ladder projections of squeezed oscillator $`|0\rangle`$ and $`|1\rangle`$. Their opposite parity makes the two code states exactly orthogonal. For $`b=c=1`$, the sum of noisy-spin variances is $`(13/16)n^{2/3}+O(n^{1/3})`$. Positivity of the double-commutator generator on Hilbert–Schmidt space gives
 
 ```math
-F_e(t)\ge1-2t[\operatorname{Var}(J_y)+\operatorname{Var}(J_z)],
+F_e(t)\ge1-2t[\mathrm{Var}(J_y)+\mathrm{Var}(J_z)],
 \qquad
 \liminf_{n\to\infty}e_{n/2,D}(s n^{-2/3})
 \ge[1/2-13s/8]_+.
@@ -559,14 +559,14 @@ R_n(\nu/n)\sim
 \frac{e^{-2\nu}}{\cosh\nu}\,n e^{-\nu n}.
 ```
 
-When $`0<\nu<\pi/2`$, the tail decays more slowly and dominates. Division by $`(n+1)^2`$ gives
+When $`0\lt \nu\lt \pi/2`$, the tail decays more slowly and dominates. Division by $`(n+1)^2`$ gives
 
 ```math
 \lambda_{0,n}(\nu/n)\sim
 -\frac{e^{-2\nu}}{\cosh\nu}\frac{e^{-\nu n}}n.
 ```
 
-Thus fixed $`1\le\nu<\pi/2`$ supports both vanishing distance to EB and an NPT Choi state along sufficiently large odd $`n`$, corresponding to half-integer spins. At $`\nu=1`$, a finite certificate proves negativity for every odd $`n\ge5`$. At the endpoint $`\nu=\pi/2`$, the heat term's larger polynomial prefactor makes this particular eigenvalue eventually positive.
+Thus fixed $`1\le\nu\lt \pi/2`$ supports both vanishing distance to EB and an NPT Choi state along sufficiently large odd $`n`$, corresponding to half-integer spins. At $`\nu=1`$, a finite certificate proves negativity for every odd $`n\ge5`$. At the endpoint $`\nu=\pi/2`$, the heat term's larger polynomial prefactor makes this particular eigenvalue eventually positive.
 
 Parity determines the tail's first sign: odd $`n`$ makes the first omitted rank even and its contribution positive. The asymptotic argument controls the whole tail by an absolutely summable majorant after writing its ranks as $`n+1+k`$. It therefore requires fixed positive $`\nu`$ and compares complete sums, not just two individual terms. The endpoint changes because the exponential rates agree there and the polynomial prefactors become decisive.
 
