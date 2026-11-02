@@ -110,12 +110,12 @@
       "counterpart_file_links_checked": [
         {
           "source": "references/RELATED_WORK.md",
-          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/SPIN_SISTER_COMMIT/science/rank_two_diffusion.md",
+          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/bf31418c10302d1786451ddee9b9840f4d9983c8/science/rank_two_diffusion.md",
           "local_counterpart": "science/rank_two_diffusion.md"
         },
         {
           "source": "science/spin_contraction.md",
-          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/SPIN_SISTER_COMMIT/science/rank_two_diffusion.md",
+          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/bf31418c10302d1786451ddee9b9840f4d9983c8/science/rank_two_diffusion.md",
           "local_counterpart": "science/rank_two_diffusion.md"
         }
       ]
