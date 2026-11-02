@@ -18,7 +18,7 @@ This is the source of the capacity separation. High polarization alone would not
 
 ## Why exact entanglement can survive
 
-Being close to an EB channel and belonging exactly to the EB set are different properties. The [finite-spin Choi analysis](residual_entanglement.md) identifies a negative partial-transpose eigenvalue for sufficiently large half-integer spins at every fixed $`1\le\nu<\pi/2`$. Its magnitude is exponentially small in $`n=2j`$.
+Being close to an EB channel and belonging exactly to the EB set are different properties. The [finite-spin Choi analysis](residual_entanglement.md) identifies a negative partial-transpose eigenvalue for sufficiently large half-integer spins at every fixed $`1\le\nu\lt \pi/2`$. Its magnitude is exponentially small in $`n=2j`$.
 
 This result concerns one identified eigenvalue. It does not establish that every entanglement measure, every negative eigenvalue, or the exact distance to the EB set is exponentially small. The uniform theorem bounds the latter distance by $`O(1/n)`$.
 

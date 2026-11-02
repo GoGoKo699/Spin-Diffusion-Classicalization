@@ -23,7 +23,7 @@ The question concerns preservation of entanglement with an external reference, u
 | Berezin transform approximates heat flow | Uniform Sobolev-operator estimate already proved in [Ioos2020], Proposition 3.9, Eq. (3.30); spin measurement/diffusion comparison in [Brody2026]. | Neither the heat analogy nor norm approximation in general is new. The norm, domain, and ancillary-system uniformity matter. |
 | Classical group kernels control quantum-channel distances | Established transference framework [Bardet2021], especially Sections III and IV.C. | The elementary total-variation-to-diamond transfer is not itself the new step. |
 | At $`t=1/n`$, the spin diffusion channel is within $`O(n^{-1})`$ in diamond norm of the coherent measure-and-prepare channel | Estimate derived in the accompanying analysis, using the imported central kernel and a shrinking-time heat-kernel comparison. | The bound is uniform over input states and arbitrary reference systems despite growing spin dimension. |
-| For every fixed $`0\leq\nu<1`$, distance from all entanglement-breaking channels remains bounded below | Derived from the two-level north-pole encoding and a partial-transpose witness in the accompanying analysis. | This supplies the lower side of the asymptotic channel-classicalization threshold; it does not establish a positive quantum-capacity threshold. |
+| For every fixed $`0\leq\nu\lt 1`$, distance from all entanglement-breaking channels remains bounded below | Derived from the two-level north-pole encoding and a partial-transpose witness in the accompanying analysis. | This supplies the lower side of the asymptotic channel-classicalization threshold; it does not establish a positive quantum-capacity threshold. |
 | Bounds for every encoding and final recovery, and $`Q=O(\log n/n)`$ above threshold | Consequences of the uniform estimate, the standard entanglement-breaking fidelity bound, and capacity continuity [LeungSmith2009]. | The general continuity theorem is imported; its shrinking-time application to this spin family is derived. |
 | $`C\geq\log_2(n+1)-g(\nu)`$, where $`g(x)=(x+1)\log_2(x+1)-x\log_2x`$ | Coherent-ensemble calculation in the accompanying analysis; uses covariance and the standard entropy bound at fixed mean occupation. | This retains nearly maximal classical information at the same scale where the quantum upper bound vanishes. |
 | Singlet eigenvalue of the partially transposed heat-channel Choi state and its odd-$`n`$ asymptotics | Specialization derived in the accompanying analysis. The SU(2) partial-transpose multiplet method is established [Schliemann2003]. | This distinguishes exact residual entanglement from operational distance to entanglement breaking; it does not determine the full PPT or entanglement-breaking time. |
@@ -123,15 +123,24 @@ For the normalized heat-channel Choi state, the accompanying analysis derives th
 \sum_{\ell=0}^{n}(-1)^\ell(2\ell+1)e^{-t\ell(\ell+1)}.
 ```
 
-Along odd $`n`$, at fixed $`0<\nu<\pi/2`$ and $`t=\nu/n`$, the derived asymptotic is
+Along odd $`n`$, at fixed $`0\lt \nu\lt \pi/2`$ and $`t=\nu/n`$, the derived asymptotic is
 
 ```math
 \lambda_0(j,\nu/n)\sim
 -\frac{e^{-2\nu}}{\cosh\nu}\frac{e^{-\nu n}}{n}.
 ```
 
-Thus, for fixed $`1\leq\nu<\pi/2`$ and sufficiently large odd $`n`$, an exact nonpositive-partial-transpose witness coexists with a vanishing operational distance to the entanglement-breaking set. The negative eigenvalue is exponentially small. This is not an exact PPT/entanglement-breaking-time determination or a lower bound on quantum communication capacity. The structural comparison with [Rudnicki2026] is given above.
+Thus, for fixed $`1\leq\nu\lt \pi/2`$ and sufficiently large odd $`n`$, an exact nonpositive-partial-transpose witness coexists with a vanishing operational distance to the entanglement-breaking set. The negative eigenvalue is exponentially small. This is not an exact PPT/entanglement-breaking-time determination or a lower bound on quantum communication capacity. The structural comparison with [Rudnicki2026] is given above.
 
 Primary author text: <https://arxiv.org/html/quant-ph/0212114v3>. Version record: <https://arxiv.org/abs/quant-ph/0212114> (v3, 12 July 2003); publication: <https://journals.aps.org/pra/abstract/10.1103/PhysRevA.68.012309>, 11 July 2003. The generated HTML date is not the paper's publication or revision date.
 
 Anisotropic thresholds are another separate statement. Anisotropic spin dynamics already appears in [DenisMartin2022]; any sharp coefficient or general sandwich bound must be justified by its own derivation and its exact ordering assumptions on the diffusion coefficients.
+
+
+## Rank-two spin contraction and its nonlinear sister
+
+The [rank-two account](../science/rank_two_diffusion.md) uses an established hypoelliptic mechanism. **Baudoin and Bonnefont**, *The subelliptic heat kernel on SU(2): representations, asymptotics and gradient bounds*, arXiv:0802.3320v2 (5 March 2008), *Mathematische Zeitschrift* **263** (2009), 647–672, [DOI](https://doi.org/10.1007/s00209-008-0436-0), study the exact rank-two SU(2) heat law. Sections 2 and 3.4 identify its bracket geometry and Heisenberg scaling. Theorem 4.3 and Remark 4.4 give the gradient estimate used here for the **equal-positive-rate** global EB comparison. Their fields satisfy $`[X,Y]=2Z`$; the spin proof includes the time conversion. [Primary text](https://arxiv.org/pdf/0802.3320).
+
+**Schubert and Plastow**, *Decoherence Time Scales and the Hörmander Condition*, [arXiv:2307.08799v1](https://arxiv.org/html/2307.08799v1), Theorem I.2 and Section III, describe bracket-delayed decoherence and odd powers of time for Gaussian dynamics. Their coherent-cross-term Hilbert–Schmidt estimates do not directly give an arbitrary-reference diamond approximation to EB. **Speed, Lyu and Schubert**, *Beyond Gaussian Quantum Channels: A model case*, [arXiv:2305.08467v1](https://arxiv.org/pdf/2305.08467), introduce and solve the nonlinear position/kinetic-energy Lindblad model through Grushin/Mehler methods. The model, bracket spreading and cubic scaling are inherited, not discoveries of this spin application.
+
+The sister [Nonlinear-Diffusion-Entanglement at 9c0ee02](https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/tree/9c0ee02e018cf6940bcbb7916a666495331e8852) owns the conditional covariance, exceptional-path oscillator EB estimate and finite-energy NPT theorem at every finite time without direct noise regularization. The new spin account proves a controlled growing-excitation contraction, transfers those finite-energy witnesses into a necessary condition $`n^{2/3}t\to\infty`$, and gives an independent finite-spin fidelity lower bound. It separately constructs the equal-rate global comparator $`\Phi_t\circ\mathcal B_j`$ and derives a weaker sufficient regime $`\sqrt n\,t\to\infty`$ from the imported heat estimate. Neither the local determinant nor oscillator good-path replacements establish matching global spin sufficiency. No separate discovery is claimed for the inherited oscillator theorem, coherent comparator identity, Gaussian EB criterion or group transference.

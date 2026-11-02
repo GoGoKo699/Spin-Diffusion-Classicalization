@@ -4,6 +4,12 @@
 
 For isotropic rotational diffusion on one irreducible spin, this account proves a sharp large-spin threshold for proximity to entanglement-breaking channels. At the threshold, every encoding and final recovery is constrained, quantum capacity tends to zero, and classical capacity remains within two bits of its dimensional maximum. The result concerns the complete channel, including arbitrary external reference systems.
 
+## Sister project: nonlinear diffusion
+
+[**Nonlinear-Diffusion-Entanglement**](https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement) supplies a conditional-covariance method, an exceptional-path EB bound and finite-energy reference-entanglement witnesses for a nonlinear oscillator. The [rank-two spin account](science/rank_two_diffusion.md) proves a controlled transfer to spin diffusion with $`D=\mathrm{diag}(0,b,c)`$: squeezing near a coherent pole uses $`O(n^{1/3})`$ excitations and gives the nonlinear limit at $`t=s n^{-2/3}`$.
+
+The transferred witnesses show that the spin channel stays a positive distance from EB at **every fixed finite** $`s`$. Thus vanishing distance requires $`n^{2/3}t\to\infty`$. A separate global argument for equal positive rates proves sufficiency when $`\sqrt n\,t\to\infty`$. Matching global sufficiency remains open; local covariance is not a global EB approximation. This repository owns the controlled spin proof and finite-spin tests; its sister owns the inherited nonlinear-channel results. Both remain independently readable, with Holevo (2019) as their common educational anchor.
+
 ## Principal result
 
 Write $`n=2j`$, $`d=n+1`$, and use the dimensionless noise convention
@@ -18,7 +24,7 @@ Let $`e_j(t)`$ be the infimum of the half-diamond distance from $`\Phi_t`$ to al
 ```math
 \begin{aligned}
 \nu\ge1:&\qquad e_{n/2}(\nu/n)\le\min\{1,2.4/n\},\\
-0\le\nu<1:&\qquad
+0\le\nu\lt 1:&\qquad
 \liminf_{n\to\infty}e_{n/2}(\nu/n)
 \ge\frac{1-\nu}{2(1+\nu)^2}>0.
 \end{aligned}
@@ -33,7 +39,7 @@ The second line holds at every fixed subthreshold $`\nu`$. Thus **$`\nu=1`$ is t
 | Classical capacity at fixed scaled time | $`C\ge\log_2(n+1)-g(\nu)`$, where $`g(x)=(x+1)\log_2(x+1)-x\log_2x`$. |
 | At the boundary $`\nu=1`$ | The classical deficit is at most two bits; mean polarization is retained by the factor $`e^{-2/n}`$. |
 
-These capacity statements allow arbitrary block codes over independent uses. The sharp boundary above is a channel-distance result; positive quantum capacity throughout $`\nu<1`$ is not established. [Communication bounds and proofs](science/communication.md).
+These capacity statements allow arbitrary block codes over independent uses. The sharp boundary above is a channel-distance result; positive quantum capacity throughout $`\nu\lt 1`$ is not established. [Communication bounds and proofs](science/communication.md).
 
 ![Kernel comparison and encoded witness for spin diffusion](figures/operational_threshold.svg)
 
@@ -41,7 +47,7 @@ These capacity statements allow arbitrary block codes over independent uses. The
 
 ## Robustness and residual entanglement
 
-For a fixed positive diffusion matrix with eigenvalues $`0<a\le b\le c`$, the onset of vanishing distance to EB obeys
+For a fixed positive diffusion matrix with eigenvalues $`0\lt a\le b\le c`$, the onset of vanishing distance to EB obeys
 
 ```math
 \frac1{\sqrt{ab}}\le\tau_{\mathrm{op}}\le\frac1a,
@@ -50,7 +56,7 @@ For a fixed positive diffusion matrix with eigenvalues $`0<a\le b\le c`$, the on
 
 When **the two smallest rates agree**, $`a=b\le c`$, both bounds meet at $`\tau_{\mathrm{op}}=1/a`$. The third-axis rate may be arbitrarily stronger and fixed. Classical capacity still grows as $`\log_2(n+1)`$ with a bounded deficit. Deterministic linear spin rotations preserve the upper bound through an exact Casimir factorization. [Anisotropic theorem](science/anisotropic_diffusion.md).
 
-Operational classicality also differs from exact entanglement death. For every fixed $`1\le\nu<\pi/2`$ and sufficiently large odd $`n`$, the normalized Choi state still has a negative partial-transpose eigenvalue:
+Operational classicality also differs from exact entanglement death. For every fixed $`1\le\nu\lt \pi/2`$ and sufficiently large odd $`n`$, the normalized Choi state still has a negative partial-transpose eigenvalue:
 
 ```math
 \lambda_{0,n}(\nu/n)
@@ -68,10 +74,11 @@ At $`\nu=1`$, this singlet eigenvalue is negative for every odd $`n\ge5`$. The e
 | What exactly is assumed and proved? | [Model, conventions and claims](science/model.md) |
 | How does the complete argument fit together? | [Scientific account](science/README.md) |
 | Why does the result constrain every spin code? | [Uniform threshold proof](science/classicalization.md) and [recovery converse](science/communication.md#1-every-encoding-and-final-recovery) |
+| What changes for rank-two noise, and what remains open globally? | [Controlled contraction and global gap](science/rank_two_diffusion.md) |
 | Which ingredients are established prior work? | [Related work and source map](references/RELATED_WORK.md), with [BibTeX bibliography](references/references.bib) |
 | How can I reproduce the finite checks and figures? | [Verification](verification/README.md) |
 
-The [learning route](learning/README.md) uses **Holevo, _Quantum Systems, Channels, Information_, second revised and expanded edition (2019)** as its single educational anchor. Twelve background milestones and eighteen narrative milestones connect the physical carrier to the theorem, its communication consequences, and its limits. The tutorial includes an exactly solved qubit example; the source bridge records the verified chapter locations and the additional spin-specific steps supplied here.
+The [learning route](learning/README.md) uses **Holevo, _Quantum Systems, Channels, Information_, second revised and expanded edition (2019)** as its single educational anchor. Twelve background milestones and eighteen narrative milestones connect the physical carrier to the theorem, its communication consequences, growing-excitation rank-two noise, and its limits. The tutorial includes an exactly solved qubit example; the source bridge records the verified chapter locations and the additional spin-specific steps supplied here.
 
 ## Reproduce
 

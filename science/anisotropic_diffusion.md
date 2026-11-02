@@ -1,6 +1,6 @@
 # Anisotropic diffusion and deterministic rotations
 
-[Model](model.md) · [Threshold proof](classicalization.md) · [Communication](communication.md)
+[Model](model.md) · [Threshold proof](classicalization.md) · [Communication](communication.md) · [Rank-two diffusion](rank_two_diffusion.md)
 
 Unequal rotation-noise strengths preserve an inverse-spin operational boundary. Two-sided bounds locate it exactly when the two smallest diffusion strengths coincide, even if the third is arbitrarily stronger and fixed.
 
@@ -18,7 +18,7 @@ The eigenvalues of $`D`$ are physical angular diffusion rates. Our normalization
 Write
 
 ```math
-0<a\le b\le c
+0\lt a\le b\le c
 ```
 
 for the eigenvalues of a positive definite $`D`$, and define
@@ -38,7 +38,7 @@ The following bounds hold.
 e_{j,D}(t)\le\min\{1,K_0/n\}.
 ```
 
-Here $`K_0\approx2.393520645246<2.4`$ is the constant defined exactly in the [isotropic kernel comparison](classicalization.md#3-a-uniform-finite-size-bound).
+Here $`K_0\approx2.393520645246\lt 2.4`$ is the constant defined exactly in the [isotropic kernel comparison](classicalization.md#3-a-uniform-finite-size-bound).
 
 **Lower bound, fixed anisotropy and fixed $`\tau`$.** For every finite $`\tau\ge0`$,
 
@@ -52,7 +52,7 @@ Here $`K_0\approx2.393520645246<2.4`$ is the constant defined exactly in the [is
 \right]_+.
 ```
 
-In particular, the distance remains bounded away from zero when $`\tau<1/\sqrt{ab}`$, while it is $`O(1/n)`$ when $`\tau\ge1/a`$. These bounds give an interval for the boundary; they do not establish a universal equality.
+In particular, the distance remains bounded away from zero when $`\tau\lt 1/\sqrt{ab}`$, while it is $`O(1/n)`$ when $`\tau\ge1/a`$. These bounds give an interval for the boundary; they do not establish a universal equality.
 
 **A nontrivial exactly located family.** If the two smallest rates coincide, $`a=b\le c`$, then the onset of asymptotic proximity to EB channels is exactly
 
@@ -65,7 +65,7 @@ In particular, the distance remains bounded away from zero when $`\tau<1/\sqrt{a
 This remains true for an arbitrarily stronger fixed third-axis rate $`c`$. The lower witness uses the coherent pole along that third axis. Its limiting lower bound is
 
 ```math
-\frac{1-a\tau}{2(1+a\tau)^2},\qquad a\tau<1.
+\frac{1-a\tau}{2(1+a\tau)^2},\qquad a\tau\lt 1.
 ```
 
 **Classical capacity, exact finite-$`n`$ bound.** Let $`g(x)=(x+1)\log_2(x+1)-x\log_2x`$, with $`g(0)=0`$. Then
@@ -240,7 +240,7 @@ B-A=M(1)+2M'(1)
 {[(1+\tau\mu_1)(1+\tau\mu_2)]^{3/2}}.
 ```
 
-When $`\tau\sqrt{\mu_1\mu_2}<1`$, $`B>A\ge0`$ and the block has limiting negative eigenvalue $`-(B-A)/2`$. Let $`w=(|1,0\rangle-|0,1\rangle)/\sqrt2`$ and $`W=(|w\rangle\langle w|)^{\Gamma_R}`$. Its operator norm is $`1/2`$ and its expectation is nonnegative on every separable state. Thus the output's half trace-norm distance from separable states is at least $`(B-A)/2`$ in the limit. Every EB comparator sends this input to a separable state, proving (8).
+When $`\tau\sqrt{\mu_1\mu_2}\lt 1`$, $`B>A\ge0`$ and the block has limiting negative eigenvalue $`-(B-A)/2`$. Let $`w=(|1,0\rangle-|0,1\rangle)/\sqrt2`$ and $`W=(|w\rangle\langle w|)^{\Gamma_R}`$. Its operator norm is $`1/2`$ and its expectation is nonnegative on every separable state. Thus the output's half trace-norm distance from separable states is at least $`(B-A)/2`$ in the limit. Every EB comparator sends this input to a separable state, proving (8).
 
 ### 2.4 Optimal pole for this witness and the sandwich
 
@@ -268,7 +268,7 @@ Semigroup postprocessing makes $`e_{j,D}(t)`$ nonincreasing in $`t`$, and the pr
 \frac1{\sqrt{ab}}\le\tau_{\mathrm{op}}(D)\le\frac1a.
 ```
 
-Equality of the two rates $`a=b`$ closes this interval and proves (3). For $`a<b`$, the interval is an unresolved gap. The local Gaussian threshold suggests a sharper possible coefficient, but the upper bound does not prove it and no universal formula is asserted.
+Equality of the two rates $`a=b`$ closes this interval and proves (3). For $`a\lt b`$, the interval is an unresolved gap. The local Gaussian threshold suggests a sharper possible coefficient, but the upper bound does not prove it and no universal formula is asserted.
 
 ## 3. Classical capacity without covariance
 
@@ -329,7 +329,7 @@ Let $`E:\mathcal B(\mathbb C^k)\to\mathcal B(\mathcal H_j)`$ and $`R:\mathcal B(
 F_e(R\circ\Phi_{D,t}\circ E)\le\frac1k+\frac{K_0}{n}.
 ```
 
-For independent uses, [Leung–Smith's finite-output-dimension continuity bound](../references/RELATED_WORK.md#entanglement-breaking-continuity-and-the-limits-of-the-conclusion) applies to the full diamond error $`\epsilon\le2K_0/n<4.8/n`$. Their Corollary 14, equation (29), bounds the quantum-capacity difference by $`8\epsilon\log_2d+4h_2(\epsilon)`$. For sufficiently large $`n`$, this proves (5). No interchange of the regularization in the number of channel uses with the limit $`n\to\infty`$ is required.
+For independent uses, [Leung–Smith's finite-output-dimension continuity bound](../references/RELATED_WORK.md#entanglement-breaking-continuity-and-the-limits-of-the-conclusion) applies to the full diamond error $`\epsilon\le2K_0/n\lt 4.8/n`$. Their Corollary 14, equation (29), bounds the quantum-capacity difference by $`8\epsilon\log_2d+4h_2(\epsilon)`$. For sufficiently large $`n`$, this proves (5). No interchange of the regularization in the number of channel uses with the limit $`n\to\infty`$ is required.
 
 Primary continuity source: [Leung and Smith, *Continuity of quantum channel capacities*](https://arxiv.org/html/0810.4931v2).
 
@@ -408,11 +408,11 @@ The trace inequality uses $`|\mathrm{Tr}(AM)|\le\mathrm{Tr}(A)\|M\|_{\mathrm{op}
 ## 6. Limits of the robustness claim
 
 1. **Fixed positive anisotropy matters.** For a fixed $`D>0`$, the EB upper bound has no condition-number prefactor, and the classical deficit at $`\tau=1/a`$ remains the finite constant $`g(\mathrm{Tr}D/(3a))`$. If $`a`$ depends on $`n`$ and tends to zero, that deficit can grow, and the advertised fixed-anisotropy separation must be reassessed.
-2. **Rank-deficient noise has a different limit.** The lower-bound proof remains valid for $`D\ge0`$. If $`a=0`$, the pole along the largest-eigenvalue axis has tangent rates $`0,b`$ and gives the strictly positive lower bound $`1/[2(1+\tau b)^{3/2}]`$ for every finite $`\tau`$. Thus bounded-rate rotations do not produce asymptotic EB proximity at any fixed inverse-spin time under rank-deficient $`D`$. No claim about its longer timescale is made here.
+2. **Rank-deficient noise has a different limit.** The lower-bound proof remains valid for $`D\ge0`$. If $`a=0`$, the pole along the largest-eigenvalue axis has tangent rates $`0,b`$ and gives the strictly positive lower bound $`1/[2(1+\tau b)^{3/2}]`$ for every finite $`\tau`$. Thus bounded-rate rotations do not produce asymptotic EB proximity at any fixed inverse-spin time under rank-deficient $`D`$. For fixed rank-two noise without an added Hamiltonian, the separate [growing-excitation contraction](rank_two_diffusion.md) strengthens this: vanishing distance requires $`n^{2/3}t_n\to\infty`$. An equal-positive-rate global bound proves sufficiency only in the weaker regime $`\sqrt n\,t_n\to\infty`$; matching sufficiency remains open.
 3. **Irreducibility is essential.** Collective noise on the full tensor product of distinguishable spins has noiseless multiplicity spaces. They are absent from $`\mathcal H_j`$ and are outside this theorem.
 4. **Uses must be independent for capacities.** A common rotation applied jointly to many carriers is a different communication channel. Equations (5) and (18) do not rule out relational or multiplicity encodings in that model.
 5. **No active intermediate correction.** Encoding and recovery at the two ends are unrestricted, but intervention with noiseless ancillas during the interval is not part of this channel model.
-6. **No universal anisotropic coefficient is proved.** For $`a<b`$ the gap in (15) is open. Closing it would require a stronger global EB approximation than the isotropic Casimir factorization, not simply the local Gaussian argument.
+6. **No universal anisotropic coefficient is proved.** For $`a\lt b`$ the gap in (15) is open. Closing it would require a stronger global EB approximation than the isotropic Casimir factorization, not simply the local Gaussian argument.
 
 ## 7. Focused finite-spin check
 

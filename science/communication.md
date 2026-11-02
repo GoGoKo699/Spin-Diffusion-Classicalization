@@ -119,7 +119,7 @@ The constants are deliberately conservative. For moderate $`n`$, the displayed b
 
 At any fixed $`\nu\ge1`$ the classical deficit is bounded while the quantum rate vanishes. The same exact bounds also describe intermediate time scales.
 
-Let $`t_n=n^{-\alpha}`$ with fixed $`0<\alpha<1`$. Then $`nt_n=n^{1-\alpha}\ge1`$, and
+Let $`t_n=n^{-\alpha}`$ with fixed $`0\lt \alpha\lt 1`$. Then $`nt_n=n^{1-\alpha}\ge1`$, and
 $`g(x)=\log_2x+\log_2e+o(1)`$ as $`x\to\infty`$. Consequently
 
 ```math
@@ -136,7 +136,7 @@ This corollary follows from the finite bounds above; it does not require an addi
 
 ## 5. What remains distinct
 
-The negative witness expectation for every fixed $`\nu<1`$ establishes a sharp distance-to-EB boundary. It does not prove positive unassisted quantum capacity at every such $`\nu`$. A quantum-capacity phase boundary is a different question.
+The negative witness expectation for every fixed $`\nu\lt 1`$ establishes a sharp distance-to-EB boundary. It does not prove positive unassisted quantum capacity at every such $`\nu`$. A quantum-capacity phase boundary is a different question.
 
 The [residual-entanglement calculation](residual_entanglement.md) shows that some finite carriers can remain NPT beyond $`\nu=1`$ while the capacity upper bound tends to zero. Detecting an entangled Choi state, transmitting one state with high fidelity, and having a nonzero asymptotic quantum rate are different operational statements.
 

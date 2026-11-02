@@ -2,7 +2,7 @@
 
 [Project overview](../README.md) · [Scientific account](../science/README.md) · [Verification](../verification/README.md)
 
-A large spin can retain an accurate direction while its ability to preserve quantum information changes substantially. The learning route explains how to make that statement precise for every encoding in one irreducible spin, why the threshold occurs on an inverse-spin time scale, and how classical communication survives it.
+A large spin can retain an accurate direction while its ability to preserve quantum information changes substantially. The learning route explains how to make that statement precise for every encoding in one irreducible spin, why the isotropic threshold occurs on an inverse-spin time scale, and how classical communication survives it. Rank-two noise then tests the boundary of that argument: growing-excitation states connect it to the nonlinear sister model, while a local contraction and a global EB approximation remain separate obligations.
 
 The single educational anchor is **Alexander S. Holevo, _Quantum Systems, Channels, Information: A Mathematical Introduction_, second revised and expanded edition (2019)**. The [source bridge](ANCHOR.md) identifies the verified chapter locations, fixes the project's conventions, and connects the textbook topics to the spin-specific arguments. The tutorial supplies the explanations needed to enter the project; reading the entire book is not a prerequisite.
 
@@ -19,7 +19,7 @@ The single educational anchor is **Alexander S. Holevo, _Quantum Systems, Channe
 
 ## How the 30 milestones fit together
 
-The allocation follows the scientific dependencies. **Twelve background milestones** connect the spin carrier, entanglement, channels, probability, entropy, and coding into the operational question. **Eighteen narrative milestones** assemble the two sides of the theorem, derive its consequences, and test its scope. Each phase moves from individual objects and arguments toward a synthesis.
+The allocation follows the scientific dependencies. **Twelve background milestones** connect the spin carrier, entanglement, channels, probability, entropy, and coding into the operational question. **Eighteen narrative milestones** assemble the two sides of the theorem, derive its consequences, and test its scope, including the singular rank-two limit. Each phase moves from individual objects and arguments toward a synthesis.
 
 | Milestones | Part of the story |
 |---|---|
@@ -29,11 +29,15 @@ The allocation follows the scientific dependencies. **Twelve background mileston
 | M13–M18 | Build the EB comparator, compare rotation kernels uniformly, and extend the bound to later times. |
 | M19–M21 | Construct the two-level witness, evaluate its local limit, and establish the sharp boundary. |
 | M22–M25 | Constrain arbitrary recovery, retain classical bits, bound quantum capacity, and extend the separation across time scales. |
-| M26–M27 | Unequal diffusion strengths, deterministic rotations, and missing noise directions. |
+| M26–M27 | Unequal diffusion strengths and deterministic rotations; the rank-two growing-excitation contraction, reference witnesses and unresolved global scale. |
 | M28–M29 | Exact Choi partial transpose and the residual entanglement that can coexist with operational classicality. |
 | M30 | Whole-project synthesis: mechanism, contribution, attribution, and resource scope. |
 
 The map selects what is needed to understand the project as a whole. The canonical science pages retain the specialist lemmas and calculations behind each target. The tutorial follows this settled map and uses the exactly solvable qubit channel to connect physical preparation, noisy output, measurement, entanglement, and channel distance in one example.
+
+## The rank-two sister connection
+
+[Nonlinear-Diffusion-Entanglement](https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement) supplies conditional covariance, exceptional-path estimates and all-finite-time reference witnesses for the limiting nonlinear channel. The [rank-two spin account](../science/rank_two_diffusion.md) owns the controlled growing-excitation contraction and its finite-spin consequences. M27 and the corresponding tutorial section explain why $`n^{-2/3}`$ has no finite sharp coefficient for vanishing EB distance, and why a global sufficient regime at that scale remains open. The common Holevo anchor supports distinct learning routes in the two repositories.
 
 ## Three quantities to keep in view
 

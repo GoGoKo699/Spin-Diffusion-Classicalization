@@ -81,7 +81,7 @@ This norm controls every initial state, every external reference, and every enco
 e_{n/2}(\nu/n)\le \min\{1,2.4/n\}.
 ```
 
-For each fixed $`0\le\nu<1`$,
+For each fixed $`0\le\nu\lt 1`$,
 
 ```math
 \liminf_{n\to\infty}e_{n/2}(\nu/n)
@@ -116,7 +116,7 @@ For capacities, different uses undergo independent draws of the channel. A commo
 
 ## Interpretation of sharpness
 
-The theorem is sharp for the stated distance-to-EB criterion. For each fixed $`\nu<1`$, the subthreshold witness proves that entanglement survives for sufficiently large $`n`$; it does not determine the unassisted quantum capacity throughout that interval. Likewise, an $`O(1/n)`$ EB approximation does not make a finite-$`n`$ channel exactly EB. The residual-entanglement theorem makes this distinction quantitative.
+The theorem is sharp for the stated distance-to-EB criterion. For each fixed $`\nu\lt 1`$, the subthreshold witness proves that entanglement survives for sufficiently large $`n`$; it does not determine the unassisted quantum capacity throughout that interval. Likewise, an $`O(1/n)`$ EB approximation does not make a finite-$`n`$ channel exactly EB. The residual-entanglement theorem makes this distinction quantitative.
 
 All asymptotic statements specify which parameters are fixed. No result assumes that an approximate equality in a weak phase-space norm automatically holds in diamond norm.
 
