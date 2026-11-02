@@ -1,6 +1,6 @@
 # Anisotropic diffusion and deterministic rotations
 
-[Model](model.md) · [Threshold proof](classicalization.md) · [Communication](communication.md)
+[Model](model.md) · [Threshold proof](classicalization.md) · [Communication](communication.md) · [Rank-two diffusion](rank_two_diffusion.md)
 
 Unequal rotation-noise strengths preserve an inverse-spin operational boundary. Two-sided bounds locate it exactly when the two smallest diffusion strengths coincide, even if the third is arbitrarily stronger and fixed.
 
@@ -408,7 +408,7 @@ The trace inequality uses $`|\mathrm{Tr}(AM)|\le\mathrm{Tr}(A)\|M\|_{\mathrm{op}
 ## 6. Limits of the robustness claim
 
 1. **Fixed positive anisotropy matters.** For a fixed $`D>0`$, the EB upper bound has no condition-number prefactor, and the classical deficit at $`\tau=1/a`$ remains the finite constant $`g(\mathrm{Tr}D/(3a))`$. If $`a`$ depends on $`n`$ and tends to zero, that deficit can grow, and the advertised fixed-anisotropy separation must be reassessed.
-2. **Rank-deficient noise has a different limit.** The lower-bound proof remains valid for $`D\ge0`$. If $`a=0`$, the pole along the largest-eigenvalue axis has tangent rates $`0,b`$ and gives the strictly positive lower bound $`1/[2(1+\tau b)^{3/2}]`$ for every finite $`\tau`$. Thus bounded-rate rotations do not produce asymptotic EB proximity at any fixed inverse-spin time under rank-deficient $`D`$. No claim about its longer timescale is made here.
+2. **Rank-deficient noise has a different limit.** The lower-bound proof remains valid for $`D\ge0`$. If $`a=0`$, the pole along the largest-eigenvalue axis has tangent rates $`0,b`$ and gives the strictly positive lower bound $`1/[2(1+\tau b)^{3/2}]`$ for every finite $`\tau`$. Thus bounded-rate rotations do not produce asymptotic EB proximity at any fixed inverse-spin time under rank-deficient $`D`$. For fixed rank-two noise without an added Hamiltonian, the separate [growing-excitation contraction](rank_two_diffusion.md) strengthens this: vanishing distance requires $`n^{2/3}t_n\to\infty`$. An equal-positive-rate global bound proves sufficiency only in the weaker regime $`\sqrt n\,t_n\to\infty`$; matching sufficiency remains open.
 3. **Irreducibility is essential.** Collective noise on the full tensor product of distinguishable spins has noiseless multiplicity spaces. They are absent from $`\mathcal H_j`$ and are outside this theorem.
 4. **Uses must be independent for capacities.** A common rotation applied jointly to many carriers is a different communication channel. Equations (5) and (18) do not rule out relational or multiplicity encodings in that model.
 5. **No active intermediate correction.** Encoding and recovery at the two ends are unrestricted, but intervention with noiseless ancillas during the interval is not part of this channel model.

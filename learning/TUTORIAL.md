@@ -4,7 +4,7 @@
 
 A growing spin carrier can retain its direction and almost all its classical communication capacity while its quantum communication rate tends to zero. This tutorial develops the objects and mechanism behind that statement. The crucial comparison concerns the entire noisy channel, including inputs entangled with an external reference.
 
-The sections follow the settled M01–M30 map. Holevo's *Quantum Systems, Channels, Information* supplies the educational anchor: Chapters 3 and 6 for composite systems and channels, Chapters 7–8 for entropy and classical communication, Chapter 10 for quantum transmission, and Chapter 12 for a limited local Gaussian interpretation. These are the [verified chapter-level pointers](ANCHOR.md#verified-chapter-locations-and-their-role); the spin-specific claims and detailed proofs come from the linked scientific pages.
+The sections follow the settled M01–M30 map. Holevo's *Quantum Systems, Channels, Information* supplies the educational anchor: Chapters 3 and 6 for composite systems and channels, Chapters 7–8 for entropy and classical communication, Chapter 10 for quantum transmission, and Chapters 11–12 for constrained inputs, canonical transformations and the controlled local oscillator connection. These are the [verified chapter and preview-section pointers](ANCHOR.md#verified-chapter-locations-and-their-role); the spin-specific claims and detailed proofs come from the linked scientific pages.
 
 ## 1. The carrier, its reference, and its channel — M01–M03
 
@@ -416,7 +416,7 @@ C(\Phi_{t_n})\ge\alpha\log_2n-\log_2e+o(1),
 
 Thus the classical rate diverges across a range of shrinking times. The [communication proof](../science/communication.md) supplies the coding attribution, continuity theorem, and resource qualifications.
 
-## 9. Unequal noise strengths and deterministic rotations — M26–M27
+## 9. Unequal strengths, rotations and rank-two diffusion — M26–M27
 
 Replace isotropy by a fixed real symmetric positive-definite matrix $`D`$, with eigenvalues $`0<a\le b\le c`$:
 
@@ -456,6 +456,81 @@ Deterministic linear spin Hamiltonians $`H(s)=h(s)\cdot J`$ permit a stronger up
 is sufficient for the same $`2.4/n`$ EB approximation. Casimir centrality makes the factorization survive strong prescribed rotations. The unchanged local lower limit has a narrower assumption: rotation rates bounded independently of $`n`$. Fast spin-dependent rotations may change the transverse noise seen by the witness.
 
 The corresponding classical entropy bound uses $`(n/3)\int_0^T\mathrm{Tr}D(s)\,ds`$ as its argument of $`g`$. For fixed rank-deficient diffusion and bounded rotation rates, a transverse determinant vanishes and the lower witness remains positive at every fixed inverse-spin time. Nonlinear Hamiltonians and spin-dependent degenerating diffusion rates require separate analysis. The [anisotropic proof](../science/anisotropic_diffusion.md) gives the factorization, Gaussian integral, entropy averaging, and precise control scope.
+
+### A missing axis changes the question
+
+Take fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0<b\le c`$, and choose the pole along the $`c`$ axis. At every fixed inverse-spin time $`t=\tau/n`$, the tangent rates are $`0,b`$, so the earlier two-level witness remains positive:
+
+```math
+\liminf_{n\to\infty}e_{n/2,D}(\tau/n)
+\ge\frac1{2(1+b\tau)^{3/2}}>0.
+```
+
+This rules out an inverse-spin threshold for rank-two noise. It does not locate a longer sufficient scale. Setting the missing rate to zero in an upper bound containing $`1/a`$ cannot answer that question.
+
+The next test uses states whose excitation grows with the spin. Let $`N=j-J_z`$, and identify its finite ladder with oscillator number states. Squeeze a fixed smooth oscillator input using
+
+```math
+q=n^{1/6}Q,\qquad p=n^{-1/6}P,
+\qquad [Q,P]=i,\qquad t=s n^{-2/3}.
+```
+
+The large and small transverse fluctuations balance: $`J_y\simeq\sqrt{n/2}\,p`$ is of order $`n^{1/3}`$, and $`J_z-j=-N\simeq-n^{1/3}Q^2/2`$ has the same order. Their double commutators therefore survive on the proposed time scale. The limiting generator is
+
+```math
+\mathcal G=-\frac b2[P,[P,\cdot]]
+-c[Q^2/2,[Q^2/2,\cdot]].
+```
+
+The squeeze raises mean physical excitation to $`O(n^{1/3})`$. It is still small compared with $`n`$, but it is not the bounded-excitation limit used for the isotropic two-level proof. [The rank-two proof](../science/rank_two_diffusion.md) controls the Holstein–Primakoff remainder and excitation tails, normalizes the projected input span by an isometry, and bounds output trace error by $`O(n^{-2/3})`$ on each fixed finite Schwartz input span, finite reference and bounded interval of $`s`$. Schwartz vectors are smooth wavefunctions whose derivatives decay faster than any inverse power; their moments control the unbounded operators and discarded tails. The error constant depends on this span and interval. There is no bound uniform over the whole spin Hilbert space or scaled times growing with $`n`$.
+
+### What the nonlinear sister contributes
+
+Exchange the canonical quadratures. The limit becomes the model studied in [Nonlinear-Diffusion-Entanglement](https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement), with position-generated diffusion strength $`D_{\mathrm{osc}}=b/2`$, quadratic-noise strength $`\kappa=c`$, and $`\eta=\omega=0`$. Conditioning mathematically on the quadratic Brownian noise produces a Gaussian displacement channel followed by a shear. Its covariance determinant is
+
+```math
+\det V=8D_{\mathrm{osc}}^2\kappa s^3 Z
+=2b^2c\,s^3 Z,
+```
+
+where $`Z`$ is the integrated square of a Brownian path after subtraction of its time average. The one-mode Gaussian EB criterion tests whether $`\sqrt{\det V}\ge1`$. The canonical cubic variable is $`D_{\mathrm{osc}}^2\kappa s^3=(b^2c/4)s^3`$, equivalent to $`(b^2c/4)n^2t^3`$ in spin time.
+
+The conditional channel can be EB on most paths. The unconditional mixture is generally non-Gaussian, and a collection of non-EB conditional channels need not remain non-EB after averaging. The sister therefore proves a separate finite-energy, qubit-reference NPT witness for the unconditional output at every finite scaled time. No observer receives a Brownian path or conditions their experiment on it; conditioning is part of the proof.
+
+The controlled contraction transfers each such witness into the original finite spin. For every fixed finite $`s>0`$,
+
+```math
+\liminf_{n\to\infty}
+ e_{n/2,D}(s n^{-2/3})>0.
+```
+
+The positive constant depends on $`s,b,c`$ and the input/test packets, and can be extremely small. This is stronger than failure of one chosen detector: it rules out a finite sharp coefficient $`s_*`$ above which the EB distance would vanish. Monotonicity in time implies that $`n^2t_n^3\to\infty`$ is necessary for vanishing distance. Its sufficiency is still open.
+
+An independent finite-spin bound makes the test concrete. Prepare a Bell state from the normalized finite-ladder projections of squeezed oscillator $`|0\rangle`$ and $`|1\rangle`$. Their opposite parity makes the two code states exactly orthogonal. For $`b=c=1`$, the sum of noisy-spin variances is $`(13/16)n^{2/3}+O(n^{1/3})`$. Positivity of the double-commutator generator on Hilbert–Schmidt space gives
+
+```math
+F_e(t)\ge1-2t[\operatorname{Var}(J_y)+\operatorname{Var}(J_z)],
+\qquad
+\liminf_{n\to\infty}e_{n/2,D}(s n^{-2/3})
+\ge[1/2-13s/8]_+.
+```
+
+Here $`F_e`$ is the overlap of the noisy encoded Bell state with that same Bell state, and the variances are evaluated in the equal mixture of the two code states. This conservative lower bound follows directly at finite spin, independently of the contraction. Exact finite-spin evolution gives a negative reference partial-transpose witness near $`-0.0455`$ at $`n=128,s=1`$ and $`-0.0452`$ at $`n=512,s=1`$. These numerical values test the original spin generator and a particular normalized input. A nonnegative result for that detector at a later time would only mean that the detector stopped witnessing entanglement.
+
+### Why a global EB approximation remains separate
+
+The oscillator's exceptional-path method bounds its own unrestricted channel distance: replace bad conditional components by EB maps and pay their probability. In the exact spin problem, conditioning on one noisy rotation leaves another spin generator rotating with the path. Its time-ordered commutators are spin operators, not scalar phases on the entire carrier. The local Gaussian replacement therefore does not define a global finite-spin EB channel by itself.
+
+A weaker global result is available for equal positive rates $`b=c`$. Compose the actual spin diffusion with the coherent-state measure-and-prepare channel $`\mathcal B_j`$. This is an EB map on the whole spin, and subelliptic heat-kernel smoothing yields, at sufficiently small positive times,
+
+```math
+e_{j,D}(t)\le
+\min\{1,C_b/(\sqrt n\,t)\}.
+```
+
+Thus $`t_n\sqrt n\to\infty`$ is a proved sufficient regime in that equal-rate family. It is later than the candidate $`n^{-2/3}`$ crossover, so the two statements leave a real gap. Closing it requires a globally CP/TP EB comparator and a diamond-error estimate uniform over every spin encoding and reference, including localization disturbance if patches are used. It cannot be inferred by multiplying a local contraction error with an oscillator exceptional-path bound.
+
+Commutator-generated noise spreading and delayed powers of time are established hypoelliptic mechanisms: Baudoin–Bonnefont analyze rank-two SU(2) heat flow, Schubert–Plastow analyze Hörmander-delayed decoherence, and Speed–Lyu–Schubert introduce and solve the nonlinear diffusion model. The [research source map](../references/RELATED_WORK.md) distinguishes these ingredients from the controlled spin transfer and its operational lower consequence. Holevo's verified §§6.4, 11.1, 11.5, 11.7, 12.2, 12.4.4 and 12.6.2 supply the channel, convergence and covariance vocabulary; they are not a textbook proof of the new contraction or the missing global bound.
 
 ## 10. Exact residual entanglement — M28–M29
 
@@ -499,10 +574,10 @@ The singlet witness also yields $`e_j(t)\ge-d\lambda_{0,n}(t)/2`$ when the eigen
 
 ## 11. The combined mechanism and its attribution — M30
 
-The global and local arguments do different jobs. Comparing rotation distributions gives a uniform channel approximation that protects the conclusion against every encoding within the irreducible carrier. A two-level reference witness prevents that approximation below the limiting boundary. Entropy then quantifies the surviving classical messages, while capacity continuity constrains quantum transmission. Anisotropy tests which parts rely on isotropy; the singlet calculation exposes the difference between operational approximation and exact entanglement death.
+The global and local arguments do different jobs. Comparing rotation distributions gives a uniform channel approximation that protects the conclusion against every encoding within the irreducible carrier. A two-level reference witness prevents that approximation below the limiting boundary. Entropy then quantifies the surviving classical messages, while capacity continuity constrains quantum transmission. Anisotropy tests which parts rely on isotropy; the singular rank-two case changes the excitation and time scale, transferring a nonlinear reference witness without transferring a global upper bound. The singlet calculation exposes the further difference between operational approximation and exact entanglement death.
 
 Several ingredients are established prior work. Aschieri–Ruba–Solovej supply the coherent-channel identities. Berezin–heat comparisons, group-to-channel norm transfer, and spin diffusion have substantial precedents, including Ioos and collaborators, Bardet and collaborators, and Brody–Graefe–Melanathuru. EB characterizations, classical coding, and quantum-capacity continuity are imported tools. The [source map](../references/RELATED_WORK.md#established-ingredients-and-the-contribution-of-this-analysis) records these dependencies and the closest overlaps.
 
-The analysis here combines the explicit shrinking-time, dimension-uniform comparison with the matching reference witness, communication consequences, qualified robustness results, and odd-spin residual asymptotics. The [verification record](../verification/README.md) provides reproducible finite checks; analytical estimates establish the asymptotic claims. Remaining questions include the general anisotropic coefficient, exact finite-spin PPT and EB times, and the quantum-capacity boundary below $`\nu=1`$.
+The analysis here combines the explicit shrinking-time, dimension-uniform comparison with the matching reference witness, communication consequences, qualified robustness results, and odd-spin residual asymptotics. The [verification record](../verification/README.md) provides reproducible finite checks; analytical estimates establish the asymptotic claims. Remaining questions include the general positive-anisotropy coefficient, a sharper global rank-two EB approximation, exact finite-spin PPT and EB times, and the quantum-capacity boundary below $`\nu=1`$. The rank-two reference witness makes no positive-capacity or fixed-quality storage claim.
 
 The common result is a separation within one specified physical carrier: almost maximal classical communication can persist while every encoding faces a quantum-transmission converse. The [milestone map](MILESTONES.md), [educational anchor](ANCHOR.md), and [scientific route](../science/README.md) provide complementary paths through the definitions, background, and complete proofs.

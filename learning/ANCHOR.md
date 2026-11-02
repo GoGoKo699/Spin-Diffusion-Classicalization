@@ -4,9 +4,9 @@
 
 The single educational anchor for this project is **Alexander S. Holevo, _Quantum Systems, Channels, Information: A Mathematical Introduction_, second revised and expanded edition, De Gruyter, 2019**. The [publisher's book record](https://www.degruyterbrill.com/document/doi/10.1515/9783110642490/html) identifies the edition; the book DOI is [10.1515/9783110642490](https://doi.org/10.1515/9783110642490).
 
-The book provides the language for connecting physical noise, entanglement, and communication. This page maps that language to one irreducible spin undergoing angular diffusion. The project-specific channel estimates and their proofs are in the linked scientific account; research-paper attribution remains in the separate [source map](../references/RELATED_WORK.md).
+The book provides the language for connecting physical noise, entanglement, and communication. This page maps that language to one irreducible spin undergoing angular diffusion and its controlled rank-two connection to [Nonlinear-Diffusion-Entanglement](https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement), which uses the same single anchor. The project-specific channel estimates and their proofs are in the linked scientific account; research-paper attribution remains in the separate [source map](../references/RELATED_WORK.md).
 
-**Source access and precision.** Chapter titles and starting pages below were checked against the publisher's [contents](https://www.degruyterbrill.com/document/doi/10.1515/9783110642490-toc/html) and publicly indexed publisher chapter metadata on 23 October 2026. Full chapter text was unavailable for inspection. Consequently, the reading pointers remain at chapter level; no subsection, theorem, exercise, or equation number from the book is asserted. The notation below is the repository's convention, not a claim to reproduce Holevo's exact symbols or normalization.
+**Source access and precision.** Chapter titles and starting pages below were checked against the publisher's [contents](https://www.degruyterbrill.com/document/doi/10.1515/9783110642490-toc/html) and publicly indexed publisher chapter metadata on 23 October 2026. Full chapter text was unavailable for inspection. The retained chapter map below records that check. For the rank-two bridge, the [publisher-distributed preview](https://api.pageplace.de/preview/DT0400.9783110642490_A39059069/preview-9783110642490_A39059069.pdf), contents pp. XI–XV, was also inspected on 2 November 2026: §6.4 starts on p. 110; §§11.1, 11.5 and 11.7 on pp. 233, 243 and 248; §§12.2.1–12.2.3 on pp. 265–269; §§12.4.4 and 12.6.2 on pp. 294 and 324. These are verified topic locations, not inspected theorem statements. No theorem, exercise, or equation number from the unavailable chapter bodies is asserted. The notation below is the repository's convention, not a claim to reproduce Holevo's exact symbols or normalization.
 
 ## Verified chapter locations and their role
 
@@ -21,7 +21,7 @@ The page numbers are chapter starts in the selected 2019 edition. The final two 
 | 10. Transmission of Quantum Information | 187 | Preservation and transmission of quantum information. | How does a uniform channel approximation constrain all encodings and the regularized quantum capacity? |
 | 12. Gaussian Systems | 255 | Gaussian quantum systems as a local description. | Which features of the shrinking-time spin problem have an oscillator interpretation, and which require a global finite-spin proof? |
 
-These six locations are verified by the [publisher's table of contents](https://www.degruyterbrill.com/document/doi/10.1515/9783110642490-toc/html). They form a conceptual map, independent of any order of exercises or research milestones.
+These six chapter locations are verified by the [publisher's table of contents](https://www.degruyterbrill.com/document/doi/10.1515/9783110642490-toc/html). They form a conceptual map, independent of any order of exercises or research milestones.
 
 ## The project in the language of channels
 
@@ -64,7 +64,7 @@ Use this table when translating textbook formulas into the project. It fixes the
 |---|---|---|
 | State and channel | $`\rho\ge0`$, $`\mathrm{Tr}\rho=1`$; $`\Phi`$ is completely positive and trace preserving. | $`\Phi`$ acts on states. Its Heisenberg dual satisfies $`\mathrm{Tr}[\Phi(\rho)X]=\mathrm{Tr}[\rho\Phi^*(X)]`$. |
 | Size variables | $`n=2j`$, $`d=n+1`$; use $`m`$ for the number of independent channel uses. | The spin-size limit $`n\to\infty`$ is different from coding over $`m\to\infty`$ uses at each fixed $`n`$. |
-| Time | $`\nu=nt`$. For $`d\rho/ds=\gamma\sum_a\mathcal D[J_a](\rho)`$, $`t=\gamma s/2`$. | A factor of two in the Lindblad generator changes the physical-time conversion. |
+| Time | Isotropic scale $`\nu=nt`$; rank-two scale $`s=n^{2/3}t`$. For physical time $`u`$ with $`d\rho/du=\gamma\sum_a\mathcal D[J_a](\rho)`$, $`t=\gamma u/2`$. | A factor of two in the Lindblad generator changes the physical-time conversion. |
 | Distances | Trace distance is $`\frac12\Vert \rho-\sigma\Vert _1`$; channel distance is one half of the diamond norm. | A bound for the full diamond norm has twice the numerical error parameter. |
 | Logarithms | Entropies and classical rates use $`\log_2`$; $`Q`$ is in qubits per use. | If a source uses natural logarithms, divide entropy expressions by $`\ln2`$ to obtain bits. The book's logarithm convention was not verified from full text here. |
 | Coherent-state measure | $`d\Omega`$ has total mass one; $`d\int_{S^2}\lvert\Omega\rangle\langle\Omega\rvert\,d\Omega=I`$. | The POVM density includes the factor $`d=n+1`$. Haar measure on the rotation group is also normalized. |
@@ -85,7 +85,7 @@ The transpose is on the second factor in the displayed $`J_z`$ basis. A conventi
 
 ## Finite carrier and local oscillator: two different uses
 
-Chapter 12 is a useful conceptual bridge, but the project uses a Gaussian limit and a number-ladder entropy bound for different purposes.
+Chapter 12 is a useful conceptual bridge. The project uses bounded-excitation fluctuations, a growing-excitation nonlinear contraction and a number-ladder entropy bound for different purposes. Chapter 11 and its input-constraint distinction help keep these local approximations separate from an unrestricted channel norm.
 
 ### Local fluctuations near a coherent pole
 
@@ -114,6 +114,28 @@ has an exponential distribution of mean $`\nu`$. Its elementary expectations det
 In oscillator notation, the same local scaling corresponds to random quadrature shifts with covariance $`\nu I_2`$, or a complex displacement amplitude $`\alpha=(\delta Q+i\delta P)/\sqrt2`$ with $`\mathbb E|\alpha|^2=\nu`$. These conventions explain the noise parameter physically. They are a translation of the project's scaling, not a verified equation citation from Holevo.
 
 The global upper bound has a different source: it compares probability densities on the rotation group before choosing the spin representation. That is why it controls arbitrary encodings, including states outside the local pole region.
+
+### Rank-two diffusion requires growing excitation
+
+For fixed rank-two noise $`D=\mathrm{diag}(0,b,c)`$, $`0<b\le c`$, the inverse-spin witness remains positive at every fixed $`nt`$. A longer scale therefore needs a different test. Near the $`c`$ axis, squeeze the oscillator coordinates by
+
+```math
+q=n^{1/6}Q,\qquad p=n^{-1/6}P,
+\qquad t=s n^{-2/3}.
+```
+
+These inputs have mean excitation $`O(n^{1/3})`$. The controlled local contraction has generator
+
+```math
+\mathcal G=-\frac b2\operatorname{ad}_P^2
+-c\operatorname{ad}_{Q^2/2}^2.
+```
+
+Exchanging quadratures identifies the sister model's parameters $`D_{\mathrm{osc}}=b/2`$, $`\kappa=c`$, $`\eta=\omega=0`$. The [rank-two account](../science/rank_two_diffusion.md) supplies the exact spin embedding, projection normalization, generator estimates and trace-norm convergence on fixed finite Schwartz input spans and fixed finite scaled-time intervals. The error constants depend on that span and interval; this is not convergence in the unrestricted diamond norm.
+
+The sister model is conditionally Gaussian after a Brownian shear is fixed. Its displacement covariance has determinant $`8D_{\mathrm{osc}}^2\kappa s^3 Z`$, where $`Z`$ is a nonnegative centered-Brownian quadratic functional. The Gaussian EB criterion applies to each conditional channel. The unconditional mixture is generally non-Gaussian, and environmental paths are not supplied to a receiver. Holevo's Gaussian-system topics explain the covariance language; the stochastic decomposition, finite-spin contraction and estimates require the cited research accounts.
+
+The sister's finite-energy reference witness survives every fixed finite $`s`$. Transferring that witness gives a positive limiting lower bound on the spin channel's distance to EB for every such $`s`$. Thus $`n^{-2/3}`$ is a candidate crossover scale without a finite sharp coefficient for vanishing distance. A global spin EB approximation on this scale is still open. The proved weaker upper route for equal positive rates requires $`t\sqrt n\to\infty`$; it uses a globally defined spin measure-and-prepare comparator and subelliptic smoothing, rather than the local contraction.
 
 ### An exact entropy bound without a Gaussian-state assumption
 
@@ -160,7 +182,8 @@ The book's chapter map organizes the prerequisites. The following calculations a
 | Prove the matching lower side | [Classicalization, Section 4](../science/classicalization.md#4-a-two-level-converse-below-the-boundary) | Exact two-level matrix elements, a controlled Gaussian coordinate limit, and a separability witness for every fixed $`\nu<1`$. |
 | Convert channel proximity into communication statements | [Communication](../science/communication.md) | Arbitrary encoder/decoder fidelity bound, exact coherent-ensemble entropy estimate, and an explicit regularized quantum-capacity bound. |
 | Control departures from isotropy | [Anisotropic diffusion](../science/anisotropic_diffusion.md) | Casimir factorization, tangent-plane Gaussian witness, capacity bounds, and the precise gap left for unequal smallest diffusion rates. |
+| Control the singular rank-two limit | [Rank-two diffusion](../science/rank_two_diffusion.md) | Growing-excitation contraction, finite-reference lower witnesses, a weaker equal-rate global EB bound and the unresolved global sufficiency question. |
 | Distinguish approximation from exact entanglement death | [Residual entanglement](../science/residual_entanglement.md) | Normalized Choi conventions, the exact singlet partial-transpose eigenvalue, its odd-$`n`$ asymptotics, and the limits of that one-sector witness. |
 | Keep the physical conclusion within its assumptions | [Interpretation](../science/interpretation.md) | Why classical directions and classical rates can survive, and which additional resources change the question. |
 
-None of these spin-specific claims is attributed to an uninspected theorem in the textbook. The chapter locations are a verified reading guide; the linked proofs, definitions, and research citations make the source-to-project connection explicit.
+The controlled contraction and its reference-witness consequence are shared with the sister project; this repository owns their finite-spin proof, while the sister owns its conditional-covariance and finite-energy oscillator results. None of these spin-specific claims is attributed to an uninspected theorem in the textbook. The chapter locations are a verified reading guide; the linked proofs, definitions, and research citations make the source-to-project connection explicit.

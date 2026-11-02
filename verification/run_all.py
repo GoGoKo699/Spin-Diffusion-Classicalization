@@ -1,4 +1,4 @@
-"""Run the three bounded scientific checks and record versions and outputs."""
+"""Run the four bounded scientific checks and record versions and outputs."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ import time
 from check_core import run_checks as check_core
 from check_anisotropic import run_checks as check_anisotropic
 from check_residual_npt import run_checks as check_residual_npt
+from check_rank_two import run_checks as check_rank_two
 
 
 def write_manifest(destination, manifest):
@@ -55,7 +56,8 @@ def main():
     write_manifest(manifest_path, manifest)
     for name, function in (("core", check_core),
                            ("anisotropic", check_anisotropic),
-                           ("residual_npt", check_residual_npt)):
+                           ("residual_npt", check_residual_npt),
+                           ("rank_two", check_rank_two)):
         print(f"Running {name} checks...", flush=True)
         before = time.monotonic()
         manifest["active_check"] = name

@@ -1,0 +1,125 @@
+{
+  "scope": "File targets, exact M01\u2013M30 IDs and README reciprocity; no scientific or hosted-rendering verdict",
+  "all_assertions_passed": true,
+  "reciprocal_checkout_checked": true,
+  "reports": [
+    {
+      "repository": "Spin-Diffusion-Classicalization",
+      "local_link_count": 252,
+      "missing_local_links": [],
+      "milestone_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28",
+        "M29",
+        "M30"
+      ],
+      "milestone_count": 30,
+      "readme_sister_link_present": true,
+      "counterpart_file_links_checked": [
+        {
+          "source": "learning/MILESTONES.md",
+          "target": "https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/blob/9c0ee02e018cf6940bcbb7916a666495331e8852/science/conditional_gaussian.md",
+          "local_counterpart": "science/conditional_gaussian.md"
+        },
+        {
+          "source": "learning/MILESTONES.md",
+          "target": "https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/blob/9c0ee02e018cf6940bcbb7916a666495331e8852/science/exact_threshold.md",
+          "local_counterpart": "science/exact_threshold.md"
+        },
+        {
+          "source": "science/rank_two_diffusion.md",
+          "target": "https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/blob/9c0ee02e018cf6940bcbb7916a666495331e8852/science/conditional_gaussian.md",
+          "local_counterpart": "science/conditional_gaussian.md"
+        },
+        {
+          "source": "science/rank_two_diffusion.md",
+          "target": "https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/blob/9c0ee02e018cf6940bcbb7916a666495331e8852/science/cubic_distance.md",
+          "local_counterpart": "science/cubic_distance.md"
+        },
+        {
+          "source": "science/rank_two_diffusion.md",
+          "target": "https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement/blob/9c0ee02e018cf6940bcbb7916a666495331e8852/science/exact_threshold.md",
+          "local_counterpart": "science/exact_threshold.md"
+        }
+      ]
+    },
+    {
+      "repository": "Nonlinear-Diffusion-Entanglement",
+      "local_link_count": 173,
+      "missing_local_links": [],
+      "milestone_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28",
+        "M29",
+        "M30"
+      ],
+      "milestone_count": 30,
+      "readme_sister_link_present": true,
+      "counterpart_file_links_checked": [
+        {
+          "source": "references/RELATED_WORK.md",
+          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/SPIN_SISTER_COMMIT/science/rank_two_diffusion.md",
+          "local_counterpart": "science/rank_two_diffusion.md"
+        },
+        {
+          "source": "science/spin_contraction.md",
+          "target": "https://github.com/GoGoKo699/Spin-Diffusion-Classicalization/blob/SPIN_SISTER_COMMIT/science/rank_two_diffusion.md",
+          "local_counterpart": "science/rank_two_diffusion.md"
+        }
+      ]
+    }
+  ],
+  "status": "passed"
+}

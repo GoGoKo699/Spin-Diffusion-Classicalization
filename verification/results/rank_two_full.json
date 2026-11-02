@@ -1,0 +1,878 @@
+{
+  "model": "j=n/2; generator -ad_Jy^2-ad_Jz^2; t=s*n^(-2/3)",
+  "code": "Normalized finite-ladder S(log(n)/6)|0>, S(log(n)/6)|1>; qubit reference",
+  "scope": "Exact finite-spin witness and local generator/vector checks; no global EB upper or optimized diamond norm",
+  "all_assertions_passed": true,
+  "full_witness_grid": true,
+  "independent_generator_controls": [
+    {
+      "n": 1,
+      "t": 0,
+      "full_generator_error": 1.2412670766236366e-16,
+      "trace_error": 3.3306888603030323e-16,
+      "output_min_eigenvalue": -1.1102230246251565e-16
+    },
+    {
+      "n": 1,
+      "t": 0.03,
+      "full_generator_error": 1.2412670766236366e-16,
+      "trace_error": 3.3306888603030323e-16,
+      "output_min_eigenvalue": 0.016529271348001112
+    },
+    {
+      "n": 1,
+      "t": 0.7,
+      "full_generator_error": 1.5700924586837752e-16,
+      "trace_error": 3.3306888603030323e-16,
+      "output_min_eigenvalue": 0.2635683211123033
+    },
+    {
+      "n": 2,
+      "t": 0,
+      "full_generator_error": 4.934426949698985e-16,
+      "trace_error": 6.662513699125169e-16,
+      "output_min_eigenvalue": -2.7303458078176696e-16
+    },
+    {
+      "n": 2,
+      "t": 0.03,
+      "full_generator_error": 4.606923918098424e-16,
+      "trace_error": 6.662513699125169e-16,
+      "output_min_eigenvalue": 0.003907697900894243
+    },
+    {
+      "n": 2,
+      "t": 0.7,
+      "full_generator_error": 3.015526256401336e-16,
+      "trace_error": 6.662513699125169e-16,
+      "output_min_eigenvalue": 0.13519281795036645
+    },
+    {
+      "n": 3,
+      "t": 0,
+      "full_generator_error": 6.72339075223201e-16,
+      "trace_error": 8.882442905918585e-16,
+      "output_min_eigenvalue": -4.2500899641379283e-16
+    },
+    {
+      "n": 3,
+      "t": 0.03,
+      "full_generator_error": 5.183544167520175e-16,
+      "trace_error": 7.772313974022533e-16,
+      "output_min_eigenvalue": 0.0022654971269420424
+    },
+    {
+      "n": 3,
+      "t": 0.7,
+      "full_generator_error": 4.727582981442167e-16,
+      "trace_error": 9.992592745220658e-16,
+      "output_min_eigenvalue": 0.15479534971977588
+    },
+    {
+      "n": 4,
+      "t": 0,
+      "full_generator_error": 7.223102968844821e-16,
+      "trace_error": 4.441108490844638e-16,
+      "output_min_eigenvalue": -5.051077435390251e-16
+    },
+    {
+      "n": 4,
+      "t": 0.03,
+      "full_generator_error": 4.566130289149005e-16,
+      "trace_error": 2.220878802311906e-16,
+      "output_min_eigenvalue": 0.0013090927666074839
+    },
+    {
+      "n": 4,
+      "t": 0.7,
+      "full_generator_error": 3.3471342248659513e-16,
+      "trace_error": 1.1110882779216384e-16,
+      "output_min_eigenvalue": 0.1359594174229409
+    },
+    {
+      "n": 7,
+      "t": 0,
+      "full_generator_error": 6.17838865167032e-16,
+      "trace_error": 1.306628259053209e-17,
+      "output_min_eigenvalue": -3.0924357830344065e-16
+    },
+    {
+      "n": 7,
+      "t": 0.03,
+      "full_generator_error": 4.232796376010767e-16,
+      "trace_error": 2.2242871738390455e-16,
+      "output_min_eigenvalue": 0.0018761105892366053
+    },
+    {
+      "n": 7,
+      "t": 0.7,
+      "full_generator_error": 1.6489889945945345e-15,
+      "trace_error": 4.218867727458377e-15,
+      "output_min_eigenvalue": 0.07724458578634597
+    }
+  ],
+  "max_full_generator_error": 1.6489889945945345e-15,
+  "finite_spin_witnesses": [
+    {
+      "n": 16,
+      "scaled_time_s": 0.1,
+      "time_t": 0.015749013123685915,
+      "pt_block_min": -0.4039997482755122,
+      "witness_expectation": -0.40399974827551216,
+      "distance_lower_from_witness": 0.40399974827551216,
+      "entanglement_fidelity": 0.868190091085441,
+      "fidelity_tangent_lower": 0.8500705425923607,
+      "distance_lower_from_tangent": 0.3500705425923607,
+      "variance_sum": 4.759963568198158,
+      "variance_sum_over_n_two_thirds": 0.7496472870381963,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.22917208304643624,
+        1.687448921527103
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999446418194,
+        0.9999955477514428
+      ],
+      "tail_at_excitation_n_over_2": [
+        0.00035831993184055704,
+        0.002738141620098663
+      ],
+      "trace_error": 4.3298697960381105e-15,
+      "hermiticity_error": 5.229623856115348e-31,
+      "population_output_min_eigenvalue": 2.426372661256201e-11
+    },
+    {
+      "n": 16,
+      "scaled_time_s": 0.5,
+      "time_t": 0.07874506561842957,
+      "pt_block_min": -0.17334286590247033,
+      "witness_expectation": -0.17334286590247036,
+      "distance_lower_from_witness": 0.17334286590247036,
+      "entanglement_fidelity": 0.5526005279238834,
+      "fidelity_tangent_lower": 0.2503527129618037,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 4.759963568198158,
+      "variance_sum_over_n_two_thirds": 0.7496472870381963,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.22917208304643624,
+        1.687448921527103
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999446418194,
+        0.9999955477514428
+      ],
+      "tail_at_excitation_n_over_2": [
+        0.00035831993184055704,
+        0.002738141620098663
+      ],
+      "trace_error": 6.106226635438361e-15,
+      "hermiticity_error": 2.675715221586608e-31,
+      "population_output_min_eigenvalue": 9.667396510753012e-07
+    },
+    {
+      "n": 16,
+      "scaled_time_s": 1.0,
+      "time_t": 0.15749013123685915,
+      "pt_block_min": -0.044429406987331915,
+      "witness_expectation": -0.044429406987331915,
+      "distance_lower_from_witness": 0.044429406987331915,
+      "entanglement_fidelity": 0.3636654973188133,
+      "fidelity_tangent_lower": -0.49929457407639255,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 4.759963568198158,
+      "variance_sum_over_n_two_thirds": 0.7496472870381963,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.22917208304643624,
+        1.687448921527103
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999446418194,
+        0.9999955477514428
+      ],
+      "tail_at_excitation_n_over_2": [
+        0.00035831993184055704,
+        0.002738141620098663
+      ],
+      "trace_error": 8.215650382226158e-15,
+      "hermiticity_error": 1.8661349379577438e-31,
+      "population_output_min_eigenvalue": 3.672139982260539e-05
+    },
+    {
+      "n": 16,
+      "scaled_time_s": 2.0,
+      "time_t": 0.3149802624737183,
+      "pt_block_min": 0.04224644029929023,
+      "witness_expectation": 0.04224644029929022,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.20311297129438416,
+      "fidelity_tangent_lower": -1.998589148152785,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 4.759963568198158,
+      "variance_sum_over_n_two_thirds": 0.7496472870381963,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.22917208304643624,
+        1.687448921527103
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999446418194,
+        0.9999955477514428
+      ],
+      "tail_at_excitation_n_over_2": [
+        0.00035831993184055704,
+        0.002738141620098663
+      ],
+      "trace_error": 1.1324274851176597e-14,
+      "hermiticity_error": 5.494960080677292e-32,
+      "population_output_min_eigenvalue": 0.0009061890363612642
+    },
+    {
+      "n": 32,
+      "scaled_time_s": 0.1,
+      "time_t": 0.009921256574801248,
+      "pt_block_min": -0.40326969049118083,
+      "witness_expectation": -0.40326969049118083,
+      "distance_lower_from_witness": 0.40326969049118083,
+      "entanglement_fidelity": 0.8650978547913422,
+      "fidelity_tangent_lower": 0.8459671705083798,
+      "distance_lower_from_tangent": 0.3459671705083798,
+      "variance_sum": 7.762768170054402,
+      "variance_sum_over_n_two_thirds": 0.7701641474581009,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.3724455903322913,
+        2.1173366656705217
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999630157,
+        0.9999999965524826
+      ],
+      "tail_at_excitation_n_over_2": [
+        6.634040265071573e-06,
+        8.551893843137627e-05
+      ],
+      "trace_error": 1.1102230246251565e-16,
+      "hermiticity_error": 5.405373973331259e-31,
+      "population_output_min_eigenvalue": 8.777908065678509e-18
+    },
+    {
+      "n": 32,
+      "scaled_time_s": 0.5,
+      "time_t": 0.04960628287400624,
+      "pt_block_min": -0.17265005104796274,
+      "witness_expectation": -0.17265005104796274,
+      "distance_lower_from_witness": 0.17265005104796274,
+      "entanglement_fidelity": 0.5454516928861514,
+      "fidelity_tangent_lower": 0.2298358525418992,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 7.762768170054402,
+      "variance_sum_over_n_two_thirds": 0.7701641474581009,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.3724455903322913,
+        2.1173366656705217
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999630157,
+        0.9999999965524826
+      ],
+      "tail_at_excitation_n_over_2": [
+        6.634040265071573e-06,
+        8.551893843137627e-05
+      ],
+      "trace_error": 2.55351295663786e-15,
+      "hermiticity_error": 3.248253533910024e-31,
+      "population_output_min_eigenvalue": 2.640541778147001e-10
+    },
+    {
+      "n": 32,
+      "scaled_time_s": 1.0,
+      "time_t": 0.09921256574801247,
+      "pt_block_min": -0.045325539893225006,
+      "witness_expectation": -0.045325539893225006,
+      "distance_lower_from_witness": 0.045325539893225006,
+      "entanglement_fidelity": 0.3559821034591499,
+      "fidelity_tangent_lower": -0.5403282949162016,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 7.762768170054402,
+      "variance_sum_over_n_two_thirds": 0.7701641474581009,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.3724455903322913,
+        2.1173366656705217
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999630157,
+        0.9999999965524826
+      ],
+      "tail_at_excitation_n_over_2": [
+        6.634040265071573e-06,
+        8.551893843137627e-05
+      ],
+      "trace_error": 4.9960036108132044e-15,
+      "hermiticity_error": 1.8158804112810014e-31,
+      "population_output_min_eigenvalue": 8.465630780360389e-08
+    },
+    {
+      "n": 32,
+      "scaled_time_s": 2.0,
+      "time_t": 0.19842513149602495,
+      "pt_block_min": 0.038573243162912496,
+      "witness_expectation": 0.038573243162912496,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.19580515510563173,
+      "fidelity_tangent_lower": -2.080656589832403,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 7.762768170054402,
+      "variance_sum_over_n_two_thirds": 0.7701641474581009,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.3724455903322913,
+        2.1173366656705217
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999630157,
+        0.9999999965524826
+      ],
+      "tail_at_excitation_n_over_2": [
+        6.634040265071573e-06,
+        8.551893843137627e-05
+      ],
+      "trace_error": 9.769962616701378e-15,
+      "hermiticity_error": 1.470889810973413e-31,
+      "population_output_min_eigenvalue": 1.86569447969291e-05
+    },
+    {
+      "n": 64,
+      "scaled_time_s": 0.1,
+      "time_t": 0.006250000000000002,
+      "pt_block_min": -0.40266331458717575,
+      "witness_expectation": -0.40266331458717575,
+      "distance_lower_from_witness": 0.40266331458717575,
+      "entanglement_fidelity": 0.8629633222898152,
+      "fidelity_tangent_lower": 0.843139672810746,
+      "distance_lower_from_tangent": 0.343139672810746,
+      "variance_sum": 12.54882617514032,
+      "variance_sum_over_n_two_thirds": 0.7843016359462701,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.5624999999999822,
+        2.6874999999979057
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999994,
+        0.9999999999999667
+      ],
+      "tail_at_excitation_n_over_2": [
+        1.3702405871331892e-08,
+        2.988387821845433e-07
+      ],
+      "trace_error": 7.105427357601002e-15,
+      "hermiticity_error": 1.0966212424485631e-30,
+      "population_output_min_eigenvalue": -7.175185428213011e-16
+    },
+    {
+      "n": 64,
+      "scaled_time_s": 0.5,
+      "time_t": 0.03125000000000001,
+      "pt_block_min": -0.1718532833666965,
+      "witness_expectation": -0.1718532833666965,
+      "distance_lower_from_witness": 0.1718532833666965,
+      "entanglement_fidelity": 0.5405408656610879,
+      "fidelity_tangent_lower": 0.21569836405372977,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 12.54882617514032,
+      "variance_sum_over_n_two_thirds": 0.7843016359462701,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.5624999999999822,
+        2.6874999999979057
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999994,
+        0.9999999999999667
+      ],
+      "tail_at_excitation_n_over_2": [
+        1.3702405871331892e-08,
+        2.988387821845433e-07
+      ],
+      "trace_error": 1.84297022087776e-14,
+      "hermiticity_error": 6.061007887891342e-31,
+      "population_output_min_eigenvalue": 9.75717001891606e-16
+    },
+    {
+      "n": 64,
+      "scaled_time_s": 1.0,
+      "time_t": 0.06250000000000001,
+      "pt_block_min": -0.04553064748982835,
+      "witness_expectation": -0.04553064748982835,
+      "distance_lower_from_witness": 0.04553064748982835,
+      "entanglement_fidelity": 0.3507748479369648,
+      "fidelity_tangent_lower": -0.5686032718925405,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 12.54882617514032,
+      "variance_sum_over_n_two_thirds": 0.7843016359462701,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.5624999999999822,
+        2.6874999999979057
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999994,
+        0.9999999999999667
+      ],
+      "tail_at_excitation_n_over_2": [
+        1.3702405871331892e-08,
+        2.988387821845433e-07
+      ],
+      "trace_error": 3.086420008457935e-14,
+      "hermiticity_error": 3.2974765394390992e-31,
+      "population_output_min_eigenvalue": 6.061024403160686e-12
+    },
+    {
+      "n": 64,
+      "scaled_time_s": 2.0,
+      "time_t": 0.12500000000000003,
+      "pt_block_min": 0.03655966073076891,
+      "witness_expectation": 0.03655966073076891,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.19102269768307956,
+      "fidelity_tangent_lower": -2.137206543785081,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 12.54882617514032,
+      "variance_sum_over_n_two_thirds": 0.7843016359462701,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.5624999999999822,
+        2.6874999999979057
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999994,
+        0.9999999999999667
+      ],
+      "tail_at_excitation_n_over_2": [
+        1.3702405871331892e-08,
+        2.988387821845433e-07
+      ],
+      "trace_error": 5.417888360170764e-14,
+      "hermiticity_error": 2.8222593673261704e-31,
+      "population_output_min_eigenvalue": 4.4956861804741746e-08
+    },
+    {
+      "n": 128,
+      "scaled_time_s": 0.1,
+      "time_t": 0.00393725328092148,
+      "pt_block_min": -0.4021986138213308,
+      "witness_expectation": -0.40219861382133076,
+      "distance_lower_from_witness": 0.40219861382133076,
+      "entanglement_fidelity": 0.8615120019480793,
+      "fidelity_tangent_lower": 0.8412159828540313,
+      "distance_lower_from_tangent": 0.3412159828540313,
+      "variance_sum": 20.164313268259786,
+      "variance_sum_over_n_two_thirds": 0.7939200857298436,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.8095273327688796,
+        3.42858199830664
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999998,
+        0.9999999999999999
+      ],
+      "tail_at_excitation_n_over_2": [
+        8.751500041448851e-13,
+        3.21989829457305e-11
+      ],
+      "trace_error": 5.551115123125783e-15,
+      "hermiticity_error": 1.7018477577911934e-30,
+      "population_output_min_eigenvalue": -1.9820553020784952e-15
+    },
+    {
+      "n": 128,
+      "scaled_time_s": 0.5,
+      "time_t": 0.019686266404607397,
+      "pt_block_min": -0.17115874259293995,
+      "witness_expectation": -0.17115874259293995,
+      "distance_lower_from_witness": 0.17115874259293995,
+      "entanglement_fidelity": 0.53721810288729,
+      "fidelity_tangent_lower": 0.20607991427015637,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 20.164313268259786,
+      "variance_sum_over_n_two_thirds": 0.7939200857298436,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.8095273327688796,
+        3.42858199830664
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999998,
+        0.9999999999999999
+      ],
+      "tail_at_excitation_n_over_2": [
+        8.751500041448851e-13,
+        3.21989829457305e-11
+      ],
+      "trace_error": 7.993605777301127e-15,
+      "hermiticity_error": 7.751365852672541e-31,
+      "population_output_min_eigenvalue": -6.62575388028609e-15
+    },
+    {
+      "n": 128,
+      "scaled_time_s": 1.0,
+      "time_t": 0.039372532809214794,
+      "pt_block_min": -0.04548004100486544,
+      "witness_expectation": -0.04548004100486544,
+      "distance_lower_from_witness": 0.04548004100486544,
+      "entanglement_fidelity": 0.347287182985325,
+      "fidelity_tangent_lower": -0.5878401714596873,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 20.164313268259786,
+      "variance_sum_over_n_two_thirds": 0.7939200857298436,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.8095273327688796,
+        3.42858199830664
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999998,
+        0.9999999999999999
+      ],
+      "tail_at_excitation_n_over_2": [
+        8.751500041448851e-13,
+        3.21989829457305e-11
+      ],
+      "trace_error": 1.1546319456101628e-14,
+      "hermiticity_error": 3.986455969520367e-31,
+      "population_output_min_eigenvalue": -8.45210587120032e-15
+    },
+    {
+      "n": 128,
+      "scaled_time_s": 2.0,
+      "time_t": 0.07874506561842959,
+      "pt_block_min": 0.035419001576513065,
+      "witness_expectation": 0.03541900157651307,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.18789636650154162,
+      "fidelity_tangent_lower": -2.1756803429193745,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 20.164313268259786,
+      "variance_sum_over_n_two_thirds": 0.7939200857298436,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        0.8095273327688796,
+        3.42858199830664
+      ],
+      "retained_probability_before_normalization": [
+        0.9999999999999998,
+        0.9999999999999999
+      ],
+      "tail_at_excitation_n_over_2": [
+        8.751500041448851e-13,
+        3.21989829457305e-11
+      ],
+      "trace_error": 1.4988010832439613e-14,
+      "hermiticity_error": 2.3697094242974174e-31,
+      "population_output_min_eigenvalue": 3.593533283707911e-12
+    },
+    {
+      "n": 256,
+      "scaled_time_s": 0.1,
+      "time_t": 0.0024803141437003125,
+      "pt_block_min": -0.4018608492821419,
+      "witness_expectation": -0.40186084928214183,
+      "distance_lower_from_witness": 0.40186084928214183,
+      "entanglement_fidelity": 0.8605394442776467,
+      "fidelity_tangent_lower": 0.8399266421796131,
+      "distance_lower_from_tangent": 0.3399266421796131,
+      "variance_sum": 32.26876688724152,
+      "variance_sum_over_n_two_thirds": 0.8003667891019344,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.1267735847774145,
+        4.3803207543322475
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        1.0000000000000002
+      ],
+      "tail_at_excitation_n_over_2": [
+        2.244118398185104e-19,
+        1.3845812486594273e-17
+      ],
+      "trace_error": 2.930988785010413e-14,
+      "hermiticity_error": 5.5224996420142074e-30,
+      "population_output_min_eigenvalue": -2.222841850211688e-15
+    },
+    {
+      "n": 256,
+      "scaled_time_s": 0.5,
+      "time_t": 0.012401570718501561,
+      "pt_block_min": -0.170619462727514,
+      "witness_expectation": -0.170619462727514,
+      "distance_lower_from_witness": 0.170619462727514,
+      "entanglement_fidelity": 0.5350002526330025,
+      "fidelity_tangent_lower": 0.19963321089806563,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 32.26876688724152,
+      "variance_sum_over_n_two_thirds": 0.8003667891019344,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.1267735847774145,
+        4.3803207543322475
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        1.0000000000000002
+      ],
+      "tail_at_excitation_n_over_2": [
+        2.244118398185104e-19,
+        1.3845812486594273e-17
+      ],
+      "trace_error": 3.863576125695545e-14,
+      "hermiticity_error": 3.1920806686678034e-30,
+      "population_output_min_eigenvalue": -5.9204209146185454e-15
+    },
+    {
+      "n": 256,
+      "scaled_time_s": 1.0,
+      "time_t": 0.024803141437003122,
+      "pt_block_min": -0.045357157555906115,
+      "witness_expectation": -0.04535715755590611,
+      "distance_lower_from_witness": 0.04535715755590611,
+      "entanglement_fidelity": 0.34497692295715887,
+      "fidelity_tangent_lower": -0.6007335782038687,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 32.26876688724152,
+      "variance_sum_over_n_two_thirds": 0.8003667891019344,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.1267735847774145,
+        4.3803207543322475
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        1.0000000000000002
+      ],
+      "tail_at_excitation_n_over_2": [
+        2.244118398185104e-19,
+        1.3845812486594273e-17
+      ],
+      "trace_error": 5.084821452783217e-14,
+      "hermiticity_error": 2.548035340504922e-30,
+      "population_output_min_eigenvalue": -7.761747837362468e-15
+    },
+    {
+      "n": 256,
+      "scaled_time_s": 2.0,
+      "time_t": 0.049606282874006244,
+      "pt_block_min": 0.03475757581710784,
+      "witness_expectation": 0.03475757581710783,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.18586082393416675,
+      "fidelity_tangent_lower": -2.2014671564077375,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 32.26876688724152,
+      "variance_sum_over_n_two_thirds": 0.8003667891019344,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.1267735847774145,
+        4.3803207543322475
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        1.0000000000000002
+      ],
+      "tail_at_excitation_n_over_2": [
+        2.244118398185104e-19,
+        1.3845812486594273e-17
+      ],
+      "trace_error": 8.049116928532385e-14,
+      "hermiticity_error": 1.4620623254503106e-30,
+      "population_output_min_eigenvalue": -8.074420693774835e-15
+    },
+    {
+      "n": 512,
+      "scaled_time_s": 0.1,
+      "time_t": 0.0015625000000000005,
+      "pt_block_min": -0.4016240688553866,
+      "witness_expectation": -0.4016240688553866,
+      "distance_lower_from_witness": 0.4016240688553866,
+      "entanglement_fidelity": 0.8598956305324089,
+      "fidelity_tangent_lower": 0.839073180493844,
+      "distance_lower_from_tangent": 0.33907318049384405,
+      "variance_sum": 51.496582241969904,
+      "variance_sum_over_n_two_thirds": 0.80463409753078,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.5312499999999991,
+        5.59375
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        0.9999999999999992
+      ],
+      "tail_at_excitation_n_over_2": [
+        9.026899027641109e-30,
+        9.273261634072829e-28
+      ],
+      "trace_error": 2.1316282072803006e-14,
+      "hermiticity_error": 3.1242230814126626e-30,
+      "population_output_min_eigenvalue": -4.418868662273857e-15
+    },
+    {
+      "n": 512,
+      "scaled_time_s": 0.5,
+      "time_t": 0.007812500000000002,
+      "pt_block_min": -0.17022649791597494,
+      "witness_expectation": -0.17022649791597494,
+      "distance_lower_from_witness": 0.17022649791597494,
+      "entanglement_fidelity": 0.533536604093676,
+      "fidelity_tangent_lower": 0.19536590246922003,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 51.496582241969904,
+      "variance_sum_over_n_two_thirds": 0.80463409753078,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.5312499999999991,
+        5.59375
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        0.9999999999999992
+      ],
+      "tail_at_excitation_n_over_2": [
+        9.026899027641109e-30,
+        9.273261634072829e-28
+      ],
+      "trace_error": 6.38378239159465e-14,
+      "hermiticity_error": 1.5398112793242732e-30,
+      "population_output_min_eigenvalue": -1.3132213699870358e-14
+    },
+    {
+      "n": 512,
+      "scaled_time_s": 1.0,
+      "time_t": 0.015625000000000003,
+      "pt_block_min": -0.04523346171493916,
+      "witness_expectation": -0.045233461714939166,
+      "distance_lower_from_witness": 0.045233461714939166,
+      "entanglement_fidelity": 0.3434609418202378,
+      "fidelity_tangent_lower": -0.6092681950615599,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 51.496582241969904,
+      "variance_sum_over_n_two_thirds": 0.80463409753078,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.5312499999999991,
+        5.59375
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        0.9999999999999992
+      ],
+      "tail_at_excitation_n_over_2": [
+        9.026899027641109e-30,
+        9.273261634072829e-28
+      ],
+      "trace_error": 9.037215420448774e-14,
+      "hermiticity_error": 1.1178007587597439e-30,
+      "population_output_min_eigenvalue": -1.87329586504566e-14
+    },
+    {
+      "n": 512,
+      "scaled_time_s": 2.0,
+      "time_t": 0.03125000000000001,
+      "pt_block_min": 0.03436729054212618,
+      "witness_expectation": 0.03436729054212618,
+      "distance_lower_from_witness": 0.0,
+      "entanglement_fidelity": 0.1845416035147999,
+      "fidelity_tangent_lower": -2.21853639012312,
+      "distance_lower_from_tangent": 0.0,
+      "variance_sum": 51.496582241969904,
+      "variance_sum_over_n_two_thirds": 0.80463409753078,
+      "predicted_variance_limit": 0.8125,
+      "mean_excitation": [
+        1.5312499999999991,
+        5.59375
+      ],
+      "retained_probability_before_normalization": [
+        1.0,
+        0.9999999999999992
+      ],
+      "tail_at_excitation_n_over_2": [
+        9.026899027641109e-30,
+        9.273261634072829e-28
+      ],
+      "trace_error": 1.2168044349891716e-13,
+      "hermiticity_error": 6.882285879109528e-31,
+      "population_output_min_eigenvalue": -2.2289779481270578e-14
+    }
+  ],
+  "growing_excitation_generator_checks": [
+    {
+      "n": 64,
+      "error_A": 0.009174832225374826,
+      "error_A_squared": 0.018269445940966196,
+      "n_two_thirds_times_error_A": 0.14679731560599718,
+      "n_two_thirds_times_error_A_squared": 0.2923111350554591,
+      "mean_excitation": 0.5624999999999974,
+      "tail_above_spin_ladder": 2.417912779628802e-16
+    },
+    {
+      "n": 128,
+      "error_A": 0.005917360509736825,
+      "error_A_squared": 0.011762765820399132,
+      "n_two_thirds_times_error_A": 0.15029158876850104,
+      "n_two_thirds_times_error_A_squared": 0.29875562939771455,
+      "mean_excitation": 0.8095273327688794,
+      "tail_above_spin_ladder": 1.4730786066026277e-24
+    },
+    {
+      "n": 256,
+      "error_A": 0.0037963454551359107,
+      "error_A_squared": 0.007509853829632779,
+      "n_two_thirds_times_error_A": 0.1530590576511509,
+      "n_two_thirds_times_error_A_squared": 0.3027783334908148,
+      "mean_excitation": 1.1267735847774147,
+      "tail_above_spin_ladder": 1.3390360775587088e-37
+    },
+    {
+      "n": 512,
+      "error_A": 0.002426724470613791,
+      "error_A_squared": 0.0047716830982885,
+      "n_two_thirds_times_error_A": 0.1553103661192826,
+      "n_two_thirds_times_error_A_squared": 0.30538771829046396,
+      "mean_excitation": 1.5312499999999991,
+      "tail_above_spin_ladder": 2.8149030562574662e-58
+    },
+    {
+      "n": 1024,
+      "error_A": 0.0015469969013761126,
+      "error_A_squared": 0.003023370049929512,
+      "n_two_thirds_times_error_A": 0.15716508855270306,
+      "n_two_thirds_times_error_A_squared": 0.30715525105582425,
+      "mean_excitation": 2.0446452412267497,
+      "tail_above_spin_ladder": 4.6787984179518874e-91
+    },
+    {
+      "n": 2048,
+      "error_A": 0.0009840529299464155,
+      "error_A_squared": 0.0019123451105247543,
+      "n_two_thirds_times_error_A": 0.15869811208322732,
+      "n_two_thirds_times_error_A_squared": 0.3084036940049504,
+      "mean_excitation": 2.6944883703410087,
+      "tail_above_spin_ladder": 4.9554222582160635e-143
+    },
+    {
+      "n": 4096,
+      "error_A": 0.0006248550480534681,
+      "error_A_squared": 0.0012082719700165358,
+      "n_two_thirds_times_error_A": 0.15996289230168778,
+      "n_two_thirds_times_error_A_squared": 0.30931762432423304,
+      "mean_excitation": 3.5156249999999996,
+      "tail_above_spin_ladder": 1.8221635856468635e-225
+    }
+  ]
+}

@@ -14,6 +14,7 @@ This repository studies isotropic and anisotropic rotational diffusion on one ir
 - Explicit coherent-measurement comparator, uniform heat-kernel estimate and matching two-level converse: science/classicalization.md
 - Arbitrary encoding/recovery, finite classical bound, finite quantum-capacity converse and intermediate timescales: science/communication.md
 - Unequal diffusion strengths, sharp two-equal-smallest-rate family, rank-deficient cases and deterministic rotations: science/anisotropic_diffusion.md
+- Rank-two growing-excitation contraction, all-finite-scaled-time NPT converse, finite-spin code and separate equal-rate global EB bound: science/rank_two_diffusion.md
 - Exact normalized-Choi singlet eigenvalue, odd-spin asymptotic and finite NPT certificates: science/residual_entanglement.md
 - Physical story, interpretation and boundaries: science/interpretation.md
 - Imported results, precise predecessor comparison and source versions: references/RELATED_WORK.md
@@ -39,3 +40,9 @@ The residual Choi theorem identifies one negative partial-transpose eigenvalue f
 The carrier is irreducible. An arbitrary initial encoding and final recovery are permitted, but intermediate active correction and a quantum bypass are additional resources. Capacities use independent channel copies, not a common rotation shared across all carriers.
 
 Follow the source map for attribution: coherent-channel rotation identities, Berezin/heat comparisons, transference methods, rotational partial-transpose structure and capacity continuity have established predecessors. Numerical checks verify conventions and sampled finite behavior; the proofs carry the general statements.
+
+## Sister relationship and rank-two scope
+
+Nonlinear-Diffusion-Entanglement (https://github.com/GoGoKo699/Nonlinear-Diffusion-Entanglement) owns the inherited conditional Gaussian covariance, exceptional-path oscillator EB bound and finite-energy NPT witness. This repository owns their controlled spin application in science/rank_two_diffusion.md. The single common source remains Holevo (2019); each project has its own 30-milestone route.
+
+For fixed D=diag(0,b,c), t=s n^(-2/3) and a fixed Schwartz input span/finite reference, the squeezed limit is -(b/2)ad_P²-c ad_(Q²/2)², with physical excitation O(n^(1/3)). Positive EB-distance liminf at every fixed finite s makes n^(2/3)t->infinity necessary. Only the equal-rate family has the separate global bound C_b/(sqrt(n)t), sufficient at sqrt(n)t->infinity. Do not infer matching global sufficiency, a finite coefficient threshold, exact EB, or positive quantum capacity from the local contraction.
